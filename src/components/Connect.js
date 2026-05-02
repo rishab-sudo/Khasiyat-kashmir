@@ -26,9 +26,9 @@ const Connect = () => {
 
             {/* SOCIAL ICONS */}
             <div className="connect-social">
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaWhatsapp /></a>
+              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
+              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaFacebookF /></a>
+              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaWhatsapp /></a>
             </div>
 
             {/* CALL */}

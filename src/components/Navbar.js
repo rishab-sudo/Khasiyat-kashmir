@@ -50,9 +50,9 @@ const Navbar = () => {
 
             {/* ✅ SOCIAL ICONS */}
             <div className="social-icons">
-              <a href="#"><FaFacebookF /></a>
-              <a href="#"><FaInstagram /></a>
-              <a href="#"><FaWhatsapp /></a>
+              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaFacebookF /></a>
+              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
+              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaWhatsapp /></a>
             </div>
           </div>
 
@@ -78,9 +78,9 @@ const Navbar = () => {
        
         {/* ✅ SOCIAL ICONS SIDEBAR */}
         <div className="social-icons sidebar-social">
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaWhatsapp /></a>
+          <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaFacebookF /></a>
+          <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
+          <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaWhatsapp /></a>
         </div>
       </div>
     </>
