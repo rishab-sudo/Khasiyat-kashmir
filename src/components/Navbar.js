@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
-
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -12,75 +11,79 @@ const Navbar = () => {
     const handleScroll = () => {
       setShowNav(window.scrollY > 80);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  // ✅ SCROLL FUNCTION
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false); // close sidebar on click
+      setMenuOpen(false);
     }
   };
 
   return (
     <>
-      {/* TOP NAVBAR */}
-      <div className={`navbar ${showNav ? "show" : ""}`}>
-        <Container fluid className="d-flex justify-content-between align-items-center">
+      {/* NAVBAR */}
+   {/* NAVBAR */}
+<div className={`navbar ${showNav ? "show" : ""}`}>
+  <Container fluid className="navbar-inner">
 
-          <div className="navbar-logo">
-            <img src={require("../assets/khasiyat-logo.png")} alt="logo" />
-          </div>
+    {/* LOGO */}
+    <div className="navbar-logo">
+      <img src={require("../assets/khasiyat-logo.png")} alt="logo" />
+    </div>
 
-          <div className="navbar-links">
-            <span className="links" onClick={() => scrollToSection("home")}>Home</span>
-            <span className="links" onClick={() => scrollToSection("menu")}>Menu</span>
-            <span className="links" onClick={() => scrollToSection("review")}>Review</span>
-            <span className="links" onClick={() => scrollToSection("contact")}>Get in Touch</span>
+    {/* RIGHT SIDE (LINKS + SOCIAL) */}
+    <div className="navbar-right">
 
-          
-
-            {/* ✅ SOCIAL ICONS */}
-            <div className="social-icons">
-              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaFacebookF /></a>
-              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
-              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaWhatsapp /></a>
-            </div>
-          </div>
-
-          <div className="navbar-menu" onClick={toggleMenu}>
-            {menuOpen ? "✕" : "☰"}
-          </div>
-
-        </Container>
+      <div className="navbar-links">
+        <span onClick={() => scrollToSection("home")}>Home</span>
+        <span onClick={() => scrollToSection("menu")}>Menu</span>
+        <span onClick={() => scrollToSection("review")}>Review</span>
+        <span onClick={() => scrollToSection("contact")}>Get in Touch</span>
       </div>
+
+      <div className="navbar-social">
+        <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
+        <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
+    <a
+  href="https://wa.me/919103358985"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaWhatsapp />
+</a>
+      </div>
+
+    </div>
+
+    {/* MENU ICON */}
+    <div className="navbar-menu" onClick={() => setMenuOpen(!menuOpen)}>
+      {menuOpen ? "✕" : "☰"}
+    </div>
+
+  </Container>
+</div>
 
       {/* SIDEBAR */}
       <div className={`sidebar ${menuOpen ? "open" : ""}`}>
+        <span onClick={() => scrollToSection("home")}>Home</span>
+        <span onClick={() => scrollToSection("menu")}>Menu</span>
+        <span onClick={() => scrollToSection("review")}>Review</span>
+        <span onClick={() => scrollToSection("contact")}>Get in Touch</span>
 
-        <div className="sidebar-logo">
-          <img src={require("../assets/khasiyat-logo.png")} alt="sidebar-logo"/>
-        </div>
-
-        <span className="links" onClick={() => scrollToSection("home")}>Home</span>
-        <span className="links" onClick={() => scrollToSection("menu")}>Menu</span>
-        <span className="links" onClick={() => scrollToSection("review")}>Review</span>
-        <span className="links" onClick={() => scrollToSection("contact")}>Get in Touch</span>
-
-       
-        {/* ✅ SOCIAL ICONS SIDEBAR */}
-        <div className="social-icons sidebar-social">
-          <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaFacebookF /></a>
-          <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
-          <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaWhatsapp /></a>
+        <div className="sidebar-social">
+          <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
+          <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
+<a
+  href="https://wa.me/919103358985"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaWhatsapp />
+</a>
         </div>
       </div>
     </>

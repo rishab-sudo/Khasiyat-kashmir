@@ -1,0 +1,128 @@
+/* =========================
+   SECTION
+========================= */
+.homeabout {
+  margin-top: 2.5%;
+  background-color: #336666;
+  color: #fff;
+}
+
+/* MAIN LAYOUT */
+.homeabout-container {
+  display: flex;
+  align-items: center;
+}
+
+/* =========================
+   LEFT IMAGE (50%)
+========================= */
+.homeabout-left {
+  width: 50%;
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* IMAGE */
+.image-wrapper img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+  /* 🔥 AUTO ZOOM EFFECT */
+  animation: zoomIn 5s linear forwards;
+}
+
+/* 🔥 KEYFRAME (MAIN EFFECT) */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+/* SOFT RIGHT-BOTTOM SHADOW */
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+/* =========================
+   RIGHT CONTENT
+========================= */
+.homeabout-right {
+  width: 50%;
+  padding: 60px;
+}
+
+.tag {
+  color: #ffb400;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 38px;
+  margin: 15px 0;
+}
+
+.desc {
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.contact {
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.menu-btn {
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background: #fff;
+  color: #336666;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .homeabout-container {
+    flex-direction: column;
+  }
+
+  .homeabout-left,
+  .homeabout-right {
+    width: 100%;
+  }
+
+  .homeabout-right {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .image-wrapper img {
+    height: 300px;
+  }
+}

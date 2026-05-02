@@ -16,7 +16,7 @@ const About = () => {
 
         {/* LEFT IMAGE */}
         <div className="about-page-left">
-          <img src={require("../assets/about22.png")} alt="About Restaurant" />
+          <img src={require("../assets/cafe/khasiyat front1.jpeg")} alt="About Restaurant" />
         </div>
 
         {/* RIGHT CONTENT */}

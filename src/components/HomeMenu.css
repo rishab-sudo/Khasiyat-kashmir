@@ -1,25 +1,30 @@
+/* =========================
+   🔥 FIXED BACKGROUND IMAGE
+========================= */
 .HomeMenu {
-  padding: 45px 0px;
-  background-color: #336666;
+  margin-top: 2.5%;
+  padding: 25px 0px;
   position: relative;
-  color: #fff;
+  overflow: hidden;
+  color: #000;
+  background: transparent;
 }
 
-/* OVERLAY */
-.HomeMenu::before {
-  content: "";
+/* BACKGROUND LAYER */
+.HomeMenu-bg {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 0;
+  background: url("../assets/cafe/khasiyat\ front1.jpeg") center/cover no-repeat;
+  opacity: 0.2;      
+  filter: blur(2px) brightness(0.8);
 }
 
-/* FIX CONTENT ABOVE OVERLAY */
-.HomeMenu * {
+/* ENSURE CONTENT ABOVE */
+.HomeMenu > *:not(.HomeMenu-bg) {
   position: relative;
   z-index: 2;
 }
-
 /* HEADER */
 .HomeMenu-header {
   text-align: center;
@@ -48,9 +53,9 @@
 .HomeMenu-filters button {
   position: relative;
   padding: 10px 22px;
-  border: 1px solid #fff;
+  border: 1px solid #ffb400;
   background: transparent;
-  color: #fff;
+  color: #ffb400;
   cursor: pointer;
   overflow: hidden;
   z-index: 1;
@@ -100,11 +105,31 @@
   flex-direction: row-reverse;
 }
 
-/* IMAGE */
+/* =========================
+   🔥 IMAGE (UPDATED)
+========================= */
+.HomeMenu-image {
+  overflow: hidden;
+  border-radius: 5px;
+}
+
 .HomeMenu-image img {
   width: 100%;
-  border-radius: 10px;
-  animation: fadeIn 0.5s ease;
+  height: 650px;
+  object-fit: cover;
+
+  /* 🔥 ZOOM EFFECT */
+  animation: zoomIn 5s linear forwards;
+}
+
+/* 🔥 KEYFRAME (MAIN EFFECT) */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.12);
+  }
 }
 
 /* ITEM */
@@ -122,12 +147,13 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  color: #000;
 }
 
 /* TAG */
 .HomeMenu-tag {
   background: #ffb400;
-  color: #fff;
+  color: #000;
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 3px;
@@ -146,24 +172,14 @@
 
 /* DESC */
 .HomeMenu-item p {
-  color: #ccc;
+  color: #000;
   font-size: 14px;
   margin-top: 5px;
 }
 
-/* ANIMATION */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
   .HomeMenu-section {
     flex-direction: column;

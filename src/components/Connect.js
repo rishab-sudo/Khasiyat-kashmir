@@ -26,14 +26,20 @@ const Connect = () => {
 
             {/* SOCIAL ICONS */}
             <div className="connect-social">
-              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a>
-              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaFacebookF /></a>
-              <a href="https://www.instagram.com/p/DXEqRVAk1nl/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaWhatsapp /></a>
+              <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
+              <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
+    <a
+  href="https://wa.me/919103358985"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaWhatsapp />
+</a>
             </div>
 
             {/* CALL */}
             <div className="connect-call">
-              Call for Reservation <strong>+01234 567 891</strong>
+              Call for Reservation <strong>+91  91033 58985</strong>
             </div>
 
           </div>

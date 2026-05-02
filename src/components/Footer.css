@@ -1,55 +1,99 @@
+/* =========================
+   FOOTER BASE
+========================= */
 .footer {
-  background-color: #336666;
+  background: #336666;
   color: #fff;
-  padding: 45px 0;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
-}
-/* ✅ Make all columns equal height */
-.footer .row {
-  display: flex;
-  align-items: stretch;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Column */
+/* BACKGROUND IMAGE (optional) */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* background: url("../assets/softdrink.png") center/cover no-repeat; */
+  opacity: 0.05;
+  z-index: 0;
+}
+
+/* CONTAINER */
+.footer-container {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+/* COLUMN */
 .footer-col {
+  width: 25%; /* ✅ now 4 equal columns */
+  padding: 40px 20px;
+  position: relative;
+
+  /* ✅ CENTER ALIGN EVERYTHING */
   display: flex;
-  justify-content: center;
-  align-items: center; /* vertical center */
-  text-align: left;  /* 🔥 center text */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-/* Inner content */
-.footer-inner {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
+/* THIN VERTICAL LINE */
+.footer-col:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background: rgba(255,255,255,0.2);
 }
 
-/* Logo */
+/* LOGO */
 .footer-logo {
-  width: 150px;
+  width: 80px;
+  height: 80px;
   margin-bottom: 15px;
 }
 
-/* Tagline */
-.footer-tagline {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-/* Description */
+/* DESCRIPTION */
 .footer-desc {
   font-size: 14px;
-  line-height: 1.6;
-}
-
-/* Heading */
-.footer-heading {
+  color: #e0e0e0;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 
-/* Links */
+/* SOCIAL */
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #fbfbfb;
+  color: #fbfbfb !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background: #336666;
+  color: #fff;
+}
+
+/* TITLE */
+.footer-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* LINKS */
 .footer-links {
   list-style: none;
   padding: 0;
@@ -57,90 +101,49 @@
 
 .footer-links li {
   margin-bottom: 10px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: #fff;
+.footer-links li:hover {
+  color: #ddd;
 }
 
-.footer-links a:hover {
-  color: #ccc;
-}
-
-/* Address */
+/* ADDRESS */
 .footer-address {
   font-size: 14px;
-  line-height: 1.7;
 }
 
-/* Social */
-.social-icons {
-  margin-top: 15px;
-}
-
-.social-icons a {
-  color: #fff;
-  margin: 0 8px;
-  font-size: 18px;
-}
-
-/* Button */
-.brochure-btn {
-  position: relative;
-  padding: 9px 15px;
-  background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 6px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 1;
-  transition: color 0.4s ease;
-}
-
-/* Fill animation layer */
-.brochure-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background: #fff;
-  z-index: -1;
-  transition: width 0.4s ease;
-}
-
-/* Hover effect */
-.brochure-btn:hover::before {
+/* MAP */
+.footer-map iframe {
   width: 100%;
+  height: 160px;
+  border: none;
+  border-radius: 6px;
 }
 
-.brochure-btn:hover {
-  color: #000;
-}
-/* clickable phone + email same color */
-.footer-contact-link {
-  color: inherit; /* same as footer text */
-  text-decoration: none;
-  transition: 0.3s ease;
+/* BOTTOM */
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  border-top: 1px solid rgba(255,255,255,0.2);
 }
 
-.footer-contact-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-/* ✅ Mobile Fix */
-@media (max-width: 768px) {
-  .footer-col {
-    justify-content: center;
-    text-align: center;
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
   }
 
-  .footer-inner {
-    max-width: 100%;
+  .footer-col {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .footer-col::after {
+    display: none;
   }
 }

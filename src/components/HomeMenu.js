@@ -1,65 +1,61 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./HomeMenu.css";
-import menuImg from "../assets/menu.jpg";
+
+/* 🔥 11 IMAGES */
+const foodImages = [
+  require("../assets/food/food1.jpeg"),
+  require("../assets/food/food2.jpeg"),
+  require("../assets/food/food3.jpeg"),
+  require("../assets/food/food4.jpeg"),
+  require("../assets/food/food5.jpeg"),
+  require("../assets/food/food6.jpeg"),
+  require("../assets/food/food7.jpeg"),
+  require("../assets/food/food8.jpeg"),
+  require("../assets/food/food9.jpeg"),
+  require("../assets/food/food10.jpeg"),
+  require("../assets/food/food11.jpeg"),
+];
 
 const menuData = {
-  Breakfast: {
-    image: menuImg,
-    reverse: true,
-    items: [
-      { name: "Grill Salmon", price: "$27.85", tag: "RECOMMENDED", desc: "Soft and juicy, with garlic & ginger" },
-      { name: "Summertime Pesto Pasta", price: "$20.00", desc: "Soft and juicy, with garlic & ginger" },
-    ],
-  },
-
-  Brunch: {
-    image: menuImg,
-    reverse: false,
-    items: [
-      { name: "Pan Fried Barramundi", price: "$27.85", desc: "Soft and juicy, with garlic & ginger" },
-    ],
-  },
-
-  Lunch: {
-    image: menuImg,
-    reverse: true,
-    items: [
-      { name: "Cassonut Salad", price: "$16.85", tag: "CHEF CHOICE", desc: "Tomato, Salt, Black Pepper, Lemon" },
-    ],
-  },
-
-  Snacks: {
-    image: menuImg,
-    reverse: false,
-    items: [
-      { name: "French Fries", price: "$5.00", desc: "Crispy golden fries" },
-    ],
-  },
-
-  Dinner: {
-    image: menuImg,
-    reverse: true,
-    items: [
-      { name: "BBQ ribs", price: "$10.20", desc: "Chicken ribs, garlic & ginger, green sauce" },
-    ],
-  },
+  Breakfast: { reverse: true },
+  Brunch: { reverse: false },
+  Lunch: { reverse: true },
+  Snacks: { reverse: false },
+  Dinner: { reverse: true },
 };
 
 const HomeMenu = () => {
   const [active, setActive] = useState("Breakfast");
+  const [currentImg, setCurrentImg] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    setCurrentImg(0);
+
+    const interval = setInterval(() => {
+      setFade(false); // start fade out
+
+      setTimeout(() => {
+        setCurrentImg((prev) => (prev + 1) % foodImages.length);
+        setFade(true); // fade in next image
+      }, 600); // fade duration
+
+    }, 4000); // total duration
+
+    return () => clearInterval(interval);
+  }, [active]);
 
   const current = menuData[active];
   const categories = Object.keys(menuData);
 
   return (
     <section className="HomeMenu">
-
+   {/* <div className="HomeMenu-bg"></div> */}
       {/* HEADER */}
       <div className="HomeMenu-header">
         <span>OUR MENU</span>
         <h2>Delicious Food</h2>
 
-        {/* BUTTONS */}
         <div className="HomeMenu-filters">
           {categories.map((cat) => (
             <button
@@ -73,33 +69,32 @@ const HomeMenu = () => {
         </div>
       </div>
 
-      {/* ACTIVE SECTION */}
+      {/* SECTION */}
       <div className={`HomeMenu-section ${current.reverse ? "reverse" : ""}`}>
 
-        {/* IMAGE */}
-        <div className="HomeMenu-image">
-          <img src={current.image} alt={active} />
-        </div>
+        {/* 🔥 IMAGE (SMOOTH) */}
+      <div className="HomeMenu-image">
+  <img
+    key={currentImg}   // 🔥 THIS FIXES EVERYTHING
+    src={foodImages[currentImg]}
+    className={`menu-img ${fade ? "show" : ""}`}
+    alt="food"
+  />
+</div>
 
         {/* CONTENT */}
         <div className="HomeMenu-list">
           <h3 className="HomeMenu-title">{active}</h3>
 
-          {current.items.map((item, i) => (
-            <div key={i} className="HomeMenu-item">
-              <div className="HomeMenu-top">
-                <h4>
-                  {item.name}
-                  {item.tag && <span className="HomeMenu-tag">{item.tag}</span>}
-                </h4>
-
-                <div className="HomeMenu-dots"></div>
-                <span className="HomeMenu-price">{item.price}</span>
-              </div>
-
-              <p>{item.desc}</p>
+          <div className="HomeMenu-item">
+            <div className="HomeMenu-top">
+              <h4>Special Dish</h4>
+              <div className="HomeMenu-dots"></div>
+              <span className="HomeMenu-price">$20</span>
             </div>
-          ))}
+            <p>Delicious freshly prepared dish with premium ingredients.</p>
+          </div>
+
         </div>
 
       </div>

@@ -1,103 +1,82 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import "./Footer.css";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <Container fluid>
-        <Container>
-          <Row className="gy-4">
-            {/* Column 1 */}
-            <Col className="footer-col" lg={4} md={6}>
-              <div className="footer-inner">
-                <img
-                  src={require("../assets/khasiyat-logo.png")}
-                  alt="logo"
-                  className="footer-logo"
-                />
 
-                <p className="footer-tagline">Go Electric. Drive the Future.</p>
+      <div className="footer-container">
 
-                <p className="footer-desc">
-                  At Eternity, we bring you the next generation of electric
-                  vehicles with cutting-edge technology, superior performance,
-                  and a commitment to sustainability. Experience innovation,
-                  reliability, and a smarter way to drive.
-                </p>
+        {/* COLUMN 1 - LOGO + DESC */}
+        <div className="footer-col">
+          <img
+            src={require("../assets/khasiyat-logo.png")}
+            className="footer-logo"
+            alt="logo"
+          />
 
-                <div className="social-icons">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61588650280727"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaFacebookF />
-                  </a>
+          <p className="footer-desc">
+            A perfect blend of taste and ambience. We serve delicious food
+            with a warm and premium dining experience.
+          </p>
 
-                  <a
-                    href="https://www.instagram.com/eternity.lucknow/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaInstagram />
-                  </a>
-                </div>
-              </div>
-            </Col>
+          <div className="footer-social">
+            <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
+            <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
+              <a
+            href="https://wa.me/919103358985"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp />
+          </a>
+          </div>
+        </div>
 
-            {/* Column 2 */}
-            <Col className="footer-col" lg={4} md={6}>
-              <div className="footer-inner">
-                <h5 className="footer-heading">Quick Links</h5>
+        {/* COLUMN 2 - QUICK LINKS */}
+        <div className="footer-col">
+          <h4 className="footer-title">Quick Links</h4>
 
-                <ul className="footer-links">
-                  <li><a href="/home">Home</a></li>
-                  <li><a href="/Mpv">VF MPV 7</a></li>
-                  <li><a href="/Vf6">VF6</a></li>
-                  <li><a href="/Vf7">VF7</a></li>
-                  <li><a href="/contact">Contact Us</a></li>
-                </ul>
-              </div>
-            </Col>
+          <ul className="footer-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Reservation</li>
+            <li>Contact</li>
+          </ul>
+        </div>
 
-            {/* Column 3 */}
-            <Col className="footer-col" lg={4} md={12}>
-              <div className="footer-inner">
-                <h5 className="footer-heading">Address</h5>
+        {/* COLUMN 3 - ADDRESS */}
+        <div className="footer-col">
+          <h4 className="footer-title">Address</h4>
 
-                <p className="footer-address">
-                  Anaura Kala, NH 24, Ayodhya - Lucknow Rd, <br />
-                  Near Indira Canal, Faizabad,
-                  <br />
-                  Lucknow, Uttar Pradesh 227105
-                  <br />
-                  <br />
-                  Phone:{" "}
-                  <a href="tel:+918679309990" className="footer-contact-link">
-                    +91 8679309990
-                  </a>
-                  ,{" "}
-                  <a href="tel:+918679509990" className="footer-contact-link">
-                    +91 8679509990
-                  </a>
-                  <br />
-                  Email:{" "}
-                  <a
-                    href="mailto:eternity.lko@gmail.com"
-                    className="footer-contact-link"
-                  >
-                    eternity.lko@gmail.com
-                  </a>
-                </p>
+          <p className="footer-address">
+            21 Maneuvers Restaurant <br />
+            Delhi, India <br />
+            +91 91033 58985
+          </p>
+        </div>
 
-                {/* <button className="brochure-btn">Download Brochure</button> */}
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </Container>
+        {/* COLUMN 4 - MAP */}
+        <div className="footer-col">
+          <h4 className="footer-title">Location</h4>
+
+          <div className="footer-map">
+            <iframe
+              src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              title="map"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
+      {/* COPYRIGHT */}
+      <div className="footer-bottom">
+        © 2026 Khasiyat. All Rights Reserved.
+      </div>
+
     </footer>
   );
 };

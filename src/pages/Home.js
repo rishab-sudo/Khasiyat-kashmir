@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap'
 import Quality from '../components/Quality'
 import Testimonial from '../components/Testimonial'
 import Connect from '../components/Connect'
+import HomeAbout from '../components/HomeAbout'
 
 const Home = () => {
   return (
@@ -17,46 +18,8 @@ const Home = () => {
       </section>
 
       {/* ✅ ABOUT (optional if you want scroll) */}
-      <section id="about" className="homeabout">
-        <div className="homeabout-container">
-
-          <div className="homeabout-left">
-            <img src={require("../assets/about.png")} alt="Food" />
-          </div>
-
-          <div className="homeabout-right">
-            <span className="tag">FRESH & TASTY FOOD</span>
-
-            <h2 className="title">
-              A Sophisticated and <br /> Traditional Cuisine
-            </h2>
-
-            <p className="desc">
-              Rosoi is one of the most popular restaurants with a unique and
-              special menu crafted by our passionate chefs.
-            </p>
-
-            <p className="contact">
-              Call for Reservation <strong>+01234 567 891</strong>
-            </p>
-
-            <button className="menu-btn book-btn">
-              View Full Menu
-            </button>
-          </div>
-
-        </div>
-
-        <Container fluid className='home-about-cards'>
-          <Container className="homeabout-bottom">
-            <div>
-              <img src={require("../assets/small-banner.jpg")} alt="Food 1" />
-            </div>
-            <div>
-              <img src={require("../assets/small-banner.jpg")} alt="Food 2" />
-            </div>
-          </Container>
-        </Container>
+      <section id="about" >
+       <HomeAbout/>
       </section>
 
       {/* ✅ MENU */}
