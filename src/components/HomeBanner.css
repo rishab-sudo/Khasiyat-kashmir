@@ -1,0 +1,127 @@
+.homebanner {
+  height: 100vh;
+  background-color: #fff !important;
+  /* background: url("/images/banner-bg.jpg") center/cover no-repeat; */
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+/* LEFT */
+.banner-left {
+  max-width: 500px;
+}
+
+.discount {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.6s;
+}
+
+.discount.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* LINE ANIMATION */
+.line {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.line.animate {
+  animation: slideUp 0.6s forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SUBTITLE */
+.subtitle {
+  opacity: 0;
+  transform: translateY(30px);
+  margin-bottom: 20px;
+}
+
+.subtitle.fadeUp {
+  animation: slideUp 0.6s forwards;
+  animation-delay: 0.6s;
+}
+
+/* BUTTON */
+.book-btn {
+  position: relative;
+  padding: 12px 28px;
+  border: 2px solid #ffb400;
+  color: #ffb400;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;              /* ✅ ADD THIS */
+}
+
+.book-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #ffb400;
+  z-index: -1;
+  transition: 0.4s;
+}
+
+.book-btn:hover::before {
+  width: 100%;
+}
+
+.book-btn:hover {
+  color: #fff;
+}
+/* RIGHT IMAGE */
+.banner-right {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease;
+}
+
+.right.imgShow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.right img {
+  width: 420px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .container{
+    flex-direction: column;
+    text-align: center;
+  }
+}

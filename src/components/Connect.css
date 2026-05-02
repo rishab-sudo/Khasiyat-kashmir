@@ -1,0 +1,106 @@
+/* =========================
+   CONNECT SECTION
+========================= */
+.connect {
+  padding: 0px 0;
+  background-color: #fbfbfb;
+}
+
+.connect-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* LEFT */
+.connect-left {
+  width: 50%;
+}
+
+.connect-left img {
+  width: 100%;
+  border-radius: 0px;
+}
+
+/* RIGHT */
+.connect-right {
+    text-align: center !important;
+  width: 35%;
+  padding: 40px;
+}
+
+/* HEADING */
+.connect-heading h5 {
+  color: #c59d5f;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.connect-heading h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.connect-heading p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* SOCIAL BOXES */
+.connect-social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.connect-social a {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #336666; 
+  transition: 0.3s;
+  border: 1px solid #ddd;
+}
+
+.connect-social a:hover {
+  background: #336666;
+  color: #fff;
+
+}
+
+/* CALL */
+.connect-call {
+  font-size: 16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .connect-left,
+  .connect-right {
+    width: 100%;
+  }
+
+  .connect-right {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .connect-heading h2 {
+    font-size: 24px;
+  }
+
+  .connect-social {
+    justify-content: flex-start;
+  }
+}

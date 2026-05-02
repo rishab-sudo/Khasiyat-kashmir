@@ -1,0 +1,123 @@
+/* =========================
+   TESTIMONIAL
+========================= */
+.testimonial {
+  padding: 45px 0;
+  
+
+}.tset-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+/* HEADING */
+.testimonial-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial-heading h5 {
+  color: #c59d5f;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.testimonial-heading h2 {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+/* SLIDER */
+.testimonial-slider {
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: 0.5s ease;
+}
+
+.testimonial-slide {
+  min-width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+/* BOX */
+.testimonial-box {
+  width: 45%;
+  margin: auto;
+  background: #f8f8f8;
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  min-height: 280px;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* USER */
+.testimonial-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-user h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.testimonial-user span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* PROFILE IMAGE bottom right */
+.testimonial-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* DOTS */
+.testimonial-dots {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.testimonial-dots span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonial-dots .active {
+  background: #c59d5f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .testimonial-slide {
+    flex-direction: column;
+  }
+
+  .testimonial-box {
+    width: 100%;
+  }
+}

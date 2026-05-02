@@ -1,0 +1,185 @@
+.HomeMenu {
+  padding: 45px 0px;
+  background-color: #336666;
+  position: relative;
+  color: #fff;
+}
+
+/* OVERLAY */
+.HomeMenu::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+/* FIX CONTENT ABOVE OVERLAY */
+.HomeMenu * {
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER */
+.HomeMenu-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.HomeMenu-header span {
+  color: #ffb400;
+  letter-spacing: 2px;
+}
+
+.HomeMenu-header h2 {
+  font-size: 40px;
+  margin: 10px 0 20px;
+}
+
+/* FILTERS */
+.HomeMenu-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 35px auto;
+  gap: 10px;
+}
+
+.HomeMenu-filters button {
+  position: relative;
+  padding: 10px 22px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+/* FILL EFFECT */
+.HomeMenu-filters button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: #ffb400;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.HomeMenu-filters button:hover::before,
+.HomeMenu-filters button.active::before {
+  width: 100%;
+}
+
+.HomeMenu-filters button:hover,
+.HomeMenu-filters button.active {
+  color: #fff;
+  border-color: #ffb400;
+}
+
+/* SECTION */
+.HomeMenu-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.HomeMenu-image,
+.HomeMenu-list {
+  flex: 1;
+}
+
+.HomeMenu-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.HomeMenu-image img {
+  width: 100%;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* ITEM */
+.HomeMenu-item {
+  margin-bottom: 25px;
+}
+
+/* TOP */
+.HomeMenu-top {
+  display: flex;
+  align-items: center;
+}
+
+.HomeMenu-top h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* TAG */
+.HomeMenu-tag {
+  background: #ffb400;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* DOTS */
+.HomeMenu-dots {
+  flex: 1;
+  border-bottom: 1px dotted #aaa;
+  margin: 0 10px;
+}
+
+.HomeMenu-price {
+  color: #ffb400;
+}
+
+/* DESC */
+.HomeMenu-item p {
+  color: #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .HomeMenu-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .HomeMenu-section.reverse {
+    flex-direction: column;
+  }
+
+  .HomeMenu-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .HomeMenu-dots {
+    display: none;
+  }
+}
