@@ -95,7 +95,10 @@
   width: 90%;
   margin: 50px auto;
 }
-
+.HomeMenu-title{
+  margin-bottom: 5%;
+  color: #ffb400;
+}
 .HomeMenu-image,
 .HomeMenu-list {
   flex: 1;

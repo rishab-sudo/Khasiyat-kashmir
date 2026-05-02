@@ -2,7 +2,7 @@ import React from 'react'
 import HomeBanner from '../components/HomeBanner'
 import Menu from "../components/HomeMenu"
 import "./Home.css"
-import { Container } from 'react-bootstrap'
+// import { Container } from 'react-bootstrap'
 import Quality from '../components/Quality'
 import Testimonial from '../components/Testimonial'
 import Connect from '../components/Connect'

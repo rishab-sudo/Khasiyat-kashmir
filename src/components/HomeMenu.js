@@ -15,13 +15,136 @@ const foodImages = [
   require("../assets/food/food10.jpeg"),
   require("../assets/food/food11.jpeg"),
 ];
-
 const menuData = {
-  Breakfast: { reverse: true },
-  Brunch: { reverse: false },
-  Lunch: { reverse: true },
-  Snacks: { reverse: false },
-  Dinner: { reverse: true },
+  Breakfast: {
+    reverse: true,
+    items: [
+      {
+        name: "Grilled Sandwich",
+        price: "₹120",
+        desc: "Crispy bread with fresh veggies and cheese",
+      },
+      {
+        name: "Masala Omelette",
+        price: "₹90",
+        desc: "Spicy omelette with onion & herbs",
+      },
+         {
+        name: "Grilled Sandwich",
+        price: "₹120",
+        desc: "Crispy bread with fresh veggies and cheese",
+      },
+      {
+        name: "Masala Omelette",
+        price: "₹90",
+        desc: "Spicy omelette with onion & herbs",
+      },
+    ],
+  },
+
+  Brunch: {
+    reverse: false,
+    items: [
+      {
+        name: "Paneer Wrap",
+        price: "₹150",
+        desc: "Soft wrap filled with spicy paneer",
+      },
+        {
+        name: "Paneer Wrap",
+        price: "₹150",
+        desc: "Soft wrap filled with spicy paneer",
+      },
+        {
+        name: "Paneer Wrap",
+        price: "₹150",
+        desc: "Soft wrap filled with spicy paneer",
+      },
+        {
+        name: "Paneer Wrap",
+        price: "₹150",
+        desc: "Soft wrap filled with spicy paneer",
+      },
+    ],
+  },
+
+  Lunch: {
+    reverse: true,
+    items: [
+      {
+        name: "Veg Thali",
+        price: "₹220",
+        desc: "Complete Indian meal with roti, sabzi & rice",
+      },
+       {
+        name: "Veg Thali",
+        price: "₹220",
+        desc: "Complete Indian meal with roti, sabzi & rice",
+      },
+       {
+        name: "Veg Thali",
+        price: "₹220",
+        desc: "Complete Indian meal with roti, sabzi & rice",
+      },
+       {
+        name: "Veg Thali",
+        price: "₹220",
+        desc: "Complete Indian meal with roti, sabzi & rice",
+      },
+    ],
+  },
+
+  Snacks: {
+    reverse: false,
+    items: [
+      {
+        name: "French Fries",
+        price: "₹80",
+        desc: "Crispy golden fries with seasoning",
+      },
+        {
+        name: "French Fries",
+        price: "₹80",
+        desc: "Crispy golden fries with seasoning",
+      },
+        {
+        name: "French Fries",
+        price: "₹80",
+        desc: "Crispy golden fries with seasoning",
+      },
+        {
+        name: "French Fries",
+        price: "₹80",
+        desc: "Crispy golden fries with seasoning",
+      },
+    ],
+  },
+
+  Dinner: {
+    reverse: true,
+    items: [
+      {
+        name: "Butter Chicken",
+        price: "₹280",
+        desc: "Creamy chicken curry with butter gravy",
+      },
+         {
+        name: "Butter Chicken",
+        price: "₹280",
+        desc: "Creamy chicken curry with butter gravy",
+      },
+         {
+        name: "Butter Chicken",
+        price: "₹280",
+        desc: "Creamy chicken curry with butter gravy",
+      },
+         {
+        name: "Butter Chicken",
+        price: "₹280",
+        desc: "Creamy chicken curry with butter gravy",
+      },
+    ],
+  },
 };
 
 const HomeMenu = () => {
@@ -40,7 +163,7 @@ const HomeMenu = () => {
         setFade(true); // fade in next image
       }, 600); // fade duration
 
-    }, 4000); // total duration
+    }, 3500); // total duration
 
     return () => clearInterval(interval);
   }, [active]);
@@ -83,19 +206,21 @@ const HomeMenu = () => {
 </div>
 
         {/* CONTENT */}
-        <div className="HomeMenu-list">
-          <h3 className="HomeMenu-title">{active}</h3>
+    <div className="HomeMenu-list">
+  <h3 className="HomeMenu-title">{active}</h3>
 
-          <div className="HomeMenu-item">
-            <div className="HomeMenu-top">
-              <h4>Special Dish</h4>
-              <div className="HomeMenu-dots"></div>
-              <span className="HomeMenu-price">$20</span>
-            </div>
-            <p>Delicious freshly prepared dish with premium ingredients.</p>
-          </div>
+  {current.items.map((item, i) => (
+    <div key={i} className="HomeMenu-item">
+      <div className="HomeMenu-top">
+        <h4>{item.name}</h4>
+        <div className="HomeMenu-dots"></div>
+        <span className="HomeMenu-price">{item.price}</span>
+      </div>
 
-        </div>
+      <p>{item.desc}</p>
+    </div>
+  ))}
+</div>
 
       </div>
     </section>
