@@ -11,7 +11,7 @@ const Quality = () => {
 
           {/* LEFT IMAGE */}
           <div className="quality-left">
-            <img src={require("../assets/quality-book1.jpg")} alt="Quality" />
+            <img src={require("../assets/Team/team1.jpeg")} alt="Quality" />
           </div>
 
           {/* RIGHT CONTENT */}
