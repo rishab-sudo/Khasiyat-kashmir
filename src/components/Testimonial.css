@@ -3,6 +3,7 @@
 ========================= */
 .testimonial {
   padding: 45px 0;
+  background-color: #fff;
   
 
 }.tset-container {
@@ -28,6 +29,7 @@
 .testimonial-heading h2 {
   font-size: 32px;
   margin-top: 10px;
+  color: #000;
 }
 
 /* SLIDER */
@@ -50,7 +52,7 @@
 .testimonial-box {
   width: 45%;
   margin: auto;
-  background-color: #fbfbfbbb;
+  background-color: #336666;
   padding: 25px;
   border-radius: 10px;
   position: relative;
@@ -59,7 +61,7 @@
 
 .testimonial-text {
   font-size: 14px;
-  color: #555;
+  color: #fbfbfb;
   line-height: 1.6;
   margin-bottom: 40px;
 }
@@ -74,11 +76,12 @@
 .testimonial-user h4 {
   margin: 0;
   font-size: 16px;
+    color: #fbfbfb;
 }
 
 .testimonial-user span {
   font-size: 12px;
-  color: #777;
+  color: #fbfbfb;
 }
 
 /* PROFILE IMAGE bottom right */

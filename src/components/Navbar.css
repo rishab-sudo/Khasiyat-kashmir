@@ -9,8 +9,8 @@
   transition: 0.4s ease;
   z-index: 1000;
   padding: 12px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 .navbar.show {
   top: 0;
 }

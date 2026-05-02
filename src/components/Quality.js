@@ -1,4 +1,5 @@
 import React from "react";
+import Service from "./Service";
 import "./Quality.css";
 
 const Quality = () => {
@@ -61,7 +62,11 @@ const Quality = () => {
         </div>
       </div>
     </section>
-
+{/* ----------- */}
+<section id="contact">
+        <Service
+        />
+      </section>
     {/* =========================
     QUALITY 2 - EVENT BOOKING
 ========================= */}
