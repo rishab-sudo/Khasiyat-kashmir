@@ -7,7 +7,7 @@ import Quality from '../components/Quality'
 import Testimonial from '../components/Testimonial'
 import Connect from '../components/Connect'
 import HomeAbout from '../components/HomeAbout'
-import Service from '../components/Service'
+
 
 const Home = () => {
   return (
