@@ -40,8 +40,7 @@ const Footer = () => {
 
           <ul className="footer-links">
             <li>Home</li>
-            <li>About</li>
-            <li>Menu</li>
+          <li>Menu</li>
             <li>Reservation</li>
             <li>Contact</li>
           </ul>

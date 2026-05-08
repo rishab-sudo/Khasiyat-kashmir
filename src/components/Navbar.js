@@ -42,7 +42,7 @@ const Navbar = () => {
         <span onClick={() => scrollToSection("home")}>Home</span>
         <span onClick={() => scrollToSection("menu")}>Menu</span>
         <span onClick={() => scrollToSection("review")}>Review</span>
-        <span onClick={() => scrollToSection("contact")}>Get in Touch</span>
+        <span onClick={() => scrollToSection("connect")}>Get in Touch</span>
       </div>
 
       <div className="navbar-social">
@@ -72,7 +72,7 @@ const Navbar = () => {
         <span onClick={() => scrollToSection("home")}>Home</span>
         <span onClick={() => scrollToSection("menu")}>Menu</span>
         <span onClick={() => scrollToSection("review")}>Review</span>
-        <span onClick={() => scrollToSection("contact")}>Get in Touch</span>
+        <span onClick={() => scrollToSection("connect")}>Get in Touch</span>
 
         <div className="sidebar-social">
           <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>

@@ -3,7 +3,8 @@
 ========================= */
 .connect {
   padding: 0px 0;
-   background-color: #fbfbfbbb;
+   /* background-color: #fbfbfbbb; */
+   background-color: #336666;
    margin-top: 2.5%;
 }
 
@@ -28,6 +29,7 @@
     text-align: center !important;
   width: 35%;
   padding: 40px;
+  color: #fff;
 }
 
 /* HEADING */
@@ -41,10 +43,11 @@
 .connect-heading h2 {
   font-size: 32px;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .connect-heading p {
-  color: #666;
+color: #fff;
   font-size: 14px;
   margin-bottom: 25px;
 }

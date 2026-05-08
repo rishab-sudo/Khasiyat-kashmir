@@ -84,7 +84,7 @@ const Quality = () => {
         </h2>
 
         <p className="quality2-call">
-          Call for Reservation <strong>+01234 567 891</strong>
+          Call for Reservation <strong>+91 91033 58985</strong>
         </p>
 
         <div className="quality2-info">
@@ -95,19 +95,19 @@ const Quality = () => {
   <div className="hours-row">
     <span className="day">Monday - Saturday</span>
     <span className="hours-line"></span>
-    <span className="time">7.30 am - 11.30 pm</span>
+    <span className="time">9.00 am - 9.00 pm</span>
   </div>
 
   <div className="hours-row">
     <span className="day">Sunday</span>
     <span className="hours-line"></span>
-    <span className="time">7.30 am - 11.30 pm</span>
+    <span className="time">9.00 am - 10.00 pm</span>
   </div>
 
   <div className="hours-row">
     <span className="day">Happy Hour</span>
     <span className="hours-line"></span>
-    <span className="time">5.30 pm - 09.00 pm</span>
+    <span className="time">5.00 pm - 09.00 pm</span>
   </div>
 
   <button className="quality2-btn">Book Early</button>
@@ -118,7 +118,7 @@ const Quality = () => {
 </div>
       {/* RIGHT IMAGE */}
       <div className="quality2-right">
-        <img src={require("../assets/quality-book2.jpg")} alt="Event Booking" />
+        <img src={require("../assets/cafe/khasiyat front1.jpeg")} alt="Event Booking" />
       </div>
 
     </div>

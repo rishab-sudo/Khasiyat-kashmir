@@ -44,7 +44,7 @@ const Home = () => {
 
 
       {/* ✅ CONTACT */}
-      <section id="contact">
+      <section id="connect">
         <Connect/>
       </section>
 

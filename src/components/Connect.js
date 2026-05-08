@@ -10,14 +10,14 @@ const Connect = () => {
 
           {/* LEFT IMAGE */}
           <div className="connect-left">
-            <img src={require("../assets/connect.jpg")} alt="Newsletter" />
+            <img src={require("../assets/connect2.png")} alt="Newsletter" />
           </div>
 
           {/* RIGHT CONTENT */}
           <div className="connect-right">
 
             <div className="connect-heading">
-              <h5>NEWSLETTER</h5>
+              <h5>Connect With Us</h5>
               <h2>Subscribe our Newsletter</h2>
               <p>
                 To get latest updates, offers and promotions

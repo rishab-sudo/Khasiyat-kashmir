@@ -4,12 +4,12 @@
 .testimonial {
   padding: 45px 0;
   background-color: #fff;
-  
+}
 
-}.tset-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.tset-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 90%;
   margin: auto;
 }
@@ -60,10 +60,19 @@
 }
 
 .testimonial-text {
-  font-size: 14px;
+  font-size: 18px;
   color: #fbfbfb;
   line-height: 1.6;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+
+/* ⭐ STARS */
+.testimonial-stars {
+  color: #c59d5f;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 2px;
 }
 
 /* USER */
@@ -76,7 +85,7 @@
 .testimonial-user h4 {
   margin: 0;
   font-size: 16px;
-    color: #fbfbfb;
+  color: #fbfbfb;
 }
 
 .testimonial-user span {
@@ -84,12 +93,19 @@
   color: #fbfbfb;
 }
 
-/* PROFILE IMAGE bottom right */
-.testimonial-user img {
+/* 👤 Initials Avatar */
+.testimonial-avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  object-fit: cover;
+  background-color: #c59d5f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 /* DOTS */
