@@ -7,6 +7,7 @@ import Quality from '../components/Quality'
 import Testimonial from '../components/Testimonial'
 import Connect from '../components/Connect'
 import HomeAbout from '../components/HomeAbout'
+import Gallery from '../components/Gallery'
 
 
 const Home = () => {
@@ -29,24 +30,26 @@ const Home = () => {
       </section>
 
       {/* ✅ QUALITY */}
-      <section id="quality">
+      <section id="quality"> 
         <Quality/>
       </section>
 
 
- 
-
-      {/* ✅ REVIEW */}
+     {/* ✅ REVIEW */}
       <section id="review">
         <Testimonial/>
       </section>
-
 
 
       {/* ✅ CONTACT */}
       <section id="connect">
         <Connect/>
       </section>
+
+       <section id="gallery">
+        <Gallery/>
+      </section>
+
 
     </>
   )
