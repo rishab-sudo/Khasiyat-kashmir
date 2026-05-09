@@ -20,7 +20,7 @@ const Quality = () => {
             {/* HEADING + ICON */}
             <div className="quality-heading">
               <h2>Our Quality Food</h2>
-              <img src="/images/quality-icon.png" alt="icon" />
+              <img src={require("../assets/dish1.png")} alt="icon" />
             </div>
 
             {/* FIRST ROW */}

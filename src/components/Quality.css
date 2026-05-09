@@ -45,7 +45,10 @@
 }
 
 .quality-heading img {
-  width: 60px;
+  margin-top: -50px;
+  width: 150px;
+  animation: bounce 3s infinite;
+
 }
 
 /* FLEX ROWS */
