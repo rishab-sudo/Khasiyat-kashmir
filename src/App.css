@@ -1,11 +1,181 @@
 .App{
-   /* background-color: #336666; */
    background-color: #fff;
 }
-img{
-   /* animation: float 6s ease-in-out infinite !important; */
-}
-  /* background-color: #174242; */
-  section {
+
+section {
   scroll-margin-top: 80px;
+}
+
+/* =========================
+   PRELOADER
+========================= */
+
+.preloader {
+  width: 100%;
+  height: 100vh;
+  background: #000; /* removed background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  backdrop-filter: blur(2px);
+}
+
+/* =========================
+   CUP IMAGE
+========================= */
+
+.dish-image-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-dish-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,0.18));
+  animation: floatCup 3s ease-in-out infinite;
+}
+
+/* =========================
+   THIN STEAM EFFECT
+========================= */
+
+.steam {
+  position: absolute;
+  width: 3px;
+  height: 45px;
+  background: rgba(255,255,255,0.55);
+  border-radius: 50px;
+  filter: blur(4px);
+  z-index: 5;
+  opacity: 0;
+  animation: steamAnimation 2.8s infinite ease-in-out;
+}
+
+.steam1 {
+  top: 5px;
+  left: 52px;
+  animation-delay: 0s;
+}
+
+.steam2 {
+  top: -2px;
+  left: 72px;
+  animation-delay: 0.7s;
+}
+
+.steam3 {
+  top: 5px;
+  right: 52px;
+  animation-delay: 1.4s;
+}
+
+@keyframes steamAnimation {
+
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: translateY(-45px) scaleX(1.8);
+    opacity: 0;
+  }
+}
+
+/* =========================
+   FLOAT ANIMATION
+========================= */
+
+@keyframes floatCup {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* =========================
+   BRAND NAME
+========================= */
+
+.brand-name {
+  color: #336666;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: 0 4px 15px rgba(51,102,102,0.2);
+}
+
+/* =========================
+   TAGLINE
+========================= */
+
+.brand-tag {
+  color: #666;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dish-image-wrapper {
+    width: 130px;
+    height: 130px;
+  }
+
+  .brand-name {
+    font-size: 28px;
+    letter-spacing: 4px;
+    text-align: center;
+  }
+
+  .brand-tag {
+    font-size: 10px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .steam1 {
+    left: 42px;
+  }
+
+  .steam2 {
+    left: 62px;
+  }
+
+  .steam3 {
+    right: 42px;
+  }
 }
