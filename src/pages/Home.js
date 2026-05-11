@@ -1,58 +1,112 @@
-import React from 'react'
-import HomeBanner from '../components/HomeBanner'
-import Menu from "../components/HomeMenu"
-import "./Home.css"
-// import { Container } from 'react-bootstrap'
-import Quality from '../components/Quality'
-import Testimonial from '../components/Testimonial'
-import Connect from '../components/Connect'
-import HomeAbout from '../components/HomeAbout'
-import Gallery from '../components/Gallery'
+import React from "react";
+import { motion } from "framer-motion";
 
+import HomeBanner from "../components/HomeBanner";
+import Menu from "../components/HomeMenu";
+import "./Home.css";
+
+import Quality from "../components/Quality";
+import Testimonial from "../components/Testimonial";
+import Connect from "../components/Connect";
+import HomeAbout from "../components/HomeAbout";
+import Gallery from "../components/Gallery";
+
+const fadeUp = {
+  hidden: {
+    opacity: 0,
+    y: 100,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+};
 
 const Home = () => {
   return (
     <>
-
       {/* ✅ HOME */}
-      <section id="home">
-        <HomeBanner/>
-      </section>
+      <motion.section
+        id="home"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <HomeBanner />
+      </motion.section>
 
-      {/* ✅ ABOUT (optional if you want scroll) */}
-      <section id="about" >
-       <HomeAbout/>
-      </section>
+      {/* ✅ ABOUT */}
+      <motion.section
+        id="about"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <HomeAbout />
+      </motion.section>
 
       {/* ✅ MENU */}
-      <section id="menu">
-        <Menu/>
-      </section>
+      <motion.section
+        id="menu"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Menu />
+      </motion.section>
 
       {/* ✅ QUALITY */}
-      <section id="quality"> 
-        <Quality/>
-      </section>
+      <motion.section
+        id="quality"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Quality />
+      </motion.section>
 
-
-     {/* ✅ REVIEW */}
-      <section id="review">
-        <Testimonial/>
-      </section>
-
+      {/* ✅ REVIEW */}
+      <motion.section
+        id="review"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Testimonial />
+      </motion.section>
 
       {/* ✅ CONTACT */}
-      <section id="connect">
-        <Connect/>
-      </section>
+      <motion.section
+        id="connect"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Connect />
+      </motion.section>
 
-       <section id="gallery">
-        <Gallery/>
-      </section>
-
-
+      {/* ✅ GALLERY */}
+      <motion.section
+        id="gallery"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Gallery />
+      </motion.section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
