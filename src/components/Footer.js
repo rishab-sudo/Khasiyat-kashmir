@@ -1,11 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
-
       <div className="footer-container">
 
         {/* COLUMN 1 - LOGO + DESC */}
@@ -22,15 +22,29 @@ const Footer = () => {
           </p>
 
           <div className="footer-social">
-            <a href="https://www.instagram.com/khaasiyatpahalgam/"><FaInstagram /></a>
-            <a href="https://www.facebook.com/profile.php?id=61575212754670"><FaFacebookF /></a>
-              <a
-            href="https://wa.me/919103358985"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp />
-          </a>
+            <a
+              href="https://www.instagram.com/khaasiyatpahalgam/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+
+            <a
+              href="https://www.facebook.com/profile.php?id=61575212754670"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+
+            <a
+              href="https://wa.me/919103358985"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp />
+            </a>
           </div>
         </div>
 
@@ -39,10 +53,17 @@ const Footer = () => {
           <h4 className="footer-title">Quick Links</h4>
 
           <ul className="footer-links">
-            <li>Home</li>
-          <li>Menu</li>
-            <li>Reservation</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+
+            <li>
+              <Link to="/menu">Menu</Link>
+            </li>
+
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
 
@@ -51,8 +72,9 @@ const Footer = () => {
           <h4 className="footer-title">Address</h4>
 
           <p className="footer-address">
-            21 Maneuvers Restaurant <br />
-            Delhi, India <br />
+          Main market, KP Rd,   <br />
+           Opp. Petrol Pump, Pahalgam,<br />
+           Jammu and Kashmir 192126 <br />
             +91 91033 58985
           </p>
         </div>
@@ -63,19 +85,23 @@ const Footer = () => {
 
           <div className="footer-map">
             <iframe
-              src="https://maps.google.com/maps?q=delhi&t=&z=13&ie=UTF8&iwloc=&output=embed"
-              title="map"
-            ></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.2542565347712!2d75.31639087555864!3d34.01168397317227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e23f0053bdcf3f%3A0xe1733c1f8183a154!2sKhaasiyat!5e0!3m2!1sen!2sin!4v1778494209264!5m2!1sen!2sin"
+  width="100%"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Khaasiyat Location Map"
+/>
           </div>
         </div>
-
       </div>
 
       {/* COPYRIGHT */}
       <div className="footer-bottom">
         © 2026 Khasiyat. All Rights Reserved.
       </div>
-
     </footer>
   );
 };
