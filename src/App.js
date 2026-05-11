@@ -54,7 +54,7 @@ function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 1 }}
           >
-            KHASIYAT
+            KHAASIYAT
           </motion.h1>
 
           {/* TAGLINE */}
