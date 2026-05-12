@@ -1,76 +1,120 @@
 import React, { useEffect, useState } from "react";
 import "./HomeBanner.css";
 
-const texts = [
+import bannerVideo from "../assets/video/web-video.mp4";
+
+/* SLIDER CONTENT */
+const bannerData = [
   {
-    title: ["Delicious & Mouth", "Watering Taste"],
-    subtitle: "Best food made by our Passionate Chefs",
+    heading: ["Taste The Real", "Kashmiri Flavours"],
+    subheading:
+      "Experience delicious food, cozy ambiance & unforgettable moments.",
   },
+
   {
-    title: ["Fresh & Healthy", "Organic Food"],
-    subtitle: "Prepared with love & premium ingredients",
+    heading: ["Fresh Food", "Great Experience"],
+    subheading:
+      "Enjoy premium quality dishes prepared by our expert chefs.",
+  },
+
+  {
+    heading: ["Delicious Meals", "Made With Passion"],
+    subheading:
+      "Authentic taste crafted with love, tradition & fresh ingredients.",
   },
 ];
 
 const HomeBanner = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animate, setAnimate] = useState(false);
 
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animate, setAnimate] = useState(true);
+
+  /* AUTO SLIDE */
   useEffect(() => {
-    setAnimate(true);
 
     const interval = setInterval(() => {
+
       setAnimate(false);
 
       setTimeout(() => {
-        setActiveIndex((prev) => (prev + 1) % texts.length);
+
+        setActiveIndex((prev) =>
+          prev === bannerData.length - 1 ? 0 : prev + 1
+        );
+
         setAnimate(true);
-      }, 500); // reset animation before next
+
+      }, 200);
 
     }, 4000);
 
     return () => clearInterval(interval);
+
   }, []);
 
-  const current = texts[activeIndex];
+  const current = bannerData[activeIndex];
 
   return (
     <section className="homebanner">
-      <div className="overlay">
-        <div className="container">
 
-          {/* LEFT */}
-          <div className="banner-left">
-            <span className={`discount ${animate ? "show" : ""}`}>
-              GET 35% DISCOUNT
-            </span>
+      {/* FULLSCREEN VIDEO */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="bg-video"
+      >
+        <source src={bannerVideo} type="video/mp4" />
+      </video>
 
-            <h1 className="title">
-              {current.title.map((line, i) => (
-                <div
-                  key={i}
-                  className={`line ${animate ? "animate" : ""}`}
-                  style={{ animationDelay: `${i * 0.3}s` }}
-                >
-                  {line}
-                </div>
-              ))}
-            </h1>
+      {/* LIGHT OVERLAY */}
+      <div className="overlay"></div>
 
-            <p className={`subtitle ${animate ? "fadeUp" : ""}`}>
-              {current.subtitle}
-            </p>
+      {/* CONTENT */}
+      <div className="banner-content">
 
-            <button className="book-btn"> Book a Table </button>
-          </div>
+        <span className="discount">
+          WELCOME TO KHAASIYAT
+        </span>
 
-          {/* RIGHT IMAGE */}
-          <div className={`banner-right ${animate ? "imgShow" : ""}`}>
-            <img src="/images/dish.png" alt="dish" />
-          </div>
+        {/* ANIMATED HEADING */}
+        <h1 className={animate ? "showText" : ""}>
+
+          {current.heading.map((line, index) => (
+            <div
+              key={index}
+              className="heading-line"
+              style={{
+                animationDelay: `${index * 0.25}s`,
+              }}
+            >
+              {line}
+            </div>
+          ))}
+
+        </h1>
+
+        {/* ANIMATED SUBHEADING */}
+        <p className={animate ? "showPara" : ""}>
+          {current.subheading}
+        </p>
+
+        {/* BUTTONS */}
+        <div className="banner-btns">
+
+          <button className="primary-btn">
+            Book a Table
+          </button>
+
+          <button className="secondary-btn">
+            Explore Menu
+          </button>
 
         </div>
+
       </div>
+
     </section>
   );
 };
