@@ -89,16 +89,16 @@ const BuffetMenu = () => {
 
                 {/* OVERLAY */}
                 <div className="buffet-menu-overlay">
-                  <Eye size={38} />
-                  <span>View Menu</span>
+
+                 <h3>{item.title}</h3>
+
+<div className="view-menu-btn">
+  <span>View Menu</span>
+  <Eye size={22} />
+</div>
+
                 </div>
 
-              </div>
-
-              {/* BOTTOM */}
-              <div className="buffet-menu-bottom">
-                <h3>{item.title}</h3>
-                <h4>{item.price}</h4>
               </div>
 
             </div>
