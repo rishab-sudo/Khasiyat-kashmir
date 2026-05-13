@@ -147,6 +147,7 @@
 }
 
 .HomeMenu-top h4 {
+  font-size: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -179,7 +180,27 @@
   font-size: 14px;
   margin-top: 5px;
 }
+/* --------------- */
+.HomeMenu-scroll {
+  max-height: 620px;   /* approx 7 items visible */
+  overflow-y: auto;
+  padding-right: 10px;
+}
 
+/* SCROLLBAR */
+.HomeMenu-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.HomeMenu-scroll::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 20px;
+}
+
+.HomeMenu-scroll::-webkit-scrollbar-thumb {
+  background: #c59d5f;
+  border-radius: 20px;
+}
 /* =========================
    RESPONSIVE
 ========================= */

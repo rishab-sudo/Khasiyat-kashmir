@@ -26,10 +26,16 @@
 
 /* RIGHT */
 .connect-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
     text-align: center !important;
   width: 35%;
   padding: 40px;
   color: #fff;
+  /* background-color: #c59d5f; */
+  margin: auto;
 }
 
 /* HEADING */

@@ -8,7 +8,7 @@ const bannerData = [
   {
     heading: ["Taste The Real", "Kashmiri Flavours"],
     subheading:
-      "Experience delicious food, cozy ambiance & unforgettable moments.",
+      "A Pure Vegetarian Culinary Destination in the Heart of Kashmir.",
   },
 
   {
