@@ -32,6 +32,12 @@ const testimonials = [
     role: "CTO, Morlex Group",
     rating: 4.5,
   },
+  {
+  text: "Excellent food, well trained staff, and a warm ambience. Very good dishes. Special recommendations - try the Dahi Kabab. Parathas are yummy. The Chole Bhature was outstanding.",
+  name: "Vinay Emmanuel",
+  role: "CTO, Morlex Group",
+  rating: 5,
+},
 ];
 
 const Testimonial = () => {
