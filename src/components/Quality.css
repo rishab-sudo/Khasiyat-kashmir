@@ -220,6 +220,12 @@ gap: 50px;
     flex-direction: column;
   }
 
+
+.quality-left img {
+  width: 100% !important;
+  height: auto;
+  border-radius: 0px;
+}
   .quality-box {
     width: 100%;
   }

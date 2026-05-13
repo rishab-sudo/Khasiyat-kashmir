@@ -36,17 +36,36 @@ const testimonials = [
 
 const Testimonial = () => {
   const [index, setIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
+  // MOBILE CHECK
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // TOTAL SLIDES
+  const totalSlides = isMobile
+    ? testimonials.length
+    : Math.ceil(testimonials.length / 2);
+
+  // NEXT
   const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % Math.ceil(testimonials.length / 2));
+    setIndex((prev) => (prev + 1) % totalSlides);
   };
 
+  // AUTO SLIDE
   useEffect(() => {
     const interval = setInterval(nextSlide, 4000);
     return () => clearInterval(interval);
-  }, []);
+  }, [totalSlides]);
 
-  // ⭐ rating stars
+  // ⭐ STARS
   const renderStars = (rating) => {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 !== 0;
@@ -64,7 +83,7 @@ const Testimonial = () => {
     return stars;
   };
 
-  // 👤 initials image
+  // 👤 INITIALS
   const getInitials = (name) => {
     const names = name.split(" ");
     return names[0][0] + names[1][0];
@@ -82,47 +101,86 @@ const Testimonial = () => {
 
         {/* SLIDER */}
         <div className="testimonial-slider">
+
           <div
             className="testimonial-track"
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
-            {Array.from({
-              length: Math.ceil(testimonials.length / 2),
-            }).map((_, slide) => (
-              <div className="testimonial-slide" key={slide}>
-                {testimonials
-                  .slice(slide * 2, slide * 2 + 2)
-                  .map((item, i) => (
-                    <div className="testimonial-box" key={i}>
-                      <p className="testimonial-text">{item.text}</p>
 
-                      {/* ⭐ Stars Left Side Below Text */}
-                      <div className="testimonial-stars">
-                        {renderStars(item.rating)}
-                      </div>
+            {isMobile ? (
+              // MOBILE SINGLE CARD
+              testimonials.map((item, i) => (
+                <div className="testimonial-slide mobile-slide" key={i}>
 
-                      <div className="testimonial-user">
-                        <div>
-                          <h4>{item.name}</h4>
-                          <span>{item.role}</span>
-                        </div>
+                  <div className="testimonial-box">
+                    <p className="testimonial-text">{item.text}</p>
 
-                        {/* 👤 Initials Circle */}
-                        <div className="testimonial-avatar">
-                          {getInitials(item.name)}
-                        </div>
-                      </div>
+                    <div className="testimonial-stars">
+                      {renderStars(item.rating)}
                     </div>
-                  ))}
-              </div>
-            ))}
+
+                    <div className="testimonial-user">
+
+                      <div>
+                        <h4>{item.name}</h4>
+                        <span>{item.role}</span>
+                      </div>
+
+                      <div className="testimonial-avatar">
+                        {getInitials(item.name)}
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              ))
+            ) : (
+              // DESKTOP 2 CARDS
+              Array.from({
+                length: Math.ceil(testimonials.length / 2),
+              }).map((_, slide) => (
+                <div className="testimonial-slide" key={slide}>
+
+                  {testimonials
+                    .slice(slide * 2, slide * 2 + 2)
+                    .map((item, i) => (
+                      <div className="testimonial-box" key={i}>
+
+                        <p className="testimonial-text">{item.text}</p>
+
+                        <div className="testimonial-stars">
+                          {renderStars(item.rating)}
+                        </div>
+
+                        <div className="testimonial-user">
+
+                          <div>
+                            <h4>{item.name}</h4>
+                            <span>{item.role}</span>
+                          </div>
+
+                          <div className="testimonial-avatar">
+                            {getInitials(item.name)}
+                          </div>
+
+                        </div>
+                      </div>
+                    ))}
+
+                </div>
+              ))
+            )}
+
           </div>
+
         </div>
 
         {/* DOTS */}
         <div className="testimonial-dots">
+
           {Array.from({
-            length: Math.ceil(testimonials.length / 2),
+            length: totalSlides,
           }).map((_, dot) => (
             <span
               key={dot}
@@ -130,6 +188,7 @@ const Testimonial = () => {
               onClick={() => setIndex(dot)}
             ></span>
           ))}
+
         </div>
 
       </div>

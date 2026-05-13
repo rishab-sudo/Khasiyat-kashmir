@@ -222,4 +222,9 @@
   .HomeMenu-dots {
     display: none;
   }
+  .HomeMenu-image img {
+  width: 100%;
+height: auto !important;
+}
+
 }
