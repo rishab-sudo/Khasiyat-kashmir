@@ -66,7 +66,7 @@
 .quality-box h4 {
   font-size: 18px;
   margin-bottom: 10px;
-    color: #fff;
+    color: #fbbf0e;
 }
 
 .quality-box p {
@@ -138,8 +138,7 @@ gap: 50px;
 }
 /* HOURS STYLE EXACT LIKE SCREENSHOT */
 .hours-row {
- 
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 8px 0;
@@ -164,18 +163,42 @@ gap: 50px;
 
 /* BUTTON */
 .quality2-btn {
+  position: relative;
   margin-top: 15px;
-  padding: 10px 20px;
-  background: #fbbf0e;
+  padding: 10px 24px;
+  background: transparent;
   color: #fff;
-  border: none;
+  border: 1px solid #fff;
   cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
+  border-radius: 1.5px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease, border-color 0.4s ease;
+  font-weight: 600;
+}
+
+/* YELLOW FILL EFFECT */
+.quality2-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fbbf0e;
+  z-index: -1;
+  transition: left 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.quality2-btn:hover::before {
+  left: 0;
 }
 
 .quality2-btn:hover {
-  background: #a67c3c;
+  color: #fff;
+  border-color: #fbbf0e;
+  transform: translateY(-2px);
 }
 
 /* RIGHT */

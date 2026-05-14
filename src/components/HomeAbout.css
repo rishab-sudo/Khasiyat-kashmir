@@ -89,19 +89,61 @@
 
 /* BUTTON */
 .menu-btn {
-  padding: 10px 30px;
+  padding: 12px 32px;
+  border: none;
+  background: #f4c542;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.menu-btn {
+  position: relative;
+  padding: 12px 32px;
   border: 1px solid #fff;
   background: transparent;
   color: #fff;
   cursor: pointer;
-  transition: 0.3s;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+  font-weight: 600;
+  border-radius: 1px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* YELLOW FILL EFFECT */
+.menu-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #f4c542;
+  z-index: -1;
+  transition: left 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.menu-btn:hover::before {
+  left: 0;
 }
 
 .menu-btn:hover {
-  background: #fff;
-  color: #336666;
+  color: #fff;
+  border-color: #f4c542;
+  transform: translateY(-2px);
 }
 
+.book-btn a {
+  text-decoration: none;
+}
 /* =========================
    RESPONSIVE
 ========================= */

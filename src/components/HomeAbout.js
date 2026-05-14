@@ -59,9 +59,11 @@ const HomeAbout = () => {
     Reserve Your Table <strong>+91 XXXXX XXXXX</strong>
   </p>
 
+<a href="tel:+91XXXXXXXXXX">
   <button className="menu-btn book-btn">
-    Explore Our Menu
+    Call Now
   </button>
+</a>
 </div>
 
       </div>

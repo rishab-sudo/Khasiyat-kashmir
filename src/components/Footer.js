@@ -52,19 +52,49 @@ const Footer = () => {
         <div className="footer-col margin-col">
           <h4 className="footer-title">Quick Links</h4>
 
-          <ul className="footer-links">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
+        <ul className="footer-links">
+  <li>
+    <a
+      href="#home"
+      onClick={(e) => {
+        e.preventDefault();
+        document.getElementById("home")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
+    >
+      Home
+    </a>
+  </li>
 
-            <li>
-              <Link to="/menu">Menu</Link>
-            </li>
+  <li>
+    <a
+      href="#menu"
+      onClick={(e) => {
+        e.preventDefault();
+        document.getElementById("menu")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
+    >
+      Menu
+    </a>
+  </li>
 
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
+  <li>
+    <a
+      href="#contact"
+      onClick={(e) => {
+        e.preventDefault();
+        document.getElementById("connect")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
+    >
+      Contact
+    </a>
+  </li>
+</ul>
         </div>
 
         {/* COLUMN 3 - ADDRESS */}

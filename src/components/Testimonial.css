@@ -21,7 +21,7 @@
 }
 
 .testimonial-heading h5 {
-  color: #c59d5f;
+  color: #f4c542;
   letter-spacing: 2px;
 }
 
@@ -66,7 +66,7 @@
 
 /* ⭐ STARS */
 .testimonial-stars {
-  color: #c59d5f;
+  color: #f4c542;
   font-size: 20px;
   margin-bottom: 25px;
   text-align: left;
@@ -96,7 +96,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #c59d5f;
+  background-color: #f4c542;
   color: #fff;
   display: flex;
   align-items: center;
@@ -123,7 +123,7 @@
 }
 
 .testimonial-dots .active {
-  background: #c59d5f;
+  background: #f4c542;
 }
 
 /* =========================

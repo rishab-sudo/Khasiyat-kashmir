@@ -6,16 +6,17 @@ section {
   scroll-margin-top: 80px;
 }
 .heading-tag{
-
+color: #ffb400 !important;
 }
 .page-heading{
-
+font-size: 32px !important;
+font-weight: 700;
 }
 .page-subheading{
   
 }
 .page-description{
-
+font-size: 18px;
 }
 /* =========================
    PRELOADER
@@ -160,7 +161,20 @@ section {
 ========================= */
 
 @media (max-width: 768px) {
-
+  .heading-tag{
+color: #ffb400 !important;
+}
+.page-heading{
+font-size: 26px !important;
+font-weight: 700;
+}
+.page-subheading{
+  
+}
+.page-description{
+font-size: 17px;
+}
+/*  */
   .dish-image-wrapper {
     width: 130px;
     height: 130px;

@@ -39,7 +39,7 @@ const Connect = () => {
 
             {/* CALL */}
             <div className="connect-call">
-              Call for Reservation <strong>+91  91033 58985</strong>
+              Call for Reservation <strong>+91  91033 xxxxx</strong>
             </div>
 
           </div>
