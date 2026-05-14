@@ -105,16 +105,12 @@ width: fit-content;
 margin: auto;
 }
 .quality2-subtitle {
-  color: #fbbf0e;
-  font-size: 14px;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 
 .quality2-title {
-  font-size: 34px;
   margin-bottom: 20px;
-  font-weight: 600;
   color: #fff !important;
 }
 
@@ -133,13 +129,11 @@ gap: 50px;
 /* BOX */
 .quality2-box h4 {
   margin-bottom: 10px;
-  font-size: 18px;
   color: #fbbf0e;
 }
 
 .quality2-box p {
   margin: 3px 0;
-  font-size: 14px;
   color: #555;
 }
 /* HOURS STYLE EXACT LIKE SCREENSHOT */
@@ -231,7 +225,7 @@ gap: 50px;
   }
 
   .quality-heading h2 {
-    font-size: 24px;
+   
   }
 
   .quality-heading img {

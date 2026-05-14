@@ -17,9 +17,9 @@ const Connect = () => {
           <div className="connect-right">
 
             <div className="connect-heading">
-              <h5>Connect With Us</h5>
-              <h2>Subscribe our Newsletter</h2>
-              <p>
+              <h5 className="heading-tag">Connect With Us</h5>
+              <h2 className="page-heading">Subscribe our Newsletter</h2>
+              <p className="page-description">
                 To get latest updates, offers and promotions
               </p>
             </div>

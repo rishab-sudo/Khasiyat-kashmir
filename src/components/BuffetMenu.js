@@ -65,12 +65,20 @@ const BuffetMenu = () => {
 
         {/* HEADING */}
         <div className="buffet-menu-heading">
-          <span>UNLIMITED BUFFET</span>
-          <h2>Buffet Menu</h2>
-          <p>
-            Freshly Prepared Multi Cuisine Pure Veg Buffet Experience
-          </p>
-        </div>
+  <span className="heading-tag">
+    PURE VEG BUFFET IN PAHALGAM
+  </span>
+
+  <h2 className="page-heading">
+    Unlimited Buffet Experience
+  </h2>
+
+  <p className="page-subheading">
+    Indulge in a lavish multi-cuisine pure vegetarian buffet featuring authentic
+    Kashmiri flavours, North Indian favourites, and freshly prepared delicacies
+    served with warmth and hospitality at Khaasiyat, Pahalgam.
+  </p>
+</div>
 
         {/* CARDS */}
         <div className="buffet-menu-cards">

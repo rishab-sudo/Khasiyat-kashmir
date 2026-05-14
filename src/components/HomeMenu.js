@@ -1067,8 +1067,8 @@ const HomeMenu = () => {
    {/* <div className="HomeMenu-bg"></div> */}
       {/* HEADER */}
       <div className="HomeMenu-header">
-        <span>OUR MENU</span>
-        <h2>Delicious Food</h2>
+        <span className="heading-tag">OUR MENU</span>
+        <h2 className="page-heading">Delicious Food</h2>
 
         <div className="HomeMenu-filters">
           {categories.map((cat) => (

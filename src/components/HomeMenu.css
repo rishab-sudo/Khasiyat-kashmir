@@ -39,7 +39,6 @@
 }
 
 .HomeMenu-header h2 {
-  font-size: 40px;
   margin: 10px 0 20px;
 }
 
@@ -167,7 +166,6 @@
 }
 
 .HomeMenu-top h4 {
-  font-size: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -197,7 +195,7 @@
 /* DESC */
 .HomeMenu-item p {
   color: #000;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 5px;
 }
 

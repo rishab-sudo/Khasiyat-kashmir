@@ -44,75 +44,78 @@ const Quality = () => {
                 alt="Quality"
               />
             </motion.div>
+{/* RIGHT CONTENT */}
+<motion.div
+  className="quality-right"
+  variants={fadeUp}
+>
 
-            {/* RIGHT CONTENT */}
-            <motion.div
-              className="quality-right"
-              variants={fadeUp}
-            >
+  {/* HEADING + ICON */}
+  <motion.div
+    className="quality-heading"
+    variants={fadeUp}
+  >
+    <h2 className="page-heading">
+      Why Guests Love Khaasiyat
+    </h2>
 
-              {/* HEADING + ICON */}
-              <motion.div
-                className="quality-heading"
-                variants={fadeUp}
-              >
-                <h2>Our Quality Food</h2>
-                <img
-                  src={require("../assets/dish1.png")}
-                  alt="icon"
-                />
-              </motion.div>
+    <img
+      src={require("../assets/dish1.png")}
+      alt="Pure Veg Restaurant in Pahalgam"
+    />
+  </motion.div>
 
-              {/* FIRST ROW */}
-              <motion.div
-                className="quality-flex"
-                variants={fadeUp}
-              >
-                <div className="quality-box">
-                  <h4>Passionate Chef</h4>
-                  <p>
-                    Rosoi is one of the most popular Restaurant & Special menu
-                    made by our passionate chefs and quality with can impress
-                    you
-                  </p>
-                </div>
+  {/* FIRST ROW */}
+  <motion.div
+    className="quality-flex"
+    variants={fadeUp}
+  >
+    <div className="quality-box">
+      <h4>Authentic Kashmiri Taste</h4>
 
-                <div className="quality-box">
-                  <h4>100% Fresh Food</h4>
-                  <p>
-                    Rosoi is one of the most popular Restaurant & special menu
-                    made by our passionate chefs and quality with can impress
-                    you
-                  </p>
-                </div>
-              </motion.div>
+      <p className="page-description">
+        Experience rich and authentic Kashmiri flavours prepared with
+        traditional recipes, premium ingredients, and a touch of warmth in
+        every dish.
+      </p>
+    </div>
 
-              {/* SECOND ROW */}
-              <motion.div
-                className="quality-flex"
-                variants={fadeUp}
-              >
-                <div className="quality-box">
-                  <h4>Memorable Ambience</h4>
-                  <p>
-                    Rosoi is one of the most popular Restaurant & special menu
-                    made by our passionate chefs and quality with can impress
-                    you
-                  </p>
-                </div>
+    <div className="quality-box">
+      <h4>Fresh & Pure Vegetarian Food</h4>
 
-                <div className="quality-box">
-                  <h4>Special Dish for Occasion's</h4>
-                  <p>
-                    Rosoi is one of the most popular Restaurant & special menu
-                    made by our passionate chefs and quality with can impress
-                    you
-                  </p>
-                </div>
-              </motion.div>
+      <p>
+        Every meal at Khaasiyat is freshly prepared using quality ingredients
+        to deliver a healthy, hygienic, and satisfying pure veg dining
+        experience.
+      </p>
+    </div>
+  </motion.div>
 
-            </motion.div>
+  {/* SECOND ROW */}
+  <motion.div
+    className="quality-flex"
+    variants={fadeUp}
+  >
+    <div className="quality-box">
+      <h4>Warm Ambience & Hospitality</h4>
 
+      <p>
+        Enjoy delicious food in a peaceful and welcoming atmosphere inspired by
+        the beauty and culture of Kashmir, perfect for families and travelers.
+      </p>
+    </div>
+
+    <div className="quality-box">
+      <h4>Perfect for Every Occasion</h4>
+
+      <p>
+        Whether it’s a family dinner, group gathering, or a relaxing meal after
+        exploring Pahalgam, Khaasiyat makes every moment memorable.
+      </p>
+    </div>
+  </motion.div>
+
+</motion.div>
           </div>
         </div>
       </motion.section>
@@ -150,11 +153,11 @@ const Quality = () => {
           >
             <div className="left-text-div">
 
-              <h5 className="quality2-subtitle">
+              <h5 className="quality2-subtitle heading-tag">
                 EVENT BOOKING
               </h5>
 
-              <h2 className="quality2-title">
+              <h2 className="quality2-title page-heading">
                 Do you have any plan <br />
                 for any Party or Events?
               </h2>

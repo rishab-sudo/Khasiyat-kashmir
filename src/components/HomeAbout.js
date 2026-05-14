@@ -38,26 +38,31 @@ const HomeAbout = () => {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div className="homeabout-right">
-          <span className="tag">FRESH & TASTY FOOD</span>
+       <div className="homeabout-right">
+  <span className="tag heading-tag">
+    PURE VEG RESTAURANT IN PAHALGAM
+  </span>
 
-          <h2 className="title">
-            A Sophisticated and <br /> Traditional Cuisine
-          </h2>
+  <h2 className="title page-heading">
+    Authentic Kashmiri Flavours <br /> Served With Warm Hospitality
+  </h2>
 
-          <p className="desc">
-            Rosoi is one of the most popular restaurants with a unique and
-            special menu crafted by our passionate chefs.
-          </p>
+  <p className="desc page-description">
+    Welcome to Khaasiyat, a premium pure vegetarian restaurant in Pahalgam,
+    Kashmir, where traditional Kashmiri taste meets modern dining. From rich
+    North Indian delicacies to authentic local flavours, every dish is freshly
+    prepared using quality ingredients and crafted with passion by our expert
+    chefs.
+  </p>
 
-          <p className="contact">
-            Call for Reservation <strong>+01234 567 891</strong>
-          </p>
+  <p className="contact">
+    Reserve Your Table <strong>+91 XXXXX XXXXX</strong>
+  </p>
 
-          <button className="menu-btn book-btn">
-            View Full Menu
-          </button>
-        </div>
+  <button className="menu-btn book-btn">
+    Explore Our Menu
+  </button>
+</div>
 
       </div>
     </section>

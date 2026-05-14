@@ -101,8 +101,8 @@ const Testimonial = () => {
 
         {/* HEADING */}
         <div className="testimonial-heading">
-          <h5>TESTIMONIAL</h5>
-          <h2>What Our Clients Say</h2>
+          <h5 className="heading-tag">TESTIMONIAL</h5>
+          <h2 className="page-hheading">What Our Clients Say</h2>
         </div>
 
         {/* SLIDER */}

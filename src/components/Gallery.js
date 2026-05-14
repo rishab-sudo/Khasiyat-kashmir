@@ -12,70 +12,88 @@ const galleryImages = [
 
 /**
  * Returns the position class for a slide given its offset from current.
- *  0  → center
- * -1  → left
- * +1  → right
- * -2  → far-left  (exits left when going right, or enters from left when going left)
- * +2  → far-right
- * everything else → hidden (not rendered)
  */
 function getPositionClass(offset) {
   switch (offset) {
-    case  0: return "center";
-    case -1: return "left";
-    case  1: return "right";
-    case -2: return "far-left";
-    case  2: return "far-right";
-    default: return null; // don't render
+    case 0:
+      return "center";
+    case -1:
+      return "left";
+    case 1:
+      return "right";
+    case -2:
+      return "far-left";
+    case 2:
+      return "far-right";
+    default:
+      return null;
   }
 }
 
 const Gallery = () => {
   const [current, setCurrent] = useState(0);
-  const [selectedImage, setSelectedImage] = useState(null);
+
+  // popup state
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
   const total = galleryImages.length;
 
-  /* wrap-aware modular offset  (-2 … +2) */
   const getOffset = useCallback(
     (idx) => {
       let raw = idx - current;
-      // wrap around the array edges
-      if (raw >  total / 2) raw -= total;
+
+      if (raw > total / 2) raw -= total;
       if (raw < -total / 2) raw += total;
+
       return raw;
     },
     [current, total]
   );
 
-  /* auto-advance */
+  /* auto slider */
   useEffect(() => {
-    const id = setInterval(
-      () => setCurrent((c) => (c + 1) % total),
-      3000
-    );
+    const id = setInterval(() => {
+      setCurrent((c) => (c + 1) % total);
+    }, 3000);
+
     return () => clearInterval(id);
   }, [total]);
 
-  const prevSlide = () =>
+  const prevSlide = () => {
     setCurrent((c) => (c - 1 + total) % total);
+  };
 
-  const nextSlide = () =>
+  const nextSlide = () => {
     setCurrent((c) => (c + 1) % total);
+  };
+
+  /* popup navigation */
+  const prevPopupImage = () => {
+    setSelectedIndex((prev) =>
+      prev === 0 ? total - 1 : prev - 1
+    );
+  };
+
+  const nextPopupImage = () => {
+    setSelectedIndex((prev) =>
+      prev === total - 1 ? 0 : prev + 1
+    );
+  };
 
   return (
     <div className="gallery">
-       <div className="gallery-title">
-          <h5>Food & Ambience</h5>
-          <h2>Discover the perfect blend of authentic flavours.</h2>
-        </div>
-    
+      <div className="gallery-title">
+        <h5 className="heading-tag">Food & Ambience</h5>
+        <h2 className="page-heading">
+          Discover the perfect blend of authentic flavours.
+        </h2>
+      </div>
 
       <div className="slider-container">
         {galleryImages.map((src, idx) => {
           const offset = getOffset(idx);
           const posClass = getPositionClass(offset);
 
-          /* only render the 5 visible slots */
           if (posClass === null) return null;
 
           return (
@@ -84,8 +102,11 @@ const Gallery = () => {
               className={`slide ${posClass}`}
               onClick={() => {
                 if (posClass === "center") {
-                  setSelectedImage(src);
-                } else if (posClass === "left" || posClass === "far-left") {
+                  setSelectedIndex(idx);
+                } else if (
+                  posClass === "left" ||
+                  posClass === "far-left"
+                ) {
                   prevSlide();
                 } else {
                   nextSlide();
@@ -98,23 +119,45 @@ const Gallery = () => {
         })}
       </div>
 
-      {/* Navigation buttons */}
-      {/* <div className="slider-buttons">
-        <button onClick={prevSlide}>⟵ Prev</button>
-        <button onClick={nextSlide}>Next ⟶</button>
-      </div> */}
-
-      {/* Lightbox popup */}
-      {selectedImage && (
+      {/* Popup */}
+      {selectedIndex !== null && (
         <div
           className="gallery-popup"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setSelectedIndex(null)}
         >
           <div
             className="gallery-popup-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={selectedImage} alt="preview" />
+            {/* Close */}
+            <button
+              className="popup-close"
+              onClick={() => setSelectedIndex(null)}
+            >
+              ✕
+            </button>
+
+            {/* Left Arrow */}
+            <button
+              className="popup-arrow left-arrow"
+              onClick={prevPopupImage}
+            >
+              ❮
+            </button>
+
+            {/* Image */}
+            <img
+              src={galleryImages[selectedIndex]}
+              alt="preview"
+            />
+
+            {/* Right Arrow */}
+            <button
+              className="popup-arrow right-arrow"
+              onClick={nextPopupImage}
+            >
+              ❯
+            </button>
           </div>
         </div>
       )}

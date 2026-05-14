@@ -5,23 +5,23 @@ import bannerVideo from "../assets/video/web-video.mp4";
 
 /* SLIDER CONTENT */
 const bannerData = [
-  {
-    heading: ["Taste The Real", "Kashmiri Flavours"],
-    subheading:
-      "A Pure Vegetarian Culinary Destination in the Heart of Kashmir.",
-  },
+ {
+  heading: ["Taste The Soul", "Of Kashmir"],
+  subheading:
+    "Experience authentic pure vegetarian delicacies crafted with Kashmiri warmth, rich flavours, and unforgettable hospitality in the heart of Pahalgam.",
+},
 
-  {
-    heading: ["Fresh Food", "Great Experience"],
-    subheading:
-      "Enjoy premium quality dishes prepared by our expert chefs.",
-  },
+{
+  heading: ["Fresh Ingredients", "Authentic Flavours"],
+  subheading:
+    "From traditional Kashmiri recipes to comforting favourites, every dish is freshly prepared to give you a truly satisfying dining experience.",
+},
 
-  {
-    heading: ["Delicious Meals", "Made With Passion"],
-    subheading:
-      "Authentic taste crafted with love, tradition & fresh ingredients.",
-  },
+{
+  heading: ["More Than Food", "A Khaasiyat Experience"],
+  subheading:
+    "Surrounded by the beauty of Kashmir, enjoy delicious pure veg cuisine, peaceful ambience, and moments that make every visit special.",
+},
 ];
 
 const HomeBanner = () => {
@@ -107,9 +107,18 @@ const HomeBanner = () => {
             Book a Table
           </button>
 
-          <button className="secondary-btn">
-            Explore Menu
-          </button>
+        <button
+  className="secondary-btn"
+  onClick={() => {
+    const section = document.getElementById("menu");
+    section?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }}
+>
+  Explore Menu
+</button>
 
         </div>
 
