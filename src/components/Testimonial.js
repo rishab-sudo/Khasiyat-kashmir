@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Testimonial.css";
 
 const testimonials = [
@@ -61,15 +61,16 @@ const Testimonial = () => {
     : Math.ceil(testimonials.length / 2);
 
   // NEXT
-  const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % totalSlides);
-  };
+const nextSlide = useCallback(() => {
+  setIndex((prev) => (prev + 1) % totalSlides);
+}, [totalSlides]);
 
   // AUTO SLIDE
-  useEffect(() => {
-    const interval = setInterval(nextSlide, 4000);
-    return () => clearInterval(interval);
-  }, [totalSlides]);
+useEffect(() => {
+  const interval = setInterval(nextSlide, 4000);
+
+  return () => clearInterval(interval);
+}, [nextSlide]);
 
   // ⭐ STARS
   const renderStars = (rating) => {
