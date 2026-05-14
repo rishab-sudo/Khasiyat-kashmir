@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
 
         {/* COLUMN 2 - QUICK LINKS */}
-        <div className="footer-col">
+        <div className="footer-col margin-col">
           <h4 className="footer-title">Quick Links</h4>
 
           <ul className="footer-links">
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         {/* COLUMN 3 - ADDRESS */}
-        <div className="footer-col">
+        <div className="footer-col margin-col">
           <h4 className="footer-title">Address</h4>
 
           <p className="footer-address">
@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
 
         {/* COLUMN 4 - MAP */}
-        <div className="footer-col">
+        <div className="footer-col margin-col">
           <h4 className="footer-title">Location</h4>
 
           <div className="footer-map">

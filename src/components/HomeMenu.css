@@ -15,8 +15,9 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("../assets/cafe/khasiyat\ front1.jpeg") center/cover no-repeat;
-  opacity: 0.2;      
+  background: url("../assets/cafe/khasiyat front1.jpeg") center/cover
+    no-repeat;
+  opacity: 0.2;
   filter: blur(2px) brightness(0.8);
 }
 
@@ -25,6 +26,7 @@
   position: relative;
   z-index: 2;
 }
+
 /* HEADER */
 .HomeMenu-header {
   text-align: center;
@@ -41,15 +43,20 @@
   margin: 10px 0 20px;
 }
 
-/* FILTERS */
+/* =========================
+   🔥 FILTER BUTTONS
+========================= */
 .HomeMenu-filters {
+  width: 100%;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center; /* center all rows */
+  gap: 14px;
   margin: 35px auto;
-  gap: 10px;
+  max-width: 65%; 
 }
 
+/* EACH BUTTON */
 .HomeMenu-filters button {
   position: relative;
   padding: 10px 22px;
@@ -60,6 +67,19 @@
   overflow: hidden;
   z-index: 1;
   transition: 0.3s;
+  border-radius: 4px;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* FIRST 6 BUTTONS */
+.HomeMenu-filters button:nth-child(-n + 6) {
+  flex: 0 0 auto;
+}
+
+/* REMAINING BUTTONS */
+.HomeMenu-filters button:nth-child(n + 7) {
+  flex: 0 0 auto;
 }
 
 /* FILL EFFECT */
@@ -95,10 +115,12 @@
   width: 90%;
   margin: 50px auto;
 }
-.HomeMenu-title{
+
+.HomeMenu-title {
   margin-bottom: 5%;
   color: #ffb400;
 }
+
 .HomeMenu-image,
 .HomeMenu-list {
   flex: 1;
@@ -109,7 +131,7 @@
 }
 
 /* =========================
-   🔥 IMAGE (UPDATED)
+   🔥 IMAGE
 ========================= */
 .HomeMenu-image {
   overflow: hidden;
@@ -120,12 +142,10 @@
   width: 100%;
   height: 650px;
   object-fit: cover;
-
-  /* 🔥 ZOOM EFFECT */
   animation: zoomIn 5s linear forwards;
 }
 
-/* 🔥 KEYFRAME (MAIN EFFECT) */
+/* ZOOM EFFECT */
 @keyframes zoomIn {
   from {
     transform: scale(1);
@@ -180,9 +200,10 @@
   font-size: 14px;
   margin-top: 5px;
 }
-/* --------------- */
+
+/* SCROLL */
 .HomeMenu-scroll {
-  max-height: 620px;   /* approx 7 items visible */
+  max-height: 620px;
   overflow-y: auto;
   padding-right: 10px;
 }
@@ -201,6 +222,7 @@
   background: #c59d5f;
   border-radius: 20px;
 }
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -222,9 +244,20 @@
   .HomeMenu-dots {
     display: none;
   }
-  .HomeMenu-image img {
-  width: 100%;
-height: auto !important;
-}
 
+  .HomeMenu-image img {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .HomeMenu-filters {
+    gap: 10px;
+    max-width: 100%;
+  }
+
+  .HomeMenu-filters button {
+    min-width: 130px;
+    padding: 8px 14px;
+    font-size: 14px;
+  }
 }
