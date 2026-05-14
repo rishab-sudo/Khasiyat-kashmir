@@ -103,7 +103,9 @@ useEffect(() => {
         {/* HEADING */}
         <div className="testimonial-heading">
           <h5 className="heading-tag">TESTIMONIAL</h5>
-          <h2 className="page-hheading">What Our Clients Say</h2>
+<h2 className="page-hheading">
+  Dining Experiences Shared By Our Guests
+</h2>
         </div>
 
         {/* SLIDER */}
