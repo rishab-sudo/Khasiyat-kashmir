@@ -25,11 +25,11 @@ const menuData = {
         price: "₹120",
         desc: "Crispy bread with fresh veggies and cheese",
       },
-      {
-        name: "Masala Omelette",
-        price: "₹90",
-        desc: "Spicy omelette with onion & herbs",
-      },
+      // {
+      //   name: "Masala Omelette",
+      //   price: "₹90",
+      //   desc: "Spicy omelette with onion & herbs",
+      // },
       {
         name: "Poha",
         price: "₹120",
