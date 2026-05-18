@@ -12,6 +12,7 @@ import HomeAbout from "../components/HomeAbout";
 import Gallery from "../components/Gallery";
 import Signature  from "../components/Signature";
 import Special from "../components/Special";
+import WhyUS from "../components/WhyUS";
 
 const fadeUp = {
   hidden: {
@@ -52,6 +53,16 @@ const Home = () => {
       >
         <HomeAbout />
       </motion.section>
+{/*  */}
+ <motion.section
+        id="quality"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <WhyUS />
+           </motion.section>
 
       {/* ✅ MENU */}
             <motion.section
