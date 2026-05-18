@@ -1,0 +1,132 @@
+/* =========================
+   SIGNATURE SECTION
+========================= */
+
+.signature {
+  width: 100%;
+  padding: 45px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* =========================
+   IMAGE SLIDER
+========================= */
+
+.signature-image-wrapper {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.signature-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.08);
+  transition: all 1s ease;
+}
+
+.signature-image-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.signature-content {
+  padding-left: 40px;
+}
+
+.signature-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  background: #f4c542;
+  color: #000;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.signature-heading {
+  font-size: 50px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 25px;
+}
+
+.signature-text {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .signature {
+    padding: 70px 0;
+  }
+
+  .signature-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .signature-heading {
+    font-size: 38px;
+  }
+
+  .signature-image-wrapper {
+    height: 450px;
+  }
+}
+
+@media (max-width: 767px) {
+  .signature {
+    padding: 55px 0;
+  }
+
+  .signature-heading {
+    font-size: 30px;
+  }
+
+  .signature-text {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .signature-image-wrapper {
+    height: 350px;
+    border-radius: 18px;
+  }
+
+  .signature-tag {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signature-heading {
+    font-size: 26px;
+  }
+
+  .signature-image-wrapper {
+    height: 280px;
+  }
+}
