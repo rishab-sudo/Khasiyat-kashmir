@@ -11,8 +11,7 @@ import Connect from "../components/Connect";
 import HomeAbout from "../components/HomeAbout";
 import Gallery from "../components/Gallery";
 import Signature  from "../components/Provide";
-import Special from "../components/Special";
-import WhyUS from "../components/WhyUS";
+
 
 const fadeUp = {
   hidden: {
