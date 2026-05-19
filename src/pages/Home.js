@@ -10,7 +10,7 @@ import Testimonial from "../components/Testimonial";
 import Connect from "../components/Connect";
 import HomeAbout from "../components/HomeAbout";
 import Gallery from "../components/Gallery";
-import Signature  from "../components/Signature";
+import Signature  from "../components/Provide";
 import Special from "../components/Special";
 import WhyUS from "../components/WhyUS";
 
@@ -84,7 +84,7 @@ const Home = () => {
         <Menu />
       </motion.section>
 {/*  */}
- <motion.section
+ {/* <motion.section
         id="quality"
         variants={fadeUp}
         initial="hidden"
@@ -92,7 +92,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <Special />
-      </motion.section>
+      </motion.section> */}
       {/* ✅ QUALITY */}
       <motion.section
         id="quality"
