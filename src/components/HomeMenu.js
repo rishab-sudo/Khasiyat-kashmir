@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./HomeMenu.css";
 import BuffetMenu from "./BuffetMenu";
+import MenuPDF from "../assets/pdf/Khasiyat-Menu.pdf";
+import { FaDownload } from "react-icons/fa";
 
 /* 🔥 11 IMAGES */
 const foodImages = [
@@ -1120,13 +1122,29 @@ const HomeMenu = () => {
       <div className={`HomeMenu-section ${current.reverse ? "reverse" : ""}`}>
 
         {/* 🔥 IMAGE (SMOOTH) */}
-      <div className="HomeMenu-image">
-  <img
-    key={currentImg}   // 🔥 THIS FIXES EVERYTHING
-    src={foodImages[currentImg]}
-    className={`menu-img ${fade ? "show" : ""}`}
-    alt="food"
-  />
+<div className="HomeMenu-image-wrapper">
+
+  {/* IMAGE */}
+  <div className="HomeMenu-image">
+    <img
+      key={currentImg}
+      src={foodImages[currentImg]}
+      className={`menu-img ${fade ? "show" : ""}`}
+      alt="food"
+    />
+  </div>
+
+  {/* DOWNLOAD MENU BUTTON */}
+  <a
+    href={MenuPDF}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="download-menu-btn"
+  >
+    <FaDownload />
+    Download Full Menu
+  </a>
+
 </div>
 
         {/* CONTENT */}

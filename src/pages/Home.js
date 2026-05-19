@@ -54,7 +54,7 @@ const Home = () => {
         <HomeAbout />
       </motion.section>
 {/*  */}
- <motion.section
+ {/* <motion.section
         id="quality"
         variants={fadeUp}
         initial="hidden"
@@ -62,7 +62,7 @@ const Home = () => {
         viewport={{ once: true, amount: 0.2 }}
       >
         <WhyUS />
-           </motion.section>
+           </motion.section> */}
 
       {/* ✅ MENU */}
             <motion.section
