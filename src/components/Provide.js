@@ -8,7 +8,7 @@ const signatureImages = [
   require("../assets/food/food1.jpeg"),
 ];
 
-const Signature = () => {
+const Provide = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   // NEXT SLIDE
@@ -39,8 +39,45 @@ const Signature = () => {
       <div className="container">
         <div className="row align-items-center">
 
-          {/* LEFT IMAGE SLIDER */}
-          <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          {/* LEFT CONTENT */}
+          <div className="col-lg-6 col-md-12 order-2 order-lg-1">
+            <div className="signature-content">
+
+              {/* TAG */}
+              <span className="signature-tag">
+                WHAT WE PROVIDE
+              </span>
+
+              {/* HEADING */}
+              <h2 className="signature-heading">
+                Enjoy Premium Dining Experience
+              </h2>
+
+              {/* BOXES */}
+              <div className="provide-boxes">
+
+                <div className="provide-box">
+                  <span>1</span>
+                  <h4>Premium Pure Veg and Jain Food</h4>
+                </div>
+
+                <div className="provide-box">
+                  <span>2</span>
+                  <h4>Banquet and Private Parties</h4>
+                </div>
+
+                <div className="provide-box">
+                  <span>3</span>
+                  <h4>Delivery to your Hotel Rooms</h4>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE SLIDER */}
+          <div className="col-lg-6 col-md-12 mb-4 mb-lg-0 order-1 order-lg-2">
             <div className="signature-image-wrapper">
 
               {/* SLIDER TRACK */}
@@ -92,47 +129,10 @@ const Signature = () => {
             </div>
           </div>
 
-          {/* RIGHT CONTENT */}
-          <div className="col-lg-6 col-md-12">
-            <div className="signature-content">
-
-              {/* TAG */}
-              <span className="signature-tag">
-                WHAT WE PROVIDE
-              </span>
-
-              {/* HEADING */}
-              <h2 className="signature-heading">
-                Enjoy Premium Dining Experience
-              </h2>
-
-              {/* BOXES */}
-              <div className="provide-boxes">
-
-                <div className="provide-box">
-                  <span>1</span>
-                  <h4>Premium Pure Veg and Jain Food</h4>
-                </div>
-
-                <div className="provide-box">
-                  <span>2</span>
-                  <h4>Banquet and Private Parties</h4>
-                </div>
-
-                <div className="provide-box">
-                  <span>3</span>
-                  <h4>Delivery to your Hotel Rooms</h4>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
   );
 };
 
-export default Signature;
+export default Provide;

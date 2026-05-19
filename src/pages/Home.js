@@ -10,7 +10,7 @@ import Testimonial from "../components/Testimonial";
 import Connect from "../components/Connect";
 import HomeAbout from "../components/HomeAbout";
 import Gallery from "../components/Gallery";
-import Signature  from "../components/Provide";
+import Provide  from "../components/Provide";
 import Special from "../components/Special";
 // import WhyUS from "../components/WhyUS";
 
@@ -53,6 +53,26 @@ const Home = () => {
       >
         <HomeAbout />
       </motion.section>
+
+                <motion.section
+        id="menu"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+      <Provide/>
+      </motion.section>
+{/*  */}
+       <motion.section
+        id="quality"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Special />
+      </motion.section>
 {/*  */}
  {/* <motion.section
         id="quality"
@@ -65,15 +85,7 @@ const Home = () => {
            </motion.section> */}
 
       {/* ✅ MENU */}
-            <motion.section
-        id="menu"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-      <Signature/>
-      </motion.section>
+  
       <motion.section
         id="menu"
         variants={fadeUp}
@@ -84,15 +96,7 @@ const Home = () => {
         <Menu />
       </motion.section>
 {/*  */}
- <motion.section
-        id="quality"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-      >
-        <Special />
-      </motion.section>
+
       {/* ✅ QUALITY */}
       <motion.section
         id="quality"

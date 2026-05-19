@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Service from "./Service";
+// import Service from "./Service";
 import "./Quality.css";
+import BuffetMenu from "./BuffetMenu";
 
 const fadeUp = {
   hidden: {
@@ -130,7 +131,8 @@ const Quality = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <Service />
+        <BuffetMenu/>
+        {/* <Service /> */}
       </motion.section>
 
       {/* =========================

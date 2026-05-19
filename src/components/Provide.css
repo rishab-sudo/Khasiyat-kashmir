@@ -5,7 +5,7 @@
 .signature {
   width: 100%;
   padding: 45px 0;
-  background: #336666;
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -51,7 +51,7 @@
   border: none;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.45);
-  color: #fff;
+  color: #336666;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +127,7 @@
   font-size: 48px;
   line-height: 1.2;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin-bottom: 35px;
 }
 
@@ -142,7 +142,7 @@
 }
 
 .provide-box {
-  background: #fff;
+  background: #336666;
   border-radius: 16px;
   width: 500px;
   max-width: 500px;
@@ -163,7 +163,7 @@
   min-width: 35px;
   border-radius: 50%;
   background: #f4c542;
-  color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -175,7 +175,7 @@
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  color: #111;
+  color: #fff;
   line-height: 1.5;
 }
 
