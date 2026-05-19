@@ -168,8 +168,8 @@
 .download-menu-btn {
   width: fit-content;
   padding: 14px 24px;
-  background: #ffb400;
-  color: #000;
+  background: #336666;
+  color: #fbfbfb;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 700;
@@ -180,7 +180,7 @@
 }
 
 .download-menu-btn:hover {
-  background: #336666;
+  background: #336666d1;
   color: #fff;
   transform: translateY(-2px);
 }

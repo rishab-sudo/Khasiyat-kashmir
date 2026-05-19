@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./HomeBanner.css";
 
-import bannerVideo from "../assets/video/web-video.mp4";
+import bannerVideo from "../assets/video/Khasiyat-video.mp4";
 
 /* SLIDER CONTENT */
 const bannerData = [

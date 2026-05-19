@@ -1142,7 +1142,7 @@ const HomeMenu = () => {
     className="download-menu-btn"
   >
     <FaDownload />
-    Download Full Menu
+    Download  Menu
   </a>
 
 </div>

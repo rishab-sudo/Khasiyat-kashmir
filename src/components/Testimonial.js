@@ -107,7 +107,7 @@ useEffect(() => {
   Dining Experiences Shared By Our Guests
 </h2>
         </div>
-
+{/*  */}
         {/* SLIDER */}
         <div className="testimonial-slider">
 

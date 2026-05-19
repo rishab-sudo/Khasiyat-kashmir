@@ -2,13 +2,38 @@
    SPECIAL SECTION
 ========================= */
 
+/* =========================
+   SPECIAL SECTION
+========================= */
+
 .special {
   width: 100%;
   padding: 45px 0;
-  background: #336666;
+  position: relative;
   overflow: hidden;
+
+  background-image: url("../assets/khasiyat-bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/* DARK OPACITY OVERLAY */
+
+.special::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* KEEP CONTENT ABOVE OVERLAY */
+
+.special .container {
+  position: relative;
+  z-index: 2;
+}
 /* =========================
    TOP CONTENT
 ========================= */
