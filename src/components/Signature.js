@@ -1,21 +1,34 @@
 import React, { useEffect, useState } from "react";
 import "./Signature.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const signatureImages = [
   require("../assets/food/food1.jpeg"),
-require("../assets/food/food1.jpeg"),
-require("../assets/food/food1.jpeg"),
+  require("../assets/food/food2.jpeg"),
+  require("../assets/food/food1.jpeg"),
 ];
 
 const Signature = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Auto Slide Images
+  // NEXT SLIDE
+  const nextSlide = () => {
+    setCurrentImage((prev) =>
+      prev === signatureImages.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  // PREVIOUS SLIDE
+  const prevSlide = () => {
+    setCurrentImage((prev) =>
+      prev === 0 ? signatureImages.length - 1 : prev - 1
+    );
+  };
+
+  // AUTO SLIDE
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) =>
-        prev === signatureImages.length - 1 ? 0 : prev + 1
-      );
+      nextSlide();
     }, 3000);
 
     return () => clearInterval(interval);
@@ -25,24 +38,60 @@ const Signature = () => {
     <section className="signature">
       <div className="container">
         <div className="row align-items-center">
-          
+
           {/* LEFT IMAGE SLIDER */}
-          <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
-            <div className="signature-image-wrapper">
-              {signatureImages.map((image, index) => (
-                <img
-                  key={index}
-                  src={image}
-                  alt={`signature-${index}`}
-                  className={`signature-image ${
-                    index === currentImage
-                      ? "signature-image-active"
-                      : ""
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
+      {/* LEFT IMAGE SLIDER */}
+<div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
+  <div className="signature-image-wrapper">
+
+    {/* SLIDER TRACK */}
+    <div
+      className="signature-slider"
+      style={{
+        transform: `translateX(-${currentImage * 100}%)`,
+      }}
+    >
+      {signatureImages.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`signature-${index}`}
+          className="signature-image"
+        />
+      ))}
+    </div>
+
+    {/* LEFT ARROW */}
+    <button
+      className="signature-arrow signature-arrow-left"
+      onClick={prevSlide}
+    >
+      <FaChevronLeft />
+    </button>
+
+    {/* RIGHT ARROW */}
+    <button
+      className="signature-arrow signature-arrow-right"
+      onClick={nextSlide}
+    >
+      <FaChevronRight />
+    </button>
+
+    {/* DOTS */}
+    <div className="signature-dots">
+      {signatureImages.map((_, index) => (
+        <span
+          key={index}
+          className={`signature-dot ${
+            index === currentImage ? "active-dot" : ""
+          }`}
+          onClick={() => setCurrentImage(index)}
+        />
+      ))}
+    </div>
+
+  </div>
+</div>
 
           {/* RIGHT CONTENT */}
           <div className="col-lg-6 col-md-12">
