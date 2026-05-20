@@ -1105,8 +1105,7 @@ useEffect(() => {
 
 
 
-  const current = menuData[active];
-  const activeImages = foodImages[active] || [];
+
   const categories = Object.keys(menuData);
 
   return (
