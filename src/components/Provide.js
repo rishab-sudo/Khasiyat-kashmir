@@ -3,9 +3,9 @@ import "./Provide.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const signatureImages = [
-  require("../assets/food/food1.jpeg"),
-  require("../assets/food/food2.jpeg"),
-  require("../assets/food/food1.jpeg"),
+  require("../assets/provide1.png"),
+   require("../assets/provide2.png"),
+   require("../assets/provide3.png"),
 ];
 
 const Provide = () => {

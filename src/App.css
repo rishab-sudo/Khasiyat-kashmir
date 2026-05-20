@@ -22,6 +22,7 @@ font-weight: 700;
 .page-description{
 font-size: 18px;
 }
+
 /* =========================
    PRELOADER
 ========================= */
@@ -29,7 +30,7 @@ font-size: 18px;
 .preloader {
   width: 100%;
   height: 100vh;
-  background: #000; /* removed background */
+  background: #33666667; /* removed background */
   display: flex;
   flex-direction: column;
   justify-content: center;

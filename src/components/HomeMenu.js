@@ -5,19 +5,20 @@ import MenuPDF from "../assets/pdf/Khasiyat-Menu.pdf";
 import { FaDownload } from "react-icons/fa";
 
 /* 🔥 11 IMAGES */
-const foodImages = [
-  require("../assets/food/food1.jpeg"),
-  require("../assets/food/food2.jpeg"),
-  require("../assets/food/food3.jpeg"),
-  require("../assets/food/food4.jpeg"),
-  require("../assets/food/food5.jpeg"),
-  require("../assets/food/food6.jpeg"),
-  require("../assets/food/food7.jpeg"),
-  require("../assets/food/food8.jpeg"),
-  require("../assets/food/food9.jpeg"),
-  require("../assets/food/food10.jpeg"),
-  require("../assets/food/food11.jpeg"),
-];
+const foodImages = {
+  Breakfast: [
+    require("../assets/menu/brkfst1.png"),
+   require("../assets/menu/brkfst2.png"),
+  ],
+
+  "South Indian Special": [
+  require("../assets/menu/brkfst1.png"),
+  require("../assets/menu/brkfst2.png"),
+  ],
+
+
+};
+
 const menuData = {
   Breakfast: {
     reverse: true,
@@ -1084,7 +1085,7 @@ const HomeMenu = () => {
       setFade(false); // start fade out
 
       setTimeout(() => {
-        setCurrentImg((prev) => (prev + 1) % foodImages.length);
+setCurrentImg((prev) => (prev + 1) % activeImages.length);
         setFade(true); // fade in next image
       }, 600); // fade duration
 
@@ -1094,6 +1095,7 @@ const HomeMenu = () => {
   }, [active]);
 
   const current = menuData[active];
+  const activeImages = foodImages[active] || [];
   const categories = Object.keys(menuData);
 
   return (
@@ -1128,7 +1130,7 @@ const HomeMenu = () => {
   <div className="HomeMenu-image">
     <img
       key={currentImg}
-      src={foodImages[currentImg]}
+      src={activeImages[currentImg] || activeImages[0]}
       className={`menu-img ${fade ? "show" : ""}`}
       alt="food"
     />

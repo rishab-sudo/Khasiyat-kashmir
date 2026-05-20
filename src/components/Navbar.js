@@ -42,7 +42,7 @@ const Navbar = () => {
         <span onClick={() => scrollToSection("home")}>Home</span>
         <span onClick={() => scrollToSection("menu")}>Menu</span>
         <span onClick={() => scrollToSection("review")}>Review</span>
-        <span onClick={() => scrollToSection("connect")}>Get in Touch</span>
+        <span onClick={() => scrollToSection("connect")}>Stay Connected</span>
       </div>
 
       <div className="navbar-social">
