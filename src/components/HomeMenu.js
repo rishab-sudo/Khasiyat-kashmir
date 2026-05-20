@@ -1074,25 +1074,29 @@ Desserts: {
 
 
 const HomeMenu = () => {
-  const [active, setActive] = useState("Breakfast");
-  const [currentImg, setCurrentImg] = useState(0);
-  const [fade, setFade] = useState(true);
+const [active, setActive] = useState("Breakfast");
+const [currentImg, setCurrentImg] = useState(0);
+const [fade, setFade] = useState(true);
 
-  useEffect(() => {
-    setCurrentImg(0);
+const current = menuData[active];
+const activeImages = foodImages[active] || [];
 
-    const interval = setInterval(() => {
-      setFade(false); // start fade out
+useEffect(() => {
+  setCurrentImg(0);
 
-      setTimeout(() => {
-setCurrentImg((prev) => (prev + 1) % activeImages.length);
-        setFade(true); // fade in next image
-      }, 600); // fade duration
+  const interval = setInterval(() => {
+    setFade(false);
 
-    }, 3500); // total duration
+    setTimeout(() => {
+      setCurrentImg((prev) => (prev + 1) % activeImages.length);
+      setFade(true);
+    }, 600);
 
-    return () => clearInterval(interval);
-  }, [active]);
+  }, 3500);
+
+  return () => clearInterval(interval);
+
+}, [active, activeImages.length]);
 
   const current = menuData[active];
   const activeImages = foodImages[active] || [];
