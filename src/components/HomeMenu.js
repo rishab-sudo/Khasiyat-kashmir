@@ -1074,6 +1074,7 @@ Desserts: {
 
 
 const HomeMenu = () => {
+
 const [active, setActive] = useState("Breakfast");
 const [currentImg, setCurrentImg] = useState(0);
 const [fade, setFade] = useState(true);
@@ -1082,9 +1083,13 @@ const current = menuData[active];
 const activeImages = foodImages[active] || [];
 
 useEffect(() => {
+
+  if (activeImages.length === 0) return;
+
   setCurrentImg(0);
 
   const interval = setInterval(() => {
+
     setFade(false);
 
     setTimeout(() => {
@@ -1097,6 +1102,8 @@ useEffect(() => {
   return () => clearInterval(interval);
 
 }, [active, activeImages.length]);
+
+
 
   const current = menuData[active];
   const activeImages = foodImages[active] || [];
