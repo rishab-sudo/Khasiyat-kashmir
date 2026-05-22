@@ -31,6 +31,7 @@
 /* KEEP CONTENT ABOVE OVERLAY */
 
 .special .container {
+  width: 100%;
   position: relative;
   z-index: 2;
 }
@@ -110,11 +111,13 @@
 
 .special-card-content {
   position: absolute;
-  left: 25px;
-  bottom: 25px;
+  top: 25px;
+  right: 25px;
+  left: auto;
+  bottom: auto;
   z-index: 2;
+  text-align: left;
 }
-
 .special-card-title {
   font-size: 28px;
   font-weight: 700;
@@ -172,8 +175,11 @@
   }
 
   .special-card-content {
-    left: 18px;
-    bottom: 18px;
+    top: 18px;
+    right: 18px;
+    left: auto;
+    bottom: auto;
+    text-align: left !important;
   }
 
   .special-card-title {

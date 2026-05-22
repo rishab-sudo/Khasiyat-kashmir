@@ -3,36 +3,22 @@ import "./Special.css";
 
 const specialCards = [
   {
-    image: require("../assets/food/food1.jpeg"),
+    image: require("../assets/food/sizzler.jpeg"),
     title: "Italian Pasta",
     description: "Freshly prepared creamy pasta with authentic flavors.",
   },
   {
-    image: require("../assets/food/food1.jpeg"),
+      image: require("../assets/food/dahi kabab.png"),
     title: "Delicious Burger",
     description: "Juicy grilled burger served with crispy fries.",
   },
-  {
-     image: require("../assets/food/food1.jpeg"),
-    title: "Seafood Special",
-    description: "Premium seafood platter crafted by expert chefs.",
-  },
-  {
-    image: require("../assets/food/food1.jpeg"),
-    title: "Classic Pizza",
-    description: "Stone baked pizza topped with fresh ingredients.",
-  },
-  {
-   image: require("../assets/food/food1.jpeg"),
-    title: "Dessert Delight",
-    description: "Sweet handcrafted desserts for every celebration.",
-  },
+
 ];
 
 function Special() {
   return (
     <section className="special">
-      <div className="container">
+      <div className="container ">
 
         {/* TOP CONTENT */}
         <div className="special-top">

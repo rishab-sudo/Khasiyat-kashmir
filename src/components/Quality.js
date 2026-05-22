@@ -224,7 +224,7 @@ const Quality = () => {
             variants={fadeUp}
           >
             <img
-              src={require("../assets/cafe/khasiyat front1.jpeg")}
+              src={require("../assets/cafe/front11.jpg")}
               alt="Event Booking"
             />
           </motion.div>
