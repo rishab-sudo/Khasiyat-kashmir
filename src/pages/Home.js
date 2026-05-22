@@ -5,7 +5,7 @@ import HomeBanner from "../components/HomeBanner";
 import Menu from "../components/HomeMenu";
 import "./Home.css";
 
-import Quality from "../components/Quality";
+
 import Testimonial from "../components/Testimonial";
 import Connect from "../components/Connect";
 import HomeAbout from "../components/HomeAbout";
