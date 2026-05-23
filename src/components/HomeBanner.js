@@ -6,21 +6,21 @@ import bannerVideo from "../assets/video/Khasiyat-video.mp4";
 /* SLIDER CONTENT */
 const bannerData = [
  {
-  heading: ["Taste The Soul", "Of Kashmir"],
+  heading: ["WELCOME TO KHAASIYAT"],
   subheading:
-    "Experience authentic pure vegetarian delicacies crafted with Kashmiri warmth, rich flavours, and unforgettable hospitality in the heart of Pahalgam.",
+    "Comforting Flavours in the Heart of Pahalgam Thoughtfully prepared vegetarian meals, warm hospitality, and moments worth remembering.",
 },
 
 {
-  heading: ["Fresh Ingredients", "Authentic Flavours"],
+  heading: ["WHERE GREAT FOOD MEETS COMFORT"],
   subheading:
-    "From traditional Kashmiri recipes to comforting favourites, every dish is freshly prepared to give you a truly satisfying dining experience.",
+    "A Dining Experience Worth Remembering Scenic surroundings, soulful flavours, and hospitality that feels genuine.",
 },
 
 {
-  heading: ["More Than Food", "A Khaasiyat Experience"],
+  heading: ["SERVING MEMORIES WITH EVERY MEAL"],
   subheading:
-    "Surrounded by the beauty of Kashmir, enjoy delicious pure veg cuisine, peaceful ambience, and moments that make every visit special.",
+    "Freshly prepared vegetarian dishes, peaceful surroundings, and experiences worth coming back for.",
 },
 ];
 

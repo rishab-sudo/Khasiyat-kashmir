@@ -6,7 +6,7 @@ const buffetData = [
   {
     title: "Silver Pack",
     price: "₹350 / Pax",
-    image: require("../assets/food/food1.jpeg"),
+    image: require("../assets/food/buffet2.png"),
     items: [
       "1 Paneer Veg",
       "1 Dal",
@@ -21,7 +21,7 @@ const buffetData = [
   {
     title: "Gold Pack",
     price: "₹450 / Pax",
-    image: require("../assets/food/food2.jpeg"),
+ image: require("../assets/food/buffet1.png"),
     items: [
       "1 Chinese Starter",
       "1 Paneer Veg",
@@ -38,7 +38,7 @@ const buffetData = [
   {
     title: "Diamond Pack",
     price: "₹550 / Pax",
-    image: require("../assets/food/food3.jpeg"),
+     image: require("../assets/food/buffet3.png"),
     items: [
       "1 Welcome Drink / Soup",
       "1 Chinese Starter",
@@ -74,9 +74,8 @@ const BuffetMenu = () => {
   </h2>
 
   <p className="page-subheading">
-    Indulge in a lavish multi-cuisine pure vegetarian buffet featuring authentic
-    Kashmiri flavours, North Indian favourites, and freshly prepared delicacies
-    served with warmth and hospitality at Khaasiyat, Pahalgam.
+Indulge in a lavish multi-cuisine pure vegetarian buffet featuring
+ rich North Indian favourites, flavourful Chinese delicacies, authentic South Indian specialties, and freshly prepared dishes served with warmth and hospitality at Khaasiyat, Pahalgam.
   </p>
 </div>
 
