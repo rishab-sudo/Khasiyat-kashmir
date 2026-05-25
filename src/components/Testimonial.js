@@ -104,7 +104,8 @@ useEffect(() => {
         <div className="testimonial-heading">
           <h5 className="heading-tag">TESTIMONIAL</h5>
 <h2 className="page-hheading">
-  Dining Experiences Shared By Our Guests
+Stories of Savor and Satisfaction
+
 </h2>
         </div>
 {/*  */}

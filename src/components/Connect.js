@@ -18,9 +18,9 @@ const Connect = () => {
 
             <div className="connect-heading">
               <h5 className="heading-tag">Connect With Us</h5>
-              <h2 className="page-heading">Subscribe our Newsletter</h2>
+              <h2 className="page-heading"></h2>
               <p className="page-description">
-                To get latest updates, offers and promotions
+             Be the first to know about our special menus, exciting offers & memorable moments.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ const Connect = () => {
 
             {/* CALL */}
             <div className="connect-call">
-              Call for Reservation <strong>+91  91033 xxxxx</strong>
+         Reservations & Enquiries: <strong>+91  91033 xxxxx</strong>
             </div>
 
           </div>

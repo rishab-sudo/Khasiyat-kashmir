@@ -97,7 +97,7 @@ Indulge in a lavish multi-cuisine pure vegetarian buffet featuring
                 {/* OVERLAY */}
                 <div className="buffet-menu-overlay">
 
-                 <h3>{item.title}</h3>
+                 {/* <h3>{item.title}</h3> */}
 
 <div className="view-menu-btn">
   <span>View Menu</span>

@@ -8,19 +8,19 @@ const bannerData = [
  {
   heading: ["WELCOME TO KHAASIYAT"],
   subheading:
-    "Comforting Flavours in the Heart of Pahalgam Thoughtfully prepared vegetarian meals, warm hospitality, and moments worth remembering.",
+    "Comforting Flavours in the Heart of Pahalgam thoughtfully prepared meals, scenic surroundings, and moments worth remembering.",
 },
 
 {
-  heading: ["WHERE GREAT FOOD MEETS COMFORT"],
+  heading: ["WHERE FLAVOURS MEET THE VALLEY"],
   subheading:
-    "A Dining Experience Worth Remembering Scenic surroundings, soulful flavours, and hospitality that feels genuine.",
+    "A Dining Experience Worth Remembering Scenic surroundings, thoughtfully prepared meals, and genuine hospitality.",
 },
 
 {
   heading: ["SERVING MEMORIES WITH EVERY MEAL"],
   subheading:
-    "Freshly prepared vegetarian dishes, peaceful surroundings, and experiences worth coming back for.",
+    "Freshly prepared dishes, peaceful surroundings, and experiences worth coming back for.",
 },
 ];
 

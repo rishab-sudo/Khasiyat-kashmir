@@ -18,11 +18,13 @@
 /* Title */
 .gallery-title h5 {
   letter-spacing: 2px;
+
 }
 
 .gallery-title h2 {
   margin-top: 5px;
   color: #000;
+    font-weight: 500 !important;
 }
 
 /* Slider wrapper */
