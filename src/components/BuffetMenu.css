@@ -16,7 +16,7 @@
 }
 
 .buffet-menu-heading span {
-  color: #fbbf0e;
+  color: #336666;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -141,7 +141,7 @@
   left: 0;
   width: 100%;
   height: 8px;
-  background: linear-gradient(to right, #fbbf0e, #f5d08a);
+  background: linear-gradient(to right, #336666, #336666);
 }
 
 @keyframes popupShow {
@@ -172,7 +172,7 @@
 }
 
 .buffet-popup-close:hover {
-  background: #fbbf0e;
+  background: #336666;
   color: #fff;
   transform: rotate(90deg);
 }
@@ -190,7 +190,7 @@
 .popup-line {
   width: 120px;
   height: 4px;
-  background: #fbbf0e;
+  background: #336666;
   margin: auto auto 40px;
   border-radius: 20px;
 }
@@ -211,13 +211,13 @@
   color: #555;
   padding: 12px;
   border-radius: 14px;
-  background: #faf7f2;
+  background: #3366661e;
   border: 1px solid #eee;
   transition: 0.3s ease;
 }
 
 .buffet-popup-item:hover {
-  background: #fbbf0e;
+  background: #336666;
   color: #fff;
   transform: translateY(-3px);
 }
@@ -228,7 +228,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #faf7f2;
+  background: #3366661e;
   padding: 15px 21px;
   border-radius: 18px;
   border: 1px solid #eee;
@@ -242,7 +242,7 @@
 
 .buffet-popup-price-box h3 {
   font-size: 26px !important;
-  color: #fbbf0e;
+  color: #336666;
 }
 .view-menu-btn {
   display: flex;

@@ -4,15 +4,29 @@ import "./Special.css";
 const specialCards = [
   {
     image: require("../assets/food/sizzler.jpeg"),
-    title: "Italian Pasta",
-    description: "Freshly prepared creamy pasta with authentic flavors.",
+    title: "North Indian Delicacies",
+    description: "Rich flavours, comforting curries, and authentic vegetarian favourites.",
   },
   {
       image: require("../assets/food/dahi kabab.png"),
-    title: "Delicious Burger",
-    description: "Juicy grilled burger served with crispy fries.",
+    title: "South Indian Cuisine",
+    description: "Freshly prepared dosas, idlis, and comforting South Indian classics.",
   },
-
+  {
+      image: require("../assets/food/dahi kabab.png"),
+    title: "Chinese & Sizzlers",
+    description: "Flavour-packed noodles, gravies, and signature sizzling creations.",
+  },
+    {
+      image: require("../assets/food/dahi kabab.png"),
+    title: "Tandoor Specials",
+    description: "Perfectly grilled vegetarian delights prepared with authentic taste.",
+  },
+    {
+      image: require("../assets/food/dahi kabab.png"),
+    title: "Jain Food Options",
+    description: "Thoughtfully prepared Jain dishes crafted with care and purity.",
+  },
 ];
 
 function Special() {
@@ -23,11 +37,12 @@ function Special() {
         {/* TOP CONTENT */}
         <div className="special-top">
           <span className="special-tag">
-            Our Special Menu
+         Explore Our Specialties
           </span>
 
           <h2 className="special-heading">
-            Taste The Best Signature Dishes Crafted With Passion
+          Enjoy Delicious Dining Amid Stunning Scenic Views
+
           </h2>
         </div>
 

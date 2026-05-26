@@ -111,10 +111,10 @@
 
 .special-card-content {
   position: absolute;
-  top: 25px;
-  right: 25px;
-  left: auto;
-  bottom: auto;
+  bottom: 25px;
+  left: 25px;
+  right: auto;
+  top: auto;
   z-index: 2;
   text-align: left;
 }

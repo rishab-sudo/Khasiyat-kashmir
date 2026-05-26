@@ -7,13 +7,13 @@ import { FaDownload } from "react-icons/fa";
 /* 🔥 11 IMAGES */
 const foodImages = {
   Breakfast: [
-    require("../assets/menu/brkfst1.png"),
-   require("../assets/menu/brkfst2.png"),
+    require("../assets/menu/brk-alu-paratha.png"),
+   require("../assets/menu/brkfst-per1.png"),
   ],
 
   "South Indian Special": [
-  require("../assets/menu/brkfst1.png"),
-  require("../assets/menu/brkfst2.png"),
+    require("../assets/menu/brk-alu-paratha.png"),
+require("../assets/menu/brkfst-per1.png"),
   ],
 
 
