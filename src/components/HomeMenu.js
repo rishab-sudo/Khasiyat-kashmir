@@ -23,6 +23,10 @@ require("../assets/menu/tamato soup.png"),
     require("../assets/menu/drinks combo.png"),
 require("../assets/menu/drinks-cheers.png"),
   ],
+    Starters: [
+    require("../assets/menu/starter-veg-kebab.png"),
+require("../assets/menu/starter-dahi-kabab.jpeg"),
+  ],
 };
 
 const menuData = {
