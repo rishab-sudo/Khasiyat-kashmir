@@ -15,8 +15,14 @@ const foodImages = {
     require("../assets/menu/brk-alu-paratha.png"),
 require("../assets/menu/brkfst-per1.png"),
   ],
-
-
+  Soups: [
+    require("../assets/menu/soups combo.png"),
+require("../assets/menu/tamato soup.png"),
+  ],
+  Beverages: [
+    require("../assets/menu/drinks combo.png"),
+require("../assets/menu/drinks-cheers.png"),
+  ],
 };
 
 const menuData = {

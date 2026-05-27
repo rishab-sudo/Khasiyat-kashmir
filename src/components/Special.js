@@ -3,7 +3,7 @@ import "./Special.css";
 
 const specialCards = [
   {
-    image: require("../assets/food/sizzler.jpeg"),
+    image: require("../assets/food/north-food.jpeg"),
     title: "North Indian Delicacies",
     description: "Rich flavours, comforting curries, and authentic vegetarian favourites.",
   },

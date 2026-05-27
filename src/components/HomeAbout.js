@@ -55,10 +55,10 @@ const HomeAbout = () => {
 </p>
 <p>Fresh ingredients. Soulful flavours. Cozy ambience.
 At Khaasiyat, every table is served with warmth, authenticity, and memorable taste.</p>
-  <p className="contact">
+  {/* <p className="contact">
     Reserve Your Table <strong>+91 91033 58985 | +91 91033 58905
 </strong>
-  </p>
+  </p> */}
 
 <a href="tel:+9103358905">
   <button className="menu-btn book-btn">
