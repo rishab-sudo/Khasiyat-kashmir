@@ -18,7 +18,7 @@ const Connect = () => {
 
             <div className="connect-heading">
               <h5 className="heading-tag">Connect With Us</h5>
-              <h2 className="page-heading"></h2>
+              {/* <h2 className="page-heading"></h2> */}
               <p className="page-description">
              Be the first to know about our special menus, exciting offers & memorable moments.
               </p>
