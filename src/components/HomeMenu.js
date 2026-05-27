@@ -9,10 +9,11 @@ const foodImages = {
   Breakfast: [
     require("../assets/menu/brk-alu-paratha.png"),
    require("../assets/menu/brkfst-per1.png"),
+    require("../assets/menu/brkfst-per3.png"),
   ],
 
   "South Indian Special": [
-    require("../assets/menu/brk-alu-paratha.png"),
+   require("../assets/menu/brkfst-per1.png"),
 require("../assets/menu/brkfst-per1.png"),
   ],
   Soups: [
