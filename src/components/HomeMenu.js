@@ -45,6 +45,10 @@ require("../assets/menu/malai panner tikka.png"),
     require("../assets/menu/jain-menu.png"),
 
   ],
+        Desserts: [
+    require("../assets/menu/dessert-menu.png"),
+
+  ],
 };
 
 const menuData = {
