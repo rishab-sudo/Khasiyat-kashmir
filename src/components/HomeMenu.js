@@ -12,9 +12,10 @@ const foodImages = {
     require("../assets/menu/brkfst-per3.png"),
   ],
 
-  "South Indian Special": [
-   require("../assets/menu/brkfst-per1.png"),
-require("../assets/menu/brkfst-per1.png"),
+      "South Indian Special": [
+    require("../assets/menu/menu-south.png"),
+require("../assets/menu/menu-south2.png"),
+
   ],
   Soups: [
     require("../assets/menu/soups combo.png"),
@@ -28,6 +29,21 @@ require("../assets/menu/drinks-cheers.png"),
     require("../assets/menu/starter-veg-kebab.png"),
 require("../assets/menu/starter-dahi-kabab.jpeg"),
 require("../assets/menu/malai panner tikka.png"),
+  ],
+
+        "Combo Meals": [
+    require("../assets/menu/combo menu2.png"),
+
+  ],
+
+          "Indian Main Course": [
+    require("../assets/menu/north-menu.png"),
+     require("../assets/menu/north-menu2.png"),
+
+  ],
+        "Jain Menu": [
+    require("../assets/menu/jain-menu.png"),
+
   ],
 };
 

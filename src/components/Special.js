@@ -18,12 +18,12 @@ const specialCards = [
     description: "Flavour-packed noodles, gravies, and signature sizzling creations.",
   },
     {
-      image: require("../assets/food/dahi kabab.png"),
+      image: require("../assets/food/food-tandoor.png"),
     title: "Tandoor Specials",
     description: "Perfectly grilled vegetarian delights prepared with authentic taste.",
   },
     {
-      image: require("../assets/food/dahi kabab.png"),
+      image: require("../assets/food/food-jain.png"),
     title: "Jain Food Options",
     description: "Thoughtfully prepared Jain dishes crafted with care and purity.",
   },
