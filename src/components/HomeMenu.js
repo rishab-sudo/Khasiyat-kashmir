@@ -27,6 +27,7 @@ require("../assets/menu/drinks-cheers.png"),
     Starters: [
     require("../assets/menu/starter-veg-kebab.png"),
 require("../assets/menu/starter-dahi-kabab.jpeg"),
+require("../assets/menu/malai panner tikka.png"),
   ],
 };
 

@@ -5,23 +5,23 @@ import bannerVideo from "../assets/video/Khasiyat-video.mp4";
 
 /* SLIDER CONTENT */
 const bannerData = [
- {
-  heading: ["WELCOME TO KHAASIYAT"],
-  subheading:
-    "Comforting Flavours in the Heart of Pahalgam thoughtfully prepared meals, scenic surroundings, and moments worth remembering.",
-},
+  {
+    heading: ["WELCOME TO KHAASIYAT"],
+    subheading:
+      "Comforting Flavours in the Heart of Pahalgam thoughtfully prepared meals, scenic surroundings, and moments worth remembering.",
+  },
 
-{
-  heading: ["WHERE FLAVOURS MEET THE VALLEY"],
-  subheading:
-    "A Dining Experience Worth Remembering Scenic surroundings, thoughtfully prepared meals, and genuine hospitality.",
-},
+  {
+    heading: ["WHERE FLAVOURS MEET", " THE VALLEY"],
+    subheading:
+      "A Dining Experience Worth Remembering Scenic surroundings, thoughtfully prepared meals, and genuine hospitality.",
+  },
 
-{
-  heading: ["SERVING MEMORIES WITH EVERY MEAL"],
-  subheading:
-    "Freshly prepared dishes, peaceful surroundings, and experiences worth coming back for.",
-},
+  {
+    heading: ["SERVING MEMORIES WITH", "EVERY MEAL"],
+    subheading:
+      "Freshly prepared dishes, peaceful surroundings, and experiences worth coming back for.",
+  },
 ];
 
 const HomeBanner = () => {
@@ -80,21 +80,19 @@ const HomeBanner = () => {
 
         {/* ANIMATED HEADING */}
         <h1 className={animate ? "showText" : ""}>
-
-          {current.heading.map((line, index) => (
-            <div
-              key={index}
-              className="heading-line"
-              style={{
-                animationDelay: `${index * 0.25}s`,
-              }}
-            >
-              {line}
-            </div>
-          ))}
-
-        </h1>
-
+  {current.heading.map((line, index) => (
+    <div
+      key={index}
+      className="heading-line"
+      style={{
+        animationDelay: `${index * 0.25}s`,
+        display: "block",
+      }}
+    >
+      {line}
+    </div>
+  ))}
+</h1>
         {/* ANIMATED SUBHEADING */}
         <p className={animate ? "showPara" : ""}>
           {current.subheading}
