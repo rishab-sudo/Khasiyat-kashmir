@@ -12,16 +12,17 @@ const specialCards = [
     title: "South Indian Cuisine",
     description: "Freshly prepared dosas, idlis, and comforting South Indian classics.",
   },
+      {
+      image: require("../assets/food/food-tandoor.png"),
+    title: "Tandoor Specials",
+    description: "Perfectly grilled vegetarian delights prepared with authentic taste.",
+  },
   {
       image: require("../assets/food/food-chinease.png"),
     title: "Chinese & Sizzlers",
     description: "Flavour-packed noodles, gravies, and signature sizzling creations.",
   },
-    {
-      image: require("../assets/food/food-tandoor.png"),
-    title: "Tandoor Specials",
-    description: "Perfectly grilled vegetarian delights prepared with authentic taste.",
-  },
+
     {
       image: require("../assets/food/food-jain.png"),
     title: "Jain Food Options",
