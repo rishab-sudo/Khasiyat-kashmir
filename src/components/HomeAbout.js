@@ -51,9 +51,9 @@ const HomeAbout = () => {
   <p className=" page-description">
  Nestled amidst the breathtaking beauty of Kashmir, Khaasiyat brings together comforting flavours, warm hospitality, and a thoughtfully curated pure vegetarian dining experience.
  </p>
- <p>From rich North Indian delicacies and authentic South Indian specialties to flavourful Chinese dishes, sizzling tandoor platters, Jain food options, and signature creations, every dish is crafted with care to satisfy every palate.
+ <p className=" page-description">From rich North Indian delicacies and authentic South Indian specialties to flavourful Chinese dishes, sizzling tandoor platters, Jain food options, and signature creations, every dish is crafted with care to satisfy every palate.
 </p>
-<p>Fresh ingredients. Soulful flavours. Cozy ambience.
+<p className=" page-description">Fresh ingredients. Soulful flavours. Cozy ambience.
 At Khaasiyat, every table is served with warmth, authenticity, and memorable taste.</p>
   {/* <p className="contact">
     Reserve Your Table <strong>+91 91033 58985 | +91 91033 58905
