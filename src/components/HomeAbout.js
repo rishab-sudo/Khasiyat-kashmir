@@ -48,7 +48,7 @@ const HomeAbout = () => {
 
   </h2>
 
-  <p className="desc page-description">
+  <p className=" page-description">
  Nestled amidst the breathtaking beauty of Kashmir, Khaasiyat brings together comforting flavours, warm hospitality, and a thoughtfully curated pure vegetarian dining experience.
  </p>
  <p>From rich North Indian delicacies and authentic South Indian specialties to flavourful Chinese dishes, sizzling tandoor platters, Jain food options, and signature creations, every dish is crafted with care to satisfy every palate.

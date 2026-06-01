@@ -56,7 +56,7 @@ const menuData = {
     reverse: true,
     items: [
                   {
-  heading: "subhe ka nashta"
+  heading: "subha ka nashta"
 },
       {
         name: "POHA",
