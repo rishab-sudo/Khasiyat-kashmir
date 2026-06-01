@@ -8,7 +8,7 @@ import { FaDownload } from "react-icons/fa";
 const foodImages = {
   Breakfast: [
     require("../assets/menu/brk-alu-paratha.png"),
-   require("../assets/menu/brkfst-per1.png"),
+  
     require("../assets/menu/brkfst-per3.png"),
   ],
 
@@ -35,10 +35,14 @@ require("../assets/menu/malai panner tikka.png"),
     require("../assets/menu/combo menu2.png"),
 
   ],
-
           "Indian Main Course": [
     require("../assets/menu/north-menu.png"),
      require("../assets/menu/north-menu2.png"),
+
+  ],
+         Chinese: [
+    require("../assets/menu/menu-chinese.png"),
+
 
   ],
         "Jain Menu": [
