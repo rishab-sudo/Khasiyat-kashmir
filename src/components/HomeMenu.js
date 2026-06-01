@@ -374,7 +374,7 @@ Soups: {
     {
       name: "ALOO NAZAKAT",
       price: "360",
-      desc: "(Description: An Indian vegetarian starter consisting of potato 'barre-ls'—cylindrical pieces—deep-fried and stuffed with a rich blend of paneer, dry fruits, raisins, and various spices; please reinstate this entry).",
+desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders stuffed with a rich blend of paneer, dry fruits, raisins, and aromatic spices."
     },
     {
       name: "RED PANEER TIKKA",
