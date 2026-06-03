@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./HomeMenu.css";
 import BuffetMenu from "./BuffetMenu";
-import MenuPDF from "../assets/pdf/Khasiyat-Menu.pdf";
-import { FaDownload } from "react-icons/fa";
+// import MenuPDF from "../assets/pdf/Khasiyat-Menu.pdf";
+// import { FaDownload } from "react-icons/fa";
 
 /* 🔥 11 IMAGES */
 const foodImages = {
