@@ -60,7 +60,7 @@ const menuData = {
     reverse: true,
     items: [
                   {
-  heading: "subha ka nashta"
+  heading: "subah ka nashta"
 },
       {
         name: "POHA",
@@ -1183,7 +1183,7 @@ useEffect(() => {
   </div>
 
   {/* DOWNLOAD MENU BUTTON */}
-  <a
+  {/* <a
     href={MenuPDF}
     target="_blank"
     rel="noopener noreferrer"
@@ -1191,7 +1191,7 @@ useEffect(() => {
   >
     <FaDownload />
     Download  Menu
-  </a>
+  </a> */}
 
 </div>
 

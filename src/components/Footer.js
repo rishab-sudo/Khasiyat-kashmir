@@ -130,7 +130,7 @@ const Footer = () => {
 
       {/* COPYRIGHT */}
       <div className="footer-bottom">
-        © 2026 Khasiyat. All Rights Reserved.
+        © 2026 Khaasiyat. All Rights Reserved.
       </div>
     </footer>
   );
