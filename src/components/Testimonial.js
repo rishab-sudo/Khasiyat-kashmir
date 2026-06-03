@@ -167,7 +167,7 @@ Stories of Savor and Satisfaction
 
                           <div>
                             <h4>{item.name}</h4>
-                            <span>{item.role}</span>
+                            {/* <span>{item.role}</span> */}
                           </div>
 
                           <div className="testimonial-avatar">
