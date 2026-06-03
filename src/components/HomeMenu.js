@@ -15,7 +15,6 @@ const foodImages = {
       "South Indian Special": [
     require("../assets/menu/menu-south.png"),
 require("../assets/menu/menu-south2.png"),
-
   ],
   Soups: [
     require("../assets/menu/soups combo.png"),
