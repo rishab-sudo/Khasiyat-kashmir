@@ -26,7 +26,7 @@ const specialCards = [
     {
       image: require("../assets/food/jain-food2.png"),
     title: "Jain Food Options",
-    description: "Thoughtfully prepared Jain dishes crafted with care and purity.",
+    description: "Thoughtfully prepared Jain dishes served with care and purity.",
   },
 ];
 
