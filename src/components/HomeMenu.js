@@ -61,11 +61,12 @@ const menuData = {
                   {
   heading: "subah ka nashta"
 },
-      {
-        name: "POHA",
-        price: "₹120",
-        desc: "Crispy bread with fresh veggies and cheese",
-      },
+
+ {
+  name: "POHA",
+  price: "₹120",
+  desc: "A light and flavorful breakfast made with flattened rice, fresh vegetables "
+},
       // {
       //   name: "Masala Omelette",
       //   price: "₹90",

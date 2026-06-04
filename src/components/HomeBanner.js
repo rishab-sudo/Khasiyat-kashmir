@@ -101,9 +101,11 @@ const HomeBanner = () => {
         {/* BUTTONS */}
         <div className="banner-btns">
 
-          <button className="primary-btn">
-            Book a Table
-          </button>
+         <a href="tel:++919103358985">
+  <button className="primary-btn">
+    Book a Table
+  </button>
+</a>
 
         <button
   className="secondary-btn"
