@@ -75,7 +75,7 @@ const menuData = {
       {
         name: "UPMA",
         price: "₹160",
-        desc: "Light and flavorful poha with fresh herbs",
+    desc: "Classic South Indian upma with fresh herbs and spices."
       },
       
       {

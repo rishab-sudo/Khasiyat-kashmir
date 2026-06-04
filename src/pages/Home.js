@@ -55,7 +55,7 @@ const Home = () => {
       </motion.section>
 
                 <motion.section
-        id="menu"
+       
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
