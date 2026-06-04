@@ -373,7 +373,7 @@ Soups: {
     {
       name: "PANEER TIKKA TRIO",
       price: "380",
-      desc: "3 Types of Marinated Paneer(Red, White, Green) Cooked In Tandoor Served with Salad & Chutney",
+      desc: "3 Types of Marinated Paneer, Cooked In Tandoor Served with Salad & Chutney",
     },
     {
       name: "ALOO NAZAKAT",
@@ -415,45 +415,45 @@ desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders st
   heading: "Chinese starters"
 },
     {
-      name: "CHINESE BHEL",
-      price: "260",
-      desc: "Crispy Noodles Fresh, Vegetables & Chinese Sauce",
-    },
-    {
-      name: "VEG CRISPY",
-      price: "300",
-      desc: "Crispy Vegetables Tossed in Chinese Sauces",
-    },
-    {
-      name: "HONEY CHILLI POTATO",
-      price: "260",
-      desc: "Crispy & Tasty, French fries tossed in honey and chilly sauce",
-    },
-    {
-      name: "VEG SPRING ROLL",
-      price: "300",
-      desc: "Chinese Veggies Rolled in a thin rice paper sheet fried n served with dips",
-    },
-    {
-      name: "CHEESE CIGAR ROLL (6 PCS)",
-      price: "380",
-      desc: "An Indian starter featuring melting cheese filling wrapped in a spring roll sheet, deep-fried until crispy, and served with Sweet Chilli Sauce",
-    },
-    {
-      name: "VEG MANCHURIAN (DRY)",
-      price: "320",
-      desc: "popular Indo Chinese appetizer made with Mix Vegges, corn flour, soya sauce, vinegar, chilli sauce, ginger & garlic.",
-    },
-    {
-      name: "VEG PANEER CHILLY (DRY)",
-      price: "380",
-      desc: "popular Indo Chinese appetizer made with Cottage Cheese, Bell Peppers, Onion, soya sauce, vinegar, chilli sauce, ginger & garlic",
-    },
-    {
-      name: "MUSHROOM CHILLI",
-      price: "380",
-      desc: "Mushroom tossed in spicy chilly sauce with ginger garlic",
-    },
+  name: "CHINESE BHEL",
+  price: "260",
+  desc: "Crispy noodles tossed with fresh veggies and Chinese sauces.",
+},
+{
+  name: "VEG CRISPY",
+  price: "300",
+  desc: "Crunchy vegetables tossed in flavorful Chinese sauces.",
+},
+{
+  name: "HONEY CHILLI POTATO",
+  price: "260",
+  desc: "Crispy potato fries coated in honey chilli sauce.",
+},
+{
+  name: "VEG SPRING ROLL",
+  price: "300",
+  desc: "Crispy rolls filled with seasoned vegetables and served with dips.",
+},
+{
+  name: "CHEESE CIGAR ROLL (6 PCS)",
+  price: "380",
+  desc: "Crunchy rolls stuffed with melted cheese and sweet chilli sauce.",
+},
+{
+  name: "VEG MANCHURIAN (DRY)",
+  price: "320",
+  desc: "Veg balls tossed in classic Indo-Chinese sauces.",
+},
+{
+  name: "VEG PANEER CHILLY (DRY)",
+  price: "380",
+  desc: "Paneer, onions, and peppers tossed in spicy Chinese sauces.",
+},
+{
+  name: "MUSHROOM CHILLI",
+  price: "380",
+  desc: "Mushrooms stir-fried with chilli, ginger, and garlic.",
+},
 
   ],
 },
