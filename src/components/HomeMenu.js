@@ -373,44 +373,43 @@ Soups: {
     {
       name: "PANEER TIKKA TRIO",
       price: "380",
-      desc: "3 Types of Marinated Paneer(Red, White, Green) Cooked In Tandoor Served With Salad & Chutney",
+      desc: "3 Types of Marinated Paneer(Red, White, Green) Cooked In Tandoor Served with Salad & Chutney",
     },
     {
       name: "ALOO NAZAKAT",
       price: "360",
 desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders stuffed with a rich blend of paneer, dry fruits, raisins, and aromatic spices."
     },
-    {
-      name: "RED PANEER TIKKA",
-      price: "380",
-      desc: "",
-    },
-    {
-      name: "WHITE PANEER TIKKA",
-      price: "380",
-      desc: "",
-    },
-    {
-      name: "GREEN PANEER TIKKA",
-      price: "380",
-      desc: "",
-    },
-    {
-      name: "AFGANI SOYA CHAAP",
-      price: "360",
-      desc: "",
-    },
-    {
-      name: "HARIYALI SOYA CHAAP",
-      price: "340",
-      desc: "",
-    },
-    {
-      name: "KASHMIRI SOYA CHAAP",
-      price: "340",
-      desc: "",
-    },
-
+   {
+  name: "RED PANEER TIKKA",
+  price: "380",
+  desc: "Smoky paneer cubes with bold tandoori flavors.",
+},
+{
+  name: "WHITE PANEER TIKKA",
+  price: "380",
+  desc: "Creamy paneer tikka with a rich, mild taste.",
+},
+{
+  name: "GREEN PANEER TIKKA",
+  price: "380",
+  desc: "Fresh herb-marinated paneer grilled to perfection.",
+},
+{
+  name: "AFGANI SOYA CHAAP",
+  price: "360",
+  desc: "Tender soya chaap in a creamy, flavorful marinade.",
+},
+{
+  name: "HARIYALI SOYA CHAAP",
+  price: "340",
+  desc: "Soya chaap coated with fresh mint and herbs.",
+},
+{
+  name: "KASHMIRI SOYA CHAAP",
+  price: "340",
+  desc: "Flavorful soya chaap with aromatic Kashmiri spices.",
+},
     // ================= CHINESE STARTERS =================
                                 {
   heading: "Chinese starters"
