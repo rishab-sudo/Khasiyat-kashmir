@@ -302,7 +302,7 @@ Soups: {
     {
       name: "MANCHOW SOUP",
       price: "225",
-      desc: "Chinese Style Sou Garlic & Crispy Noodles",
+      desc: "Chinese Style Soup Garlic & Crispy Noodles",
     },
     {
       name: "CREAM OF MUSHROOM",
@@ -312,7 +312,7 @@ Soups: {
     {
       name: "CREAM OF BROCCOLI",
       price: "280",
-      desc: "Traditional Italian Broccoli Sou Garlic",
+      desc: "Traditional Italian Broccoli Soup Garlic",
     },
     {
       name: "VEG TALUMEIN SOUP",
