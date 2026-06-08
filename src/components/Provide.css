@@ -206,7 +206,7 @@
 @media (max-width: 767px) {
 
   .signature {
-    padding: 55px 0;
+    padding: 25px 0;
   }
 
   .signature-heading {
@@ -231,6 +231,7 @@
 
   .provide-box {
     padding: 18px;
+    max-width: 95%;
   }
 
   .provide-box h4 {

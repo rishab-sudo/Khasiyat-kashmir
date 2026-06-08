@@ -272,31 +272,49 @@
 }
 
 @media (max-width: 576px) {
-.buffet-menu {
-  padding: 15px 0;
-  background: #fff;
-}
+@media (max-width: 576px) {
+
+  .buffet-popup-overlay {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
   .buffet-popup {
-    padding: 35px 20px;
+    width: 100%;
+    max-height: 85vh;
+    padding: 25px 15px;
+    border-radius: 20px;
+    overflow-y: auto;
   }
 
   .buffet-popup h2 {
-    font-size: 34px;
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .popup-line {
+    margin-bottom: 20px;
   }
 
   .buffet-popup-list {
     grid-template-columns: 1fr;
+    gap: 10px;
+    max-height: 45vh; /* dishes section scroll */
+    overflow-y: auto;
+    padding-right: 5px;
   }
 
-  .buffet-menu-overlay h3 {
-    font-size: 28px;
+  .buffet-popup-item {
+    font-size: 15px;
+    padding: 10px;
   }
 
-  .buffet-popup-price-box span {
-    font-size: 18px;
+  .buffet-popup-price-box {
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
-
-  .buffet-popup-price-box h3 {
-    font-size: 26px;
-  }
+}
 }

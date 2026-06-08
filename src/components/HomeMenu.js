@@ -1225,7 +1225,7 @@ useEffect(() => {
           </span>
         </div>
 
-        <p>{item.desc}</p>
+        <p className="menu-descp">{item.desc}</p>
 
       </div>
 

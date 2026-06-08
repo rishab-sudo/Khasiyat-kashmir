@@ -210,43 +210,38 @@
 /* =========================
    TOP
 ========================= */
-
 .HomeMenu-top {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
 }
 
 .HomeMenu-top h4 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  flex: 0 1 auto;
+  min-width: 0; /* important */
+  margin: 0;
   color: #000;
   text-transform: uppercase;
   font-size: 20px;
+  line-height: 1.4;
+  word-break: break-word;
 }
-
-/* TAG */
-
-.HomeMenu-tag {
-  background: #ffb400;
-  color: #000;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 3px;
-}
-
-/* DOTS */
 
 .HomeMenu-dots {
   flex: 1;
+  min-width: 30px;
   border-bottom: 1px dotted #aaa;
-  margin: 0 10px;
+  margin-top: 14px;
 }
 
 .HomeMenu-price {
+  flex-shrink: 0; /* price kabhi neeche nahi jayega */
+  white-space: nowrap;
   color: #ffb400;
+  font-weight: 700;
+  margin-left: 8px;
 }
-
 /* DESC */
 
 .HomeMenu-item p {
@@ -314,9 +309,11 @@
    RESPONSIVE
 ========================= */
 
-@media (max-width: 768px) {
 
-  .HomeMenu-section {
+
+ 
+ @media (max-width: 768px) {
+ .HomeMenu-section {
     flex-direction: column;
     text-align: center;
   }
@@ -326,19 +323,32 @@
   }
 
   .HomeMenu-top {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
   }
 
   .HomeMenu-dots {
-    display: none;
+    display: block;
   }
 
+  .HomeMenu-top h4 {
+    font-size: 15px;
+    text-align: left;
+    flex: 1;
+  }
+
+  .HomeMenu-price {
+    font-size: 14px;
+    white-space: nowrap;
+  }
   .HomeMenu-image img {
     width: 100%;
     height: auto !important;
   }
-
+.menu-descp{
+display: none;
+}
   .HomeMenu-filters {
     gap: 10px;
     max-width: 100%;

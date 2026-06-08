@@ -158,10 +158,12 @@
 @media (max-width: 767px) {
   .special {
     padding: 55px 0;
+     
   }
 
   .special-top {
     margin-bottom: 40px;
+    
   }
 
   .special-heading {
@@ -170,8 +172,10 @@
 
   .special-card,
   .special-card-large {
-    height: 300px;
+    height: fit-content;
     border-radius: 18px;
+    
+   
   }
 
   .special-card-content {
@@ -180,6 +184,7 @@
     left: auto;
     bottom: auto;
     text-align: left !important;
+    
   }
 
   .special-card-title {
@@ -198,7 +203,7 @@
 
   .special-card,
   .special-card-large {
-    height: 260px;
+    height: fit-content;
   }
 
   .special-card-title {
