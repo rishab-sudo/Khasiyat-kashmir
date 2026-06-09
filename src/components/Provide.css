@@ -67,11 +67,11 @@
 }
 
 .signature-arrow-left {
-  left: 18px;
+  left: 5px;
 }
 
 .signature-arrow-right {
-  right: 18px;
+  right: 50px; /* was 18px, increase to move it left */
 }
 
 /* =========================
@@ -107,7 +107,7 @@
 ========================= */
 
 .signature-content {
-  padding-left: 40px;
+  padding-left: 25px;
 }
 
 .signature-tag {

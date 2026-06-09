@@ -4,7 +4,7 @@
   background: #fbfbfbfb;
   padding: 45px;
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+
 }
 
 .gallery-title {
@@ -23,8 +23,6 @@
 
 .gallery-title h2 {
   margin-top: 5px;
-  color: #000;
-    font-weight: 500 !important;
 }
 
 /* Slider wrapper */
@@ -238,7 +236,11 @@
   .gallery-title {
     text-align: center;
   }
-
+.gallery-title h2 {
+ font-size: 22px !important;
+    font-weight: 500 !important;
+    margin-bottom: 25px;
+}
   .slider-container {
     height: 215px;
   }

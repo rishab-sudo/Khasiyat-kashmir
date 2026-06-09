@@ -60,11 +60,11 @@ At Khaasiyat, every table is served with warmth, authenticity, and memorable tas
 </strong>
   </p> */}
 
-<a href="tel:++919103358985">
+{/* <a href="tel:++919103358985">
   <button className="menu-btn book-btn">
     Call Now
   </button>
-</a>
+</a> */}
 </div>
 
       </div>

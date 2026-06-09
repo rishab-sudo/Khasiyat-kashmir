@@ -84,7 +84,7 @@ const Gallery = () => {
     <div className="gallery">
       <div className="gallery-title">
         <h5 className="heading-tag">Food & Ambience</h5>
-        <h2 className="page-heading">
+      <h2 className="page-heading">
           Discover the perfect blend of authentic flavours.
         </h2>
       </div>

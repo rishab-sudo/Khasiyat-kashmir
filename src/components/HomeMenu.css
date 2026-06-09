@@ -312,8 +312,11 @@
 
 
  
- @media (max-width: 768px) {
- .HomeMenu-section {
+@media (max-width: 768px) {
+  .HomeMenu-section {
+    MIN-width: 100%;
+
+   
     flex-direction: column;
     text-align: center;
   }
@@ -322,33 +325,62 @@
     flex-direction: column;
   }
 
+  /* 🔥 FIX: TOP ROW */
   .HomeMenu-top {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    gap: 0;
   }
 
+  /* 🔥 FIX: NAME = 65% */
+  .HomeMenu-top h4 {
+    width: 65%;
+    flex: 0 0 65%;
+    font-size: 13px;
+    text-align: left;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* 🔥 FIX: DOTS FILL REMAINING SPACE BETWEEN NAME AND PRICE */
   .HomeMenu-dots {
     display: block;
-  }
-
-  .HomeMenu-top h4 {
-    font-size: 15px;
-    text-align: left;
     flex: 1;
+    min-width: 10px;
+    border-bottom: 1px dotted #aaa;
+    margin: 0 6px;
+    align-self: center;
   }
 
+  /* 🔥 FIX: PRICE = 25%, ALWAYS RIGHT */
   .HomeMenu-price {
-    font-size: 14px;
+    width: 25%;
+    flex: 0 0 25%;
+    font-size: 13px;
     white-space: nowrap;
+    text-align: right;
+    color: #ffb400;
+    font-weight: 700;
+    margin-left: 0;
   }
+.HomeMenu-list{
+
+min-width: 100%;
+}
   .HomeMenu-image img {
     width: 100%;
     height: auto !important;
   }
-.menu-descp{
-display: none;
-}
+
+  .menu-descp {
+    display: none;
+  }
+
   .HomeMenu-filters {
     gap: 10px;
     max-width: 100%;

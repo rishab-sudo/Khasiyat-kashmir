@@ -179,10 +179,10 @@
   }
 
   .special-card-content {
-    top: 18px;
-    right: 18px;
-    left: auto;
-    bottom: auto;
+    top: auto;
+
+    left: 25px;
+    bottom: 15px;
     text-align: left !important;
     
   }
