@@ -44,17 +44,21 @@ const HomeAbout = () => {
   </span>
 
   <h2 className="title page-heading">
-  Where Every Meal Feels Like a Pause Worth Taking
+Where Great Food Meets Scenic Views
+
 
   </h2>
 
   <p className=" page-description">
- Nestled amidst the breathtaking beauty of Kashmir, Khaasiyat brings together comforting flavours, warm hospitality, and a thoughtfully curated pure vegetarian dining experience.
+ One of Pahalgam's leading multi-cuisine pure vegetarian restaurants, Khaasiyat offers a memorable dining experience for families, travellers, and food lovers seeking authentic flavours and warm hospitality.
+
  </p>
  <p className=" page-description">From rich North Indian delicacies and authentic South Indian specialties to flavourful Chinese dishes, sizzling tandoor platters, Jain food options, and signature creations, every dish is crafted with care to satisfy every palate.
 </p>
-<p className=" page-description">Fresh ingredients. Soulful flavours. Cozy ambience.
-At Khaasiyat, every table is served with warmth, authenticity, and memorable taste.</p>
+<p className=" page-description">
+From rich North Indian delicacies and authentic South Indian favourites to flavourful Chinese dishes, tandoor specialties, Jain food options, and signature creations, every dish is thoughtfully prepared using quality ingredients and time-honoured recipes.
+</p>
+<p className=" page-description"> Recognised as a preferred Pure Veg Restaurant in Pahalgam, we bring together exceptional food, scenic surroundings, and attentive service to create moments worth remembering.</p>
   {/* <p className="contact">
     Reserve Your Table <strong>+91 91033 58985 | +91 91033 58905
 </strong>
@@ -65,6 +69,8 @@ At Khaasiyat, every table is served with warmth, authenticity, and memorable tas
     Call Now
   </button>
 </a> */}
+<p className=" page-description">Fresh ingredients. Soulful flavours. Warm hospitality.
+</p>
 </div>
 
       </div>

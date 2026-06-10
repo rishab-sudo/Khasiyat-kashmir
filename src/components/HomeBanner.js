@@ -8,20 +8,29 @@ const bannerData = [
   {
     heading: ["WELCOME TO KHAASIYAT"],
     subheading:
-      "Comforting Flavours in the Heart of Pahalgam thoughtfully prepared meals, scenic surroundings, and moments worth remembering.",
+      "One of Pahalgam's Most Loved Pure Veg Restaurants",
+
+    subheading:
+      "OMulti-cuisine vegetarian dining, scenic views, warm hospitality, and flavours worth coming back for.",
   },
 
   {
-    heading: ["WHERE FLAVOURS MEET", " THE VALLEY"],
+    heading: ["WHERE GREAT FOOD MEETS", " SCENIC VIEWS"],
     subheading:
-      "A Dining Experience Worth Remembering Scenic surroundings, thoughtfully prepared meals, and genuine hospitality.",
+      "A Multi-Cuisine Dining Experience In Pahalgam",
+          subheading:
+      "North Indian, South Indian, Chinese, Jain specialties, and signature creations served with care.",
   },
 
   {
     heading: ["SERVING MEMORIES WITH", "EVERY MEAL"],
     subheading:
-      "Freshly prepared dishes, peaceful surroundings, and experiences worth coming back for.",
+      "PURE VEGETARIAN DINING IN THE HEART OF PAHALGAM",
+          subheading:
+      "Freshly prepared dishes, comforting flavours, and a dining experience designed for families, travellers, and food lovers.",
+  
   },
+  
 ];
 
 const HomeBanner = () => {

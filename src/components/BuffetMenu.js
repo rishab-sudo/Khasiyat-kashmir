@@ -74,8 +74,8 @@ const BuffetMenu = () => {
   </h2>
 
   <p className="page-subheading">
-Indulge in a lavish multi-cuisine pure vegetarian buffet featuring
- rich North Indian favourites, flavourful Chinese delicacies, authentic South Indian specialties, and freshly prepared dishes served with warmth and hospitality at Khaasiyat, Pahalgam.
+Indulge in a lavish multi-cuisine pure vegetarian buffet featuring rich North Indian favourites, flavourful Chinese delicacies, authentic South Indian specialties, Jain food options, and freshly prepared dishes served with warmth 
+and hospitality at Khaasiyat, Pahalgam. Buffet starting at ₹499 per person for groups of 30 guests or more.
   </p>
 </div>
 
