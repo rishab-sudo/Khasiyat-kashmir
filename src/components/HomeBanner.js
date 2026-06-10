@@ -8,26 +8,19 @@ const bannerData = [
   {
     heading: ["WELCOME TO KHAASIYAT"],
     subheading:
-      "One of Pahalgam's Most Loved Pure Veg Restaurants",
-
-    subheading:
-      "OMulti-cuisine vegetarian dining, scenic views, warm hospitality, and flavours worth coming back for.",
+      "One of Pahalgam's Most Loved Pure Veg Restaurants,Multi-cuisine vegetarian dining, scenic views, warm hospitality, and flavours worth coming back for."
   },
 
   {
     heading: ["WHERE GREAT FOOD MEETS", " SCENIC VIEWS"],
     subheading:
-      "A Multi-Cuisine Dining Experience In Pahalgam",
-          subheading:
-      "North Indian, South Indian, Chinese, Jain specialties, and signature creations served with care.",
+      "A Multi-Cuisine Dining Experience In Pahalgam,North Indian, South Indian, Chinese, Jain specialties, and signature creations served with care.",
   },
 
   {
     heading: ["SERVING MEMORIES WITH", "EVERY MEAL"],
     subheading:
-      "PURE VEGETARIAN DINING IN THE HEART OF PAHALGAM",
-          subheading:
-      "Freshly prepared dishes, comforting flavours, and a dining experience designed for families, travellers, and food lovers.",
+      "PURE VEGETARIAN DINING IN THE HEART OF PAHALGAM,Freshly prepared dishes, comforting flavours, and a dining experience designed for families, travellers, and food lovers.",
   
   },
   
