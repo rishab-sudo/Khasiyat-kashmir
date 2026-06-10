@@ -1,0 +1,84 @@
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+/* Common circle style */
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid #336666;
+  background-color: #1F4040;
+  color: #ffffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 22px;
+}
+.whatsaap{
+  width: 25px;
+  height: 35px;
+}
+/* WhatsApp specific */
+/* .whatsapp {
+  color: #25D366;
+} */
+
+/* Arrow specific */
+.top {
+  border-color: #336666;
+   color: #ffffffff;
+}
+
+/* Hover Effects */
+.circle-btn:hover {
+  background: #336666;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Arrow hover different */
+.top:hover {
+  background: #336666;
+  color: #fff;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+    .whatsaap{
+  width: 25px;
+  height: 25px;
+}
+  .circle-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .floating-buttons {
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+    .whatsaap{
+  width: 25px;
+  height: 25px;
+}
+  .circle-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+}

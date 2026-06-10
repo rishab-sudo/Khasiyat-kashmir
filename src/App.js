@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import preloadDish from "./assets/pre-loader.png";
 
 import "./App.css";
+import FloatingButtons from "./components/FloatingButtons";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -70,7 +71,7 @@ function App() {
       ) : (
         <div className="App">
           <Navbar />
-
+   <FloatingButtons />
           {/* HOME PAGE */}
           <Home />
 
