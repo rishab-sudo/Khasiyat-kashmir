@@ -8,32 +8,40 @@ export const foodImages = {
       "South Indian Special": [
     require("../assets/menu/menu-south.png"),
 require("../assets/menu/menu-south2.png"),
+require("../assets/menu/south-prsn.png"),
   ],
   Soups: [
     require("../assets/menu/soups combo.png"),
+    require("../assets/menu/Soup-prsn.png"),
 require("../assets/menu/tamato soup.png"),
   ],
   Beverages: [
     require("../assets/menu/drinks combo.png"),
-require("../assets/menu/drinks-cheers.png"),
+    require("../assets/menu/drinks-cheers.png"),
+    require("../assets/menu/drink-prsn.png"),
+
   ],
     Starters: [
     require("../assets/menu/starter-veg-kebab.png"),
+    require("../assets/menu/starters-prsn.png"),
 require("../assets/menu/starter-dahi-kabab.jpeg"),
 require("../assets/menu/malai panner tikka.png"),
   ],
 
         "Combo Meals": [
     require("../assets/menu/combo menu2.png"),
+        require("../assets/menu/combo-prsn.png"),
 
   ],
           "Indian Main Course": [
     require("../assets/menu/north-menu.png"),
+ 
      require("../assets/menu/north-menu2.png"),
 
   ],
          Chinese: [
     require("../assets/menu/menu-chinese.png"),
+    require("../assets/menu/chinese-prsn.jpeg"),
 
 
   ],
@@ -43,6 +51,7 @@ require("../assets/menu/malai panner tikka.png"),
   ],
         Desserts: [
     require("../assets/menu/dessert-menu.png"),
+    require("../assets/menu/desrt-prsn.png"),
 
   ],
 };

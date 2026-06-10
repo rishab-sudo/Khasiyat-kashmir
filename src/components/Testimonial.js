@@ -3,43 +3,91 @@ import "./Testimonial.css";
 
 const testimonials = [
   {
-    text: "Very nice food. Excellent service. Soft music in the background makes your experience more pleasant. Must visit when you you are in Pahalgam.",
-    name: "Rohan Jage",
-    role: "CTO, Morlex Group",
+    text: "This is a good place to have food. The staff is humble and provides excellent service. The place gives lively vibes. Do visit for food.",
+    name: "Gayatri Ransubhe",
     rating: 5,
   },
   {
-    text: "Just as the name suggests, the food is truly khaas. The taste is really good and the quality is excellent. There are plenty of great options on the menu. The staff is courteous and knowledgeable.",
-    name: "Sumeet Parmar",
-    role: "CTO, Morlex Group",
-    rating: 4.5,
+    text: "Exceptional food and unique service. Tasted authentic Kashmiri Pulao. A memorable dining experience.",
+    name: "Sajina T",
+    rating: 5,
   },
   {
-    text: "I had an amazing dining experience at this restaurant! The ambiance was warm and inviting, perfect for a relaxed evening.",
-    name: "Seema Sharma",
-    role: "CTO, Morlex Group",
+    text: "Amazing food and superb service! A must-try place when visiting.",
+    name: "Gaurav Bhakri",
+    rating: 5,
+  },
+  {
+    text: "Nice ambience, friendly staff, clean environment, and tasty food.",
+    name: "Munira Ayub",
+    rating: 5,
+  },
+  {
+    text: "Good food, great taste, and a very pleasant ambience.",
+    name: "Ishank Malhotra",
+    rating: 5,
+  },
+  {
+    text: "Delicious food with generous quantity and a wonderful ambience. Overall everything was excellent.",
+    name: "Ganesh Kumar",
+    rating: 5,
+  },
+  {
+    text: "Good food, beautiful night ambience, and very good service. Overall a great experience.",
+    name: "Mashooq Hussain",
+    rating: 5,
+  },
+  {
+    text: "Amazing food that perfectly matches the vibe of the place. Good service as well.",
+    name: "Tabraiz Abdullah",
+    rating: 5,
+  },
+  {
+    text: "Amazing food and super amazing service. Highly recommended.",
+    name: "Shefali Singh",
+    rating: 5,
+  },
+  {
+    text: "Good food and excellent service. Served wonderfully by the team.",
+    name: "Sheikh Tawseef",
+    rating: 5,
+  },
+  {
+    text: "Every Punjabi who visits Kashmir must visit this restaurant.",
+    name: "Gagan Sidhwan",
+    rating: 5,
+  },
+  {
+    text: "Food was great with excellent vegetarian options. Warm hospitality and attentive staff made the experience special.",
+    name: "Khursheed Zahid",
+    rating: 5,
+  },
+  {
+    text: "Amazing food and ambience. Great staff and wonderful hospitality.",
+    name: "Meghal Shah",
+    rating: 5,
+  },
+  {
+    text: "Very good service provided by the staff. A delightful dining experience.",
+    name: "Prince Goyal",
+    rating: 5,
+  },
+  {
+    text: "Very good food with an excellent dining experience and attentive service.",
+    name: "Amit Singh",
+    rating: 5,
+  },
+  {
+    text: "Price is slightly high, but the quantity is generous and worth it.",
+    name: "Urmila Shetye",
     rating: 4,
   },
   {
-    text: "Pure vegetarian restaurant. Dahi ke kebab were awesome. Paneer Butter Masala was delicious with garlic naan and lachha paratha.",
-    name: "Alok Shrivastav",
-    role: "CTO, Morlex Group",
+    text: "Amazing food and ambience. A perfect place to enjoy quality vegetarian cuisine.",
+    name: "Gunjan Rastogi",
     rating: 5,
   },
-  {
-    text: "Great food, awesome mountain view, centrally located, and good service. Nutella frappe and Godfather platter were excellent.",
-    name: "Monica Titus",
-    role: "CTO, Morlex Group",
-    rating: 4.5,
-  },
-  {
-  text: "Excellent food, well trained staff, and a warm ambience. Very good dishes. Special recommendations - try the Dahi Kabab. Parathas are yummy. The Chole Bhature was outstanding.",
-  name: "Vinay Emmanuel",
-  role: "CTO, Morlex Group",
-  rating: 5,
-},
 ];
-
 const Testimonial = () => {
   const [index, setIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
