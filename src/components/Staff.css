@@ -12,7 +12,9 @@
   display: flex;
   min-height: 650px;
 }
-
+.staff-tag{
+  color: #f4c542 !important;
+}
 /* =========================
    LEFT SIDE
 ========================= */
@@ -20,6 +22,7 @@
 .staff-left {
   width: 50%;
   background: #336666;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
