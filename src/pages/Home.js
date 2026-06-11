@@ -12,6 +12,7 @@ import HomeAbout from "../components/HomeAbout";
 import Gallery from "../components/Gallery";
 import Provide  from "../components/Provide";
 import Special from "../components/Special";
+import Staff from "../components/Staff";
 // import WhyUS from "../components/WhyUS";
 
 const fadeUp = {
@@ -97,7 +98,15 @@ const Home = () => {
       </motion.section>
 {/*  */}
 
-
+  <motion.section
+        id="review"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <Staff/>
+      </motion.section>
 
       {/* ✅ REVIEW */}
       <motion.section
