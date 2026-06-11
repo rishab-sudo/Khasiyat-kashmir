@@ -167,9 +167,11 @@ font-size: 18.5px;
 ========================= */
 
 @media (max-width: 768px) {
-  .heading-tag{
-color: #ffb400 !important;
-}
+  .banner-tagline {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
 .page-heading{
 font-size: 26px !important;
 font-weight: 700;
