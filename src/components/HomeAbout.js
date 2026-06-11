@@ -53,8 +53,7 @@ Where Great Food Meets Scenic Views
  One of Pahalgam's leading multi-cuisine pure vegetarian restaurants, Khaasiyat offers a memorable dining experience for families, travellers, and food lovers seeking authentic flavours and warm hospitality.
 
  </p>
- <p className=" page-description">From rich North Indian delicacies and authentic South Indian specialties to flavourful Chinese dishes, sizzling tandoor platters, Jain food options, and signature creations, every dish is crafted with care to satisfy every palate.
-</p>
+
 <p className=" page-description">
 From rich North Indian delicacies and authentic South Indian favourites to flavourful Chinese dishes, tandoor specialties, Jain food options, and signature creations, every dish is thoughtfully prepared using quality ingredients and time-honoured recipes.
 </p>
