@@ -47,7 +47,7 @@ const Staff = () => {
 
         {/* RIGHT CONTENT */}
         <div className="staff-right">
-          <img src={require("../assets/Team/team1.jpeg")}/>
+          <img src={require("../assets/Team/team1.jpeg")} alt=""/>
         </div>
 
       </div>
