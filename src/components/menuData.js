@@ -273,57 +273,57 @@ Soups: {
   items: [
     {
       name: "TOMATO SOUP",
-      price: "225",
+      price: "₹225",
       desc: "Simple Tomato Soup Fresh Mint, Coriander Served Crunchy Croutons",
     },
     {
       name: "VEGETABLE SOUP",
-      price: "225",
+      price: "₹225",
       desc: "Vegetable Soup For Weight Watchers",
     },
     {
       name: "LEMON CORRIANDER SOUP",
-      price: "225",
+      price: "₹225",
       desc: "Indian Style Soup freshness of lemon and coriander",
     },
     {
       name: "VEG CLEAR SOUP",
-      price: "225",
+      price: "₹225",
       desc: "Indian Style Soup with vegetable Broth to keep light on stomach",
     },
     {
       name: "SWEET CORN SOUP",
-      price: "225",
+      price: "₹225",
       desc: "A Chinese Style Creamy Soup Corn and Vegetable",
     },
     {
       name: "HOT & SOUR SOUP",
-      price: "225",
+      price: "₹225",
       desc: "Spicy Chinese Soup Vegetable, Paneer and Mushroom",
     },
     {
       name: "MANCHOW SOUP",
-      price: "225",
+      price: "₹225",
       desc: "Chinese Style Soup Garlic & Crispy Noodles",
     },
     {
       name: "CREAM OF MUSHROOM",
-      price: "290",
+      price: "₹290",
       desc: "Cream Of Mushroom Soup Onion",
     },
     {
       name: "CREAM OF BROCCOLI",
-      price: "280",
+      price: "₹280",
       desc: "Traditional Italian Broccoli Soup Garlic",
     },
     {
       name: "VEG TALUMEIN SOUP",
-      price: "280",
+      price: "₹280",
       desc: "Mixture of Greens and vegetables cooked in Vegetable Stock for heartful combination.",
     },
     {
       name: "VEG TOMYUM SOUP",
-      price: "280",
+      price: "₹280",
       desc: "Lower Calorie Soup with Vegetables and fragrant thai spices for tasty indulgence",
     },
   ],
@@ -339,17 +339,17 @@ Soups: {
 },
     {
       name: "CRISPY CORN",
-      price: "300",
+      price: "₹300",
       desc: "Chakhna- Corn Kernnels made Crisp served with Fresh Onion Tomatoes & Corriander",
     },
     {
       name: "HARA BHARA KEBAB",
-      price: "300",
+      price: "₹300",
       desc: "Indian Fav Snack – Mix Veg, Greens made into a patty served with Indian Dips",
     },
     {
       name: "MIX VEG BHAJIYA",
-      price: "300",
+      price: "₹300",
       desc: "Crispy & Tasty, Mix Veg Fritters W/Sweet Chilli Sauce",
     },
 
@@ -359,57 +359,57 @@ Soups: {
 },
     {
       name: "DAHI KE KEBAB",
-      price: "360",
+      price: "₹360",
       desc: "Hung Curd, Paneer, Ginger And Green Chilli, Flour And Basic Spices Powder Served With Green Chutney",
     },
     {
       name: "STUFFED TANDOORI MUSHROOM Z",
-      price: "360",
+      price: "₹360",
       desc: "Marinated Mushroom Stuffed With Cottage Cheese & Potato Cooked In Tandoor Served Salad & Chutney",
     },
     {
       name: "MALAI BROCCOLI",
-      price: "380",
+      price: "₹380",
       desc: "White Sauce marinated Broccoli grilled in clay pot to perfection",
     },
     {
       name: "PANEER TIKKA TRIO",
-      price: "380",
+      price: "₹380",
       desc: "3 Types of Marinated Paneer, Cooked In Tandoor Served with Salad & Chutney",
     },
     {
       name: "ALOO NAZAKAT",
-      price: "360",
+      price: "₹360",
 desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders stuffed with a rich blend of paneer, dry fruits, raisins, and aromatic spices."
     },
    {
   name: "RED PANEER TIKKA",
-  price: "380",
+  price: "₹380",
   desc: "Smoky paneer cubes with bold tandoori flavors.",
 },
 {
   name: "WHITE PANEER TIKKA",
-  price: "380",
+  price: "₹380",
   desc: "Creamy paneer tikka with a rich, mild taste.",
 },
 {
   name: "GREEN PANEER TIKKA",
-  price: "380",
+  price: "₹380",
   desc: "Fresh herb-marinated paneer grilled to perfection.",
 },
 {
   name: "AFGANI SOYA CHAAP",
-  price: "360",
+  price: "₹360",
   desc: "Tender soya chaap in a creamy, flavorful marinade.",
 },
 {
   name: "HARIYALI SOYA CHAAP",
-  price: "340",
+  price: "₹340",
   desc: "Soya chaap coated with fresh mint and herbs.",
 },
 {
   name: "KASHMIRI SOYA CHAAP",
-  price: "340",
+  price: "₹340",
   desc: "Flavorful soya chaap with aromatic Kashmiri spices.",
 },
     // ================= CHINESE STARTERS =================
@@ -418,42 +418,42 @@ desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders st
 },
     {
   name: "CHINESE BHEL",
-  price: "260",
+  price: "₹260",
   desc: "Crispy noodles tossed with fresh veggies and Chinese sauces.",
 },
 {
   name: "VEG CRISPY",
-  price: "300",
+  price: "₹300",
   desc: "Crunchy vegetables tossed in flavorful Chinese sauces.",
 },
 {
   name: "HONEY CHILLI POTATO",
-  price: "260",
+  price: "₹260",
   desc: "Crispy potato fries coated in honey chilli sauce.",
 },
 {
   name: "VEG SPRING ROLL",
-  price: "300",
+  price: "₹300",
   desc: "Crispy rolls filled with seasoned vegetables and served with dips.",
 },
 {
   name: "CHEESE CIGAR ROLL (6 PCS)",
-  price: "380",
+  price: "₹380",
   desc: "Crunchy rolls stuffed with melted cheese and sweet chilli sauce.",
 },
 {
   name: "VEG MANCHURIAN (DRY)",
-  price: "320",
+  price: "₹320",
   desc: "Veg balls tossed in classic Indo-Chinese sauces.",
 },
 {
   name: "VEG PANEER CHILLY (DRY)",
-  price: "380",
+  price: "₹380",
   desc: "Paneer, onions, and peppers tossed in spicy Chinese sauces.",
 },
 {
   name: "MUSHROOM CHILLI",
-  price: "380",
+  price: "₹380",
   desc: "Mushrooms stir-fried with chilli, ginger, and garlic.",
 },
 
@@ -467,17 +467,17 @@ Chinese: {
     // ================= CHINESE MAIN COURSE =================
     {
       name: "VEGETABLE MANCHURIAN GRAVY",
-      price: "300",
+      price: "₹300",
       desc: "Vegetable Balls In Manchurian Sauce",
     },
     {
       name: "CHILLI PANEER - GRAVY",
-      price: "280",
+      price: "₹280",
       desc: "Marinated Cottage Cheese Bell Peppers, Onions Cooked In Chilli Garlic Sauce",
     },
     {
       name: "VEGETABLES WITH HOT GARLIC SAUCE / BLACKBEAN SAUCE",
-      price: "280",
+      price: "₹280",
       desc: "Vegetables Tossed In Hot Garlic Sauce Or Black Bean Sauce As Liking",
     },
 
@@ -487,17 +487,17 @@ Chinese: {
 },
     {
       name: "VEGETABLE FRIED RICE",
-      price: "280",
+      price: "₹280",
       desc: "Stir Fried Vegetables with Rice in Chinese Sauce",
     },
     {
       name: "SCHEZWAN FRIED RICE",
-      price: "320",
+      price: "₹320",
       desc: "Stir Fried Vegetables with Rice in Schezwan Sauce And Chinese Sauce",
     },
     {
       name: "MUSHROOM FRIED RICE",
-      price: "380",
+      price: "₹380",
       desc: "Stir fried mushroom with rice and Chinese sauce",
     },
 
@@ -507,22 +507,22 @@ Chinese: {
 },
     {
       name: "HAKKA NOODLE",
-      price: "280",
+      price: "₹280",
       desc: "Noodles Stir Fried with Shredded Vegetables",
     },
     {
       name: "CHILLY GARLIC NOODLES",
-      price: "280",
+      price: "₹280",
       desc: "Garlic Flavoured Spicy Noodles Shredded Vegetables",
     },
     {
       name: "SCHEZWAN GARLIC NOODLE",
-      price: "320",
+      price: "₹320",
       desc: "Garlic Flavoured Spicy Noodles Shredded Vegetables tossed in schezwan sauce",
     },
     {
       name: "VEGETABLE CHOPSUEY",
-      price: "360",
+      price: "₹360",
       desc: "Crispy Noodles Served Sweet Indo-chinese Sauce and Vegetables",
     },
 
@@ -532,17 +532,17 @@ Chinese: {
 },
     {
       name: "SIZZED IN CHINA",
-      price: "480",
+      price: "₹480",
       desc: "Chinese Style Sizzler Fried Rice, Veg Manchurian, Chilli Paneer Cooked In Chilli Garlic Sauce",
     },
     {
       name: "GOD FATHER DELIGHT",
-      price: "480",
+      price: "₹480",
       desc: "Tandoori Platter with Paneer Tikka, Hara Bhara Kabab, Malai Broccoli, Soya Chap, Tandoori Aloo",
     },
     {
       name: "CHEF'S SPECIAL SIZZLER",
-      price: "480",
+      price: "₹480",
       desc: "Sizzler Paneer Tikka 3 Types, Veg Biryani with small portion of Hakka Noodles and Manchurian Dry",
     },
 
