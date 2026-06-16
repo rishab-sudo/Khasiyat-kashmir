@@ -1,0 +1,152 @@
+/* ==========================
+   BOOKING SECTION
+========================== */
+
+.booking {
+  background: #336666;
+  margin-top: 2.5%;
+}
+
+.booking-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* LEFT IMAGE */
+
+.booking-image {
+  width: 50%;
+}
+
+.booking-image img {
+  width: 100%;
+  display: block;
+}
+
+/* RIGHT FORM */
+
+.booking-form-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;   /* Right side */
+  align-items: center;
+  padding: 50px 70px;
+  color: #fff;
+}
+
+/* INNER CONTENT */
+
+.booking-content {
+  width: 75%;
+}
+
+/* HEADING */
+
+.booking-heading {
+  margin-bottom: 30px;
+}
+
+.booking-heading h5 {
+  color: #fbbf0e;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.booking-heading p {
+  color: #fff;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* FORM */
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUT */
+
+.booking-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 15px;
+  background: #fff;
+  color: #333;
+}
+
+.booking-input::placeholder {
+  color: #777;
+}
+
+/* BUTTON */
+
+.booking-btn {
+  margin-top: 8px;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #fbbf0e;
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.booking-btn:hover {
+  background: #fff;
+  color: #336666;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 992px) {
+
+  .booking-image,
+  .booking-form-wrapper {
+    width: 100%;
+  }
+
+  .booking-image {
+    order: 1;
+  }
+
+  .booking-form-wrapper {
+    order: 2;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .booking-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .booking-form-wrapper {
+    padding: 30px 18px;
+  }
+
+  .booking-content {
+    width: 100%;
+  }
+
+  .booking-input {
+    padding: 13px 15px;
+    font-size: 14px;
+  }
+
+  .booking-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+}

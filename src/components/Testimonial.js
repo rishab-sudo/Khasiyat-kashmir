@@ -235,7 +235,7 @@ Stories of Savor and Satisfaction
         </div>
 
         {/* DOTS */}
-        <div className="testimonial-dots">
+        {/* <div className="testimonial-dots">
 
           {Array.from({
             length: totalSlides,
@@ -247,7 +247,7 @@ Stories of Savor and Satisfaction
             ></span>
           ))}
 
-        </div>
+        </div> */}
 
       </div>
     </section>
