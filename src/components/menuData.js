@@ -133,16 +133,19 @@ export const menuData = {
         price: "₹260",
         desc: "Mixed vegetable stuffed paratha with curd",
       },
-      {
-        name: "Paneer Paratha with Dahi",
-        price: "₹300",
-        desc: "Soft paneer stuffed paratha served with curd",
-      },
-      {
-        name: "Cheese Paneer Paratha with Dahi",
-        price: "₹280",
-        desc: "Cheesy paneer paratha served with fresh curd",
-      },
+// Paneer Paratha
+{
+  name: "Paneer Paratha with Dahi",
+  price: "₹280",
+  desc: "Soft paneer stuffed paratha served with fresh curd."
+},
+
+// Cheese Paneer Paratha
+{
+  name: "Cheese Paneer Paratha with Dahi",
+  price: "₹320",
+  desc: "Cheesy paneer stuffed paratha served with fresh curd."
+},
     ],
   },
 
@@ -169,16 +172,16 @@ export const menuData = {
         price: "₹240",
         desc: "Cheesy masala dosa with rich flavors",
       },
-      {
-        name: "Butter Mysore Sada Dosa",
-        price: "₹200",
-        desc: "Mysore style dosa with buttery crisp texture",
-      },
-      {
-        name: "Mysore Masala Dosa",
-        price: "₹230",
-        desc: "Spicy Mysore dosa filled with potato masala",
-      },
+   {
+  name: "Butter Mysore Sada Dosa",
+  price: "₹220",
+  desc: "Mysore style crispy dosa topped with butter."
+},
+    {
+  name: "Mysore Masala Dosa",
+  price: "₹240",
+  desc: "Spicy Mysore dosa stuffed with flavorful potato masala."
+},
       {
         name: "Butter Rava Sada Dosa",
         price: "₹280",
@@ -199,11 +202,11 @@ export const menuData = {
         price: "₹340",
         desc: "Mysore dosa stuffed with paneer and masala",
       },
-      {
-        name: "Peri Peri Paneer Dosa",
-        price: "₹240",
-        desc: "Paneer dosa flavored with peri peri spices",
-      },
+  {
+  name: "Peri Peri Paneer Dosa",
+  price: "₹340",
+  desc: "Paneer dosa tossed with spicy peri peri seasoning."
+},
       {
         name: "Khaasiyat Spl Dosa Platter (6 varieties of dosa)",
         price: "₹450",
@@ -245,26 +248,32 @@ export const menuData = {
         price: "₹120",
         desc: "Soft steamed idlis served with chutney and sambar",
       },
-      {
-        name: "Idli Vada Mix",
-        price: "₹120",
-        desc: "Combination of idli and crispy medu vada",
-      },
-      {
-        name: "Ghee Podi Idli",
-        price: "₹220",
-        desc: "Idlis tossed in ghee and spicy podi masala",
-      },
-      {
-        name: "Vada 2 pcs",
-        price: "₹120",
-        desc: "Crispy medu vada served with chutney and sambar",
-      },
-      {
-        name: "Masala Idli",
-        price: "₹160",
-        desc: "Fried idli tossed in flavorful masala spices",
-      },
+{
+  name: "Idli Vada Mix",
+  price: "₹130",
+  desc: "A combination of soft idli and crispy medu vada served with chutney and sambar."
+},
+
+// Ghee Podi Idli
+{
+  name: "Ghee Podi Idli",
+  price: "₹180",
+  desc: "Soft idlis tossed in aromatic ghee and spicy podi masala."
+},
+
+// Vada
+{
+  name: "Vada 2 pcs",
+  price: "₹140",
+  desc: "Crispy medu vada served with chutney and sambar."
+},
+
+// Masala Idli
+{
+  name: "Masala Idli",
+  price: "₹180",
+  desc: "Fried idli pieces tossed in flavorful South Indian masala spices."
+},
     ],
   },
 
