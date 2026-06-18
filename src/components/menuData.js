@@ -244,7 +244,7 @@ export const menuData = {
   heading: "Idli Vada"
 },
       {
-        name: "Idli 2 pcs",
+        name: "Idli (2 pcs)",
         price: "₹120",
         desc: "Soft steamed idlis served with chutney and sambar",
       },
@@ -263,7 +263,7 @@ export const menuData = {
 
 // Vada
 {
-  name: "Vada 2 pcs",
+  name: "Vada (2 pcs)",
   price: "₹140",
   desc: "Crispy medu vada served with chutney and sambar"
 },
@@ -283,7 +283,7 @@ Soups: {
     {
       name: "TOMATO SOUP",
       price: "₹225",
-      desc: "Simple Tomato Soup Fresh Mint, Coriander Served Crunchy Croutons",
+      desc: "Simple Tomato Soup with Fresh Mint, Coriander and Crunchy Croutons",
     },
     {
       name: "VEGETABLE SOUP",
@@ -291,9 +291,9 @@ Soups: {
       desc: "Vegetable Soup For Weight Watchers",
     },
     {
-      name: "LEMON CORRIANDER SOUP",
+      name: "LEMON CORIANDER SOUP",
       price: "₹225",
-      desc: "Indian Style Soup freshness of lemon and coriander",
+      desc: "Indian Style Soup with freshness of lemon and coriander",
     },
     {
       name: "VEG CLEAR SOUP",
@@ -303,27 +303,27 @@ Soups: {
     {
       name: "SWEET CORN SOUP",
       price: "₹225",
-      desc: "A Chinese Style Creamy Soup Corn and Vegetable",
+      desc: " Chinese Style Creamy Soup with Corn and Vegetable",
     },
     {
       name: "HOT & SOUR SOUP",
       price: "₹225",
-      desc: "Spicy Chinese Soup Vegetable, Paneer and Mushroom",
+      desc: "Spicy Chinese Soup with Vegetable, Paneer and Mushroom",
     },
     {
       name: "MANCHOW SOUP",
       price: "₹225",
-      desc: "Chinese Style Soup Garlic & Crispy Noodles",
+      desc: "Chinese Style Soup with Garlic & Crispy Noodles",
     },
     {
       name: "CREAM OF MUSHROOM",
       price: "₹290",
-      desc: "Cream Of Mushroom Soup Onion",
+      desc: "Cream Of Mushroom Soup with Onion",
     },
     {
       name: "CREAM OF BROCCOLI",
       price: "₹280",
-      desc: "Traditional Italian Broccoli Soup Garlic",
+      desc: "Traditional Italian Broccoli Soup with Garlic",
     },
     {
       name: "VEG TALUMEIN SOUP",
