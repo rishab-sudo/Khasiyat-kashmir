@@ -1101,12 +1101,12 @@ Beverages: {
     {
       name: "Khaasiyat Executive Thali",
       price: "₹440",
-      desc: "(Serves 1) Paneer of the day, dal tadka, rice, butter rotis, salad, pickle & sweet",
+      desc: "(Serves 1) Paneer of the day, dal tadka, rice, 2 butter rotis, salad, pickle & sweet",
     },
     {
       name: "Khaasiyat Maharaja Thali Spl",
       price: "₹640",
-      desc: "(Serves 2) Paneer, mix veg, dal makhani, bread, rice, salad, pickle & dessert",
+      desc: "(Serves 2) Paneer of the day, mix veg of the day , dal makhani, Lachha Paratha/Garlic Naan, steam rice, salad, pickle & dessert",
     },
 
     {
