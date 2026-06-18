@@ -255,7 +255,7 @@ export const menuData = {
 },
 
 // Ghee Podi Idli
-{
+{ 
   name: "Ghee Podi Idli",
   price: "₹180",
   desc: "Soft idlis tossed in aromatic ghee and spicy podi masala."
@@ -378,13 +378,13 @@ Soups: {
     },
     {
       name: "MALAI BROCCOLI",
-      price: "₹380",
+      price: "₹430",
       desc: "White Sauce marinated Broccoli grilled in clay pot to perfection",
     },
     {
       name: "PANEER TIKKA TRIO",
-      price: "₹380",
-      desc: "3 Types of Marinated Paneer, Cooked In Tandoor Served with Salad & Chutney",
+      price: "₹400",
+      desc: "3 varieties  of Marinated Paneer, Cooked In Tandoor Served with Salad & Chutney",
     },
     {
       name: "ALOO NAZAKAT",
@@ -409,12 +409,12 @@ desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders st
 {
   name: "AFGANI SOYA CHAAP",
   price: "₹360",
-  desc: "Tender soya chaap in a creamy, flavorful marinade.",
+  desc: "Rich and creamy Afghani-style soya chaap.",
 },
 {
   name: "HARIYALI SOYA CHAAP",
   price: "₹340",
-  desc: "Soya chaap coated with fresh mint and herbs.",
+  desc: "Green herb-marinated soya chaap."
 },
 {
   name: "KASHMIRI SOYA CHAAP",
@@ -428,22 +428,22 @@ desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders st
     {
   name: "CHINESE BHEL",
   price: "₹260",
-  desc: "Crispy noodles tossed with fresh veggies and Chinese sauces.",
-},
+  desc: "rispy noodles with fresh vegetables & Chinese sauce."
+    },
 {
   name: "VEG CRISPY",
   price: "₹300",
-  desc: "Crunchy vegetables tossed in flavorful Chinese sauces.",
+  desc: "Crispy vegetables tossed in Chinese sauces.",
 },
 {
   name: "HONEY CHILLI POTATO",
   price: "₹260",
-  desc: "Crispy potato fries coated in honey chilli sauce.",
+  desc: "Crispy French fries tossed in honey & chilli sauce.",
 },
 {
   name: "VEG SPRING ROLL",
   price: "₹300",
-  desc: "Crispy rolls filled with seasoned vegetables and served with dips.",
+  desc: "Vegetables rolled in a thin rice paper sheet, fried and served with dips.",
 },
 {
   name: "CHEESE CIGAR ROLL (6 PCS)",
@@ -482,7 +482,7 @@ Chinese: {
     {
       name: "CHILLI PANEER - GRAVY",
       price: "₹280",
-      desc: "Marinated Cottage Cheese Bell Peppers, Onions Cooked In Chilli Garlic Sauce",
+      desc: "Cottage cheese, bell peppers & onions cooked in chilli garlic sauce",
     },
     {
       name: "VEGETABLES WITH HOT GARLIC SAUCE / BLACKBEAN SAUCE",
@@ -497,17 +497,17 @@ Chinese: {
     {
       name: "VEGETABLE FRIED RICE",
       price: "₹280",
-      desc: "Stir Fried Vegetables with Rice in Chinese Sauce",
+      desc: "Stir Fried Vegetables with Rice in Chinese Sauce.",
     },
     {
       name: "SCHEZWAN FRIED RICE",
       price: "₹320",
-      desc: "Stir Fried Vegetables with Rice in Schezwan Sauce And Chinese Sauce",
+      desc: "Stir Fried Vegetables with Rice in Schezwan Sauce And Chinese Sauce.",
     },
     {
       name: "MUSHROOM FRIED RICE",
       price: "₹380",
-      desc: "Stir fried mushroom with rice and Chinese sauce",
+      desc: "Stir fried mushroom with rice and Chinese sauce.",
     },
 
     // ================= NOODLES & CHOPSUEY =================
@@ -517,22 +517,22 @@ Chinese: {
     {
       name: "HAKKA NOODLE",
       price: "₹280",
-      desc: "Noodles Stir Fried with Shredded Vegetables",
+      desc: "Noodles Stir Fried with Shredded Vegetables.",
     },
     {
       name: "CHILLY GARLIC NOODLES",
       price: "₹280",
-      desc: "Garlic Flavoured Spicy Noodles Shredded Vegetables",
+      desc: "Spicy garlic-flavoured noodles with shredded vegetables.",
     },
     {
       name: "SCHEZWAN GARLIC NOODLE",
       price: "₹320",
-      desc: "Garlic Flavoured Spicy Noodles Shredded Vegetables tossed in schezwan sauce",
+      desc: "Garlic-flavoured spicy noodles tossed in Schezwan sauce.",
     },
     {
       name: "VEGETABLE CHOPSUEY",
       price: "₹360",
-      desc: "Crispy Noodles Served Sweet Indo-chinese Sauce and Vegetables",
+      desc: "Crispy Noodles Served Sweet Indo-chinese Sauce and Vegetables.",
     },
 
     // ================= SIZZLING EXPRESS =================
@@ -541,18 +541,18 @@ Chinese: {
 },
     {
       name: "SIZZED IN CHINA",
-      price: "₹480",
+      price: "₹530",
       desc: "Chinese Style Sizzler Fried Rice, Veg Manchurian, Chilli Paneer Cooked In Chilli Garlic Sauce",
     },
     {
       name: "GOD FATHER DELIGHT",
-      price: "₹480",
+      price: "₹530",
       desc: "Tandoori Platter with Paneer Tikka, Hara Bhara Kabab, Malai Broccoli, Soya Chap, Tandoori Aloo",
     },
     {
       name: "CHEF'S SPECIAL SIZZLER",
-      price: "₹480",
-      desc: "Sizzler Paneer Tikka 3 Types, Veg Biryani with small portion of Hakka Noodles and Manchurian Dry",
+      price: "₹580",
+      desc: "Paneer tikka (3 types), veg biryani, hakka noodles & manchurian dry.",
     },
 
   ],
@@ -563,118 +563,124 @@ Chinese: {
     {
       name: "Paneer Lababdar",
       price: "₹380",
-      desc: "Rich creamy paneer curry cooked in flavorful gravy",
+      desc: "Paneer in mild red & white gravy",
     },
     {
       name: "Paneer Mirch Masala",
       price: "₹380",
-      desc: "Paneer cooked with capsicum and spicy masala",
+      desc: "Mumbai-style paneer in spicy gravy",
     },
     {
       name: "Paneer Tikka Masala",
       price: "₹380",
-      desc: "Tandoori paneer tikka served in spicy gravy",
+      desc: "Marinated paneer cubes in onion-tomato gravy",
     },
     {
       name: "Paneer Butter Masala",
       price: "₹380",
-      desc: "Creamy buttery paneer curry with rich flavors",
+      desc: "Classic paneer butter masala",
     },
     {
       name: "Palak Paneer",
       price: "₹380",
-      desc: "Fresh paneer cubes cooked in spinach gravy",
+      desc: "Paneer cooked in creamy spinach gravy",
     },
     {
       name: "Kadai Paneer",
       price: "₹380",
-      desc: "Paneer tossed with capsicum in kadai masala",
+      desc: "Paneer with onion & bell pepper in rich gravy",
     },
     {
       name: "Paneer Bhurji",
       price: "₹400",
-      desc: "Spiced scrambled paneer cooked with herbs",
+      desc: "Minced cottage cheese in tomato-onion gravy",
     },
     {
       name: "Navratan Korma",
       price: "₹380",
-      desc: "Mixed vegetables and dry fruits in creamy gravy",
+      desc: "Combination of fruits, vegetables & dry fruits in mild gravy",
     },
     {
       name: "Kaju Butter Masala",
       price: "₹400",
-      desc: "Cashew based rich buttery curry",
+      desc: "Rich cashew-based curry",
     },
     {
       name: "Corn Palak",
       price: "₹400",
-      desc: "Sweet corn cooked in creamy spinach gravy",
+      desc: "Punjabi-style corn & spinach cooked with herbs",
     },
     {
       name: "Mix Vegetable",
       price: "₹360",
-      desc: "Fresh mixed vegetables cooked in Indian spices",
+      desc: "Combination of fresh vegetables in mild gravy",
     },
     {
       name: "Paneer Hyderabadi",
       price: "₹360",
-      desc: "Hyderabadi style paneer curry with rich flavors",
+      desc: "Cottage cheese in Hyderabadi-style gravy",
     },
     {
       name: "Dum Aloo",
       price: "₹360",
-      desc: "Baby potatoes cooked in aromatic gravy",
+      desc: "Baby potatoes cooked in tangy & spicy gravy",
     },
     {
-      name: "Aloo Pyaz Laziz",
+      name: "Aloo Pyaz Jaipuri",
       price: "₹360",
-      desc: "Potato and onion curry with flavorful spices",
+      desc: "Potatoes & onions in Rajasthani-style spicy gravy",
     },
     {
-      name: "Baby Corn Lazeez",
+      name: "Baby Corn Lalfrezi",
       price: "₹400",
-      desc: "Baby corn cooked in creamy Indian gravy",
+      desc: "Baby corn cooked in spicy gravy",
     },
     {
       name: "Methi Malai Matar",
       price: "₹400",
-      desc: "Creamy fenugreek and green peas curry",
+      desc: "Green peas & fenugreek in rich white gravy",
     },
     {
       name: "Jeera Aloo",
       price: "₹300",
-      desc: "Potatoes tossed with cumin and Indian spices",
+      desc: "Cumin-flavoured potatoes",
     },
     {
       name: "Chana Masala",
       price: "₹320",
-      desc: "Punjabi style chickpea curry",
+      desc: "Chickpeas cooked in Punjabi masala",
     },
     {
       name: "Baby Corn Mushroom Masala",
       price: "₹440",
-      desc: "Baby corn and mushroom cooked in rich gravy",
+      desc: "Baby corn & mushroom curry",
     },
     {
       name: "Soya Chaap Masala",
       price: "₹380",
-      desc: "Soya chaap cooked in spicy masala gravy",
+      desc: "Soya chaap chunks cooked in masala gravy",
     },
     {
-      name: "Dal Makhni",
-      price: "₹340",
-      desc: "Creamy black lentils slow cooked with butter",
+      name: "Malai Kofta",
+      price: "₹400",
+      desc: "Dry fruit-stuffed dumplings in rich yellow gravy",
     },
     {
       name: "Dal Tadka",
       price: "₹310",
-      desc: "Yellow dal tempered with Indian spices",
+      desc: "Yellow lentils tempered with spices",
+    },
+    {
+      name: "Dal Makhani",
+      price: "₹340",
+      desc: "Slow-cooked black lentils with selected spices",
     },
     {
       name: "Dal Dhaba",
       price: "₹310",
-      desc: "Dhaba style dal with smoky flavors",
+      desc: "Lentils cooked in traditional dhaba style",
     },
+
     {
       name: "Roasted Papad (2 pcs)",
       price: "₹90",
@@ -695,82 +701,83 @@ Chinese: {
       price: "₹160",
       desc: "Fried papad topped with spicy masala mix",
     },
-    {
-  name: "------From Tandoor------",
-  price: "",
-  desc: "",
-},
 
-{
-  name: "Tandoori Roti",
-  price: "₹50",
-  desc: "Freshly baked tandoori roti",
-},
-{
-  name: "Butter Tandoori Roti",
-  price: "₹65",
-  desc: "Soft tandoori roti topped with butter",
-},
-{
-  name: "Naan",
-  price: "₹90",
-  desc: "Classic soft naan baked in tandoor",
-},
-{
-  name: "Butter Naan",
-  price: "₹100",
-  desc: "Buttery naan served hot from tandoor",
-},
-{
-  name: "Garlic Butter Naan",
-  price: "₹120",
-  desc: "Naan flavored with garlic and butter",
-},
-{
-  name: "Chilli Garlic Butter Naan",
-  price: "₹140",
-  desc: "Spicy garlic naan topped with butter",
-},
-{
-  name: "Cheese Naan",
-  price: "₹180",
-  desc: "Soft naan stuffed with melted cheese",
-},
-{
-  name: "Stuffed Naan",
-  price: "₹140",
-  desc: "Stuffed naan with flavorful filling",
-},
-{
-  name: "Lachha Paratha",
-  price: "₹80",
-  desc: "Layered crispy lachha paratha",
-},
-{
-  name: "Pudina Mirchi Lachha Paratha",
-  price: "₹100",
-  desc: "Mint and chilli flavored lachha paratha",
-},
-{
-  name: "Stuffed Paratha Mix Veg",
-  price: "₹120",
-  desc: "Mixed vegetable stuffed paratha",
-},
-{
-  name: "Missi Roti",
-  price: "₹100",
-  desc: "Traditional gram flour Indian bread",
-},
-{
-  name: "Onion Chilli Kulcha",
-  price: "₹120",
-  desc: "Kulcha stuffed with onion and chilli",
-},
-{
-  name: "Roti Basket",
-  price: "₹320",
-  desc: "Assorted basket of Indian breads",
-},
+    {
+      name: "------From Tandoor------",
+      price: "",
+      desc: "",
+    },
+
+    {
+      name: "Tandoori Roti",
+      price: "₹50",
+      desc: "Freshly baked tandoori roti",
+    },
+    {
+      name: "Butter Tandoori Roti",
+      price: "₹65",
+      desc: "Soft tandoori roti topped with butter",
+    },
+    {
+      name: "Naan",
+      price: "₹90",
+      desc: "Classic soft naan baked in tandoor",
+    },
+    {
+      name: "Butter Naan",
+      price: "₹100",
+      desc: "Buttery naan served hot from tandoor",
+    },
+    {
+      name: "Garlic Butter Naan",
+      price: "₹120",
+      desc: "Naan flavored with garlic and butter",
+    },
+    {
+      name: "Chilli Garlic Butter Naan",
+      price: "₹140",
+      desc: "Spicy garlic naan topped with butter",
+    },
+    {
+      name: "Cheese Naan",
+      price: "₹180",
+      desc: "Soft naan stuffed with melted cheese",
+    },
+    {
+      name: "Stuffed Naan",
+      price: "₹140",
+      desc: "Stuffed naan with flavorful filling",
+    },
+    {
+      name: "Lachha Paratha",
+      price: "₹80",
+      desc: "Layered crispy lachha paratha",
+    },
+    {
+      name: "Pudina Mirchi Lachha Paratha",
+      price: "₹100",
+      desc: "Mint and chilli flavored lachha paratha",
+    },
+    {
+      name: "Stuffed Paratha Mix Veg",
+      price: "₹120",
+      desc: "Mixed vegetable stuffed paratha",
+    },
+    {
+      name: "Missi Roti",
+      price: "₹100",
+      desc: "Traditional gram flour Indian bread",
+    },
+    {
+      name: "Onion Chilli Kulcha",
+      price: "₹120",
+      desc: "Kulcha stuffed with onion and chilli",
+    },
+    {
+      name: "Roti Basket",
+      price: "₹320",
+      desc: "Assorted basket of Indian breads",
+    },
   ],
 },
 "Jain Menu": {
@@ -812,151 +819,163 @@ Chinese: {
 Beverages: {
   reverse: false,
   items: [
-                                       {
-  heading: "Mocktails"
-},
+    {
+      heading: "Mocktails",
+    },
     {
       name: "Lemon Ice Tea",
       price: "₹180",
-      desc: "Refreshing chilled lemon flavored iced tea",
+      desc: "Refreshing lemon flavored iced tea",
     },
     {
       name: "Blue Breeze",
       price: "₹180",
-      desc: "Cool blue mocktail with refreshing flavors",
+      desc: "Cool blue mocktail served chilled",
     },
     {
       name: "Fresh Lime Soda",
       price: "₹180",
-      desc: "Refreshing lime soda served chilled",
+      desc: "Fresh lime soda with fizz",
     },
     {
-      name: "Nimbu Pani",
+      name: "Nimbu Paani",
       price: "₹120",
-      desc: "Traditional Indian lemonade with fresh lime",
+      desc: "Traditional fresh Indian lemonade",
     },
-                                           {
-  heading: "Mojito 350 ml"
-},
+    {
+      name: "Blue Lagoon",
+      price: "₹180",
+      desc: "Refreshing blue citrus mocktail",
+    },
+
+    {
+      heading: "Mojito (350 ml)",
+    },
     {
       name: "Green Apple Mojito",
       price: "₹240",
-      desc: "Minty mojito infused with green apple flavor",
+      desc: "Minty green apple mojito",
     },
     {
       name: "Strawberry Mojito",
       price: "₹240",
-      desc: "Refreshing strawberry mojito with mint",
+      desc: "Fresh strawberry mint mojito",
     },
     {
       name: "Virgin Mojito",
       price: "₹240",
-      desc: "Classic mojito with mint and lime",
+      desc: "Classic mint lime mojito",
     },
     {
       name: "Watermelon Mojito",
-      price: "₹280",
-      desc: "Refreshing watermelon mojito served chilled",
+      price: "₹240",
+      desc: "Refreshing watermelon mojito",
     },
 
-                                              {
-  heading: "Milkshakes 300ml"
-},
-
+    {
+      heading: "Milkshakes (300 ml)",
+    },
     {
       name: "Brownie Milk Shake",
       price: "₹320",
-      desc: "Rich brownie blended creamy milkshake",
+      desc: "Creamy brownie blended milkshake",
     },
     {
       name: "Oreo Milkshake",
       price: "₹320",
-      desc: "Creamy Oreo cookies blended milkshake",
+      desc: "Creamy Oreo cookie milkshake",
     },
     {
       name: "Kit Kat Milkshake",
       price: "₹320",
-      desc: "Chocolatey Kit Kat flavored milkshake",
+      desc: "Chocolate Kit Kat milkshake",
     },
     {
       name: "Strawberry Milkshake",
       price: "₹300",
-      desc: "Fresh strawberry flavored creamy milkshake",
+      desc: "Fresh strawberry creamy milkshake",
     },
     {
       name: "Khaasiyat Chocolate Spl Milkshake",
       price: "₹440",
-      desc: "Signature rich chocolate special milkshake",
+      desc: "Signature rich chocolate milkshake",
     },
 
-                                             {
-  heading: "Cold Coffee 300 ml"
-},
-
+    {
+      heading: "Cold Coffee (300 ml)",
+    },
     {
       name: "Classic Cold Coffee",
       price: "₹240",
-      desc: "Smooth and refreshing cold coffee",
-    },
-    {
-      name: "Hazelnut Frappe",
-      price: "₹240",
-      desc: "Creamy hazelnut flavored frappe",
-    },
-    {
-      name: "Nutella Frappe",
-      price: "₹280",
-      desc: "Nutella blended chilled coffee frappe",
+      desc: "Smooth chilled cold coffee",
     },
     {
       name: "Tall N Dark",
       price: "₹320",
-      desc: "Strong dark cold coffee delight",
+      desc: "Strong dark cold coffee",
+    },
+    {
+      name: "Iced Mocha",
+      price: "₹240",
+      desc: "Chocolate flavored iced coffee",
     },
 
-                                            {
-  heading: "Miscellaneous"
-},
-
     {
-      name: "Red Bull",
-      price: "₹180",
-      desc: "Energy drink served chilled",
+      heading: "Hot Coffee",
     },
     {
-      name: "Soft Drink",
-      price: "₹100",
-      desc: "Refreshing soft drink options available",
+      name: "Espresso Single",
+      price: "₹80",
+      desc: "Single shot espresso coffee",
     },
     {
-      name: "Bottled Water",
-      price: "MRP",
-      desc: "Packaged drinking water bottle",
-    },
-    {
-      name: "Butter Milk",
+      name: "Espresso Double",
       price: "₹120",
-      desc: "Refreshing chilled traditional buttermilk",
+      desc: "Double shot espresso coffee",
     },
     {
-      name: "Lassi (Sweet)",
-      price: "₹180",
-      desc: "Sweet creamy Punjabi style lassi",
-    },
-
-                                            {
-  heading: "Hot Items"
-},
-
-    {
-      name: "Saffron Kahwa",
+      name: "Cappuccino",
       price: "₹160",
-      desc: "Traditional Kashmiri saffron kahwa tea",
+      desc: "Classic frothy cappuccino",
+    },
+    {
+      name: "Cafe Latte",
+      price: "₹160",
+      desc: "Smooth creamy cafe latte",
+    },
+    {
+      name: "Café Mocha",
+      price: "₹200",
+      desc: "Coffee blended with chocolate",
+    },
+    {
+      name: "Hazelnut Coffee",
+      price: "₹180",
+      desc: "Hazelnut flavored hot coffee",
+    },
+    {
+      name: "Caramel Coffee",
+      price: "₹180",
+      desc: "Rich caramel hot coffee",
+    },
+    {
+      name: "Hot Chocolate",
+      price: "₹220",
+      desc: "Rich creamy hot chocolate",
+    },
+
+    {
+      heading: "Hot Beverages",
+    },
+    {
+      name: "Saffron Khawa",
+      price: "₹160",
+      desc: "Traditional saffron herbal drink",
     },
     {
       name: "Black Tea",
       price: "₹80",
-      desc: "Classic strong black tea",
+      desc: "Classic black tea",
     },
     {
       name: "Hot Lemon Tea",
@@ -966,51 +985,46 @@ Beverages: {
     {
       name: "Masala Tea",
       price: "₹90",
-      desc: "Indian spiced masala chai",
+      desc: "Traditional Indian masala tea",
     },
     {
       name: "Green Tea",
       price: "₹80",
-      desc: "Healthy refreshing green tea",
+      desc: "Refreshing green tea",
     },
-                                           {
-  heading: "Hot Coffee"
-},
+    {
+      name: "Americano",
+      price: "₹150",
+      desc: "Freshly brewed black coffee",
+    },
 
     {
-      name: "Espresso Single",
-      price: "₹80",
-      desc: "Strong single shot espresso coffee",
+      heading: "Miscellaneous",
     },
     {
-      name: "Espresso Double",
+      name: "Red Bull",
+      price: "₹180",
+      desc: "Chilled energy drink",
+    },
+    {
+      name: "Soft Drink",
+      price: "₹100",
+      desc: "Refreshing soft drink",
+    },
+    {
+      name: "Bottled Water",
+      price: "MRP",
+      desc: "Packaged drinking water",
+    },
+    {
+      name: "Butter Milk",
       price: "₹120",
-      desc: "Double shot rich espresso coffee",
+      desc: "Chilled traditional buttermilk",
     },
     {
-      name: "Cappuccino",
-      price: "₹160",
-      desc: "Classic cappuccino with frothy milk",
-    },
-    {
-      name: "Cafe Latte",
-      price: "₹160",
-      desc: "Smooth latte with creamy milk",
-    },
-    {
-      name: "Hazelnut Coffee",
+      name: "Lassi (Sweet)",
       price: "₹180",
-      desc: "Hot coffee infused with hazelnut flavor",
-    },
-    {
-      name: "Caramel Coffee",
-      price: "₹180",
-      desc: "Creamy caramel flavored hot coffee",
-    },
-    {
-      name: "Hot Chocolate",
-      price: "₹220",
-      desc: "Rich creamy hot chocolate beverage",
+      desc: "Sweet Punjabi style lassi",
     },
   ],
 },
@@ -1018,69 +1032,66 @@ Beverages: {
 "Combo Meals": {
   reverse: false,
   items: [
-                                           {
-  heading: "Mini Meal Combo"
-},
+    {
+      heading: "Mini Meal Combo",
+    },
     {
       name: "Paratha Platter",
       price: "₹360",
-      desc: "Assorted parathas served with curd and pickle",
+      desc: "Choose any 2 parathas with raita, pickle, onion salad & shahi kheer",
     },
     {
       name: "Dal Makhani Mini Meal",
       price: "₹380",
-      desc: "Dal makhani served with rice and bread",
-    },
-    {
-      name: "Chole with Chawal",
-      price: "₹360",
-      desc: "Punjabi chole served with steamed rice",
+      desc: "Served with 2 lachha parathas, veg raita, onion salad & pickle",
     },
     {
       name: "Dal Makhani with Jeera Rice",
       price: "₹360",
-      desc: "Creamy dal makhani served with jeera rice",
+      desc: "Served with onion salad, pickle, raita & papad",
     },
     {
       name: "Bhuna Paneer with Baby Naan",
-      price: "₹440",
-      desc: "Spicy bhuna paneer served with soft baby naan",
+      price: "₹400",
+      desc: "Served with onion salad, pickle, raita & papad",
+    },
+    {
+      name: "Chole with Chawal",
+      price: "₹360",
+      desc: "Served with onion salad, pickle, raita & papad",
     },
 
-
-                                           {
-  heading: "Thalis"
-},
+    {
+      heading: "Thalis",
+    },
     {
       name: "Khaasiyat Executive Thali",
-      price: "₹450",
-      desc: "Complete traditional thali with multiple dishes",
+      price: "₹440",
+      desc: "(Serves 1) Paneer of the day, dal tadka, rice, butter rotis, salad, pickle & sweet",
     },
     {
       name: "Khaasiyat Maharaja Thali Spl",
-      price: "₹650",
-      desc: "Royal special thali with premium dishes",
+      price: "₹640",
+      desc: "(Serves 2) Paneer, mix veg, dal makhani, bread, rice, salad, pickle & dessert",
     },
 
-
-                                           {
-  heading: "Add Starter"
-},
     {
-      name: "Hara Bhara Kebab 2 pcs",
-      price: "₹100",
-      desc: "Healthy spinach and peas kebab starter",
+      heading: "Add Starter (Only with Maharaja Thali)",
     },
     {
-      name: "Paneer Tikka 2 pcs",
+      name: "Hara Bhara Kebab (2 Pcs)",
       price: "₹100",
-      desc: "Tandoori paneer tikka starter",
+      desc: "Add-on starter with Maharaja Thali",
+    },
+    {
+      name: "Paneer Tikka (2 Pcs)",
+      price: "₹100",
+      desc: "Add-on paneer starter with Maharaja Thali",
     },
 
- 
-                                           {
-  heading: "Add Drink"
-},
+    {
+      heading: "Add Drink (Only with Maharaja Thali)",
+    },
     {
       name: "Masala Chaas",
       price: "₹69",
@@ -1089,7 +1100,7 @@ Beverages: {
     {
       name: "Lassi",
       price: "₹99",
-      desc: "Traditional creamy sweet lassi",
+      desc: "Traditional sweet creamy lassi",
     },
   ],
 },
