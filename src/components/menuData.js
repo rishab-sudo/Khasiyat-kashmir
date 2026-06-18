@@ -77,7 +77,7 @@ export const menuData = {
       {
         name: "UPMA",
         price: "₹160",
-    desc: "Classic South Indian upma with fresh herbs and spices."
+    desc: "Classic South Indian upma with fresh herbs and spices"
       },
       
       {
@@ -116,7 +116,7 @@ export const menuData = {
         desc: "Creamy cheesy Maggi with rich flavors",
       },
                         {
-  heading: "Parathas"
+  heading: "Parathas  (2 pcs)"
 },
       {
         name: "Onion Paratha with Dahi",
@@ -126,25 +126,25 @@ export const menuData = {
       {
         name: "Aloo Paratha with Dahi",
         price: "₹240",
-        desc: "Classic potato stuffed paratha with curd",
+        desc: "Classic potato stuffed paratha with fresh curd",
       },
       {
         name: "Mix Paratha with Dahi",
         price: "₹260",
-        desc: "Mixed vegetable stuffed paratha with curd",
+        desc: "Mixed vegetable stuffed paratha with fresh curd",
       },
 // Paneer Paratha
 {
   name: "Paneer Paratha with Dahi",
   price: "₹280",
-  desc: "Soft paneer stuffed paratha served with fresh curd."
+  desc: "Soft paneer stuffed paratha served with fresh curd"
 },
 
 // Cheese Paneer Paratha
 {
   name: "Cheese Paneer Paratha with Dahi",
   price: "₹320",
-  desc: "Cheesy paneer stuffed paratha served with fresh curd."
+  desc: "Cheesy paneer stuffed paratha served with fresh curd"
 },
     ],
   },
@@ -175,12 +175,12 @@ export const menuData = {
    {
   name: "Butter Mysore Sada Dosa",
   price: "₹220",
-  desc: "Mysore style crispy dosa topped with butter."
+  desc: "Mysore style crispy dosa topped with butter"
 },
     {
   name: "Mysore Masala Dosa",
   price: "₹240",
-  desc: "Spicy Mysore dosa stuffed with flavorful potato masala."
+  desc: "Spicy Mysore dosa stuffed with flavorful potato masala"
 },
       {
         name: "Butter Rava Sada Dosa",
@@ -251,28 +251,28 @@ export const menuData = {
 {
   name: "Idli Vada Mix",
   price: "₹130",
-  desc: "A combination of soft idli and crispy medu vada served with chutney and sambar."
+  desc: "A combination of soft idli and crispy medu vada served with chutney and sambar"
 },
 
 // Ghee Podi Idli
 { 
   name: "Ghee Podi Idli",
   price: "₹180",
-  desc: "Soft idlis tossed in aromatic ghee and spicy podi masala."
+  desc: "Soft idlis tossed in aromatic ghee and spicy podi masala"
 },
 
 // Vada
 {
   name: "Vada 2 pcs",
   price: "₹140",
-  desc: "Crispy medu vada served with chutney and sambar."
+  desc: "Crispy medu vada served with chutney and sambar"
 },
 
 // Masala Idli
 {
   name: "Masala Idli",
   price: "₹180",
-  desc: "Fried idli pieces tossed in flavorful South Indian masala spices."
+  desc: "Fried idli pieces tossed in flavorful South Indian masala spices"
 },
     ],
   },
@@ -328,7 +328,7 @@ Soups: {
     {
       name: "VEG TALUMEIN SOUP",
       price: "₹280",
-      desc: "Mixture of Greens and vegetables cooked in Vegetable Stock for heartful combination.",
+      desc: "Mixture of Greens and vegetables cooked in Vegetable Stock for heartful combination",
     },
     {
       name: "VEG TOMYUM SOUP",
@@ -389,37 +389,37 @@ Soups: {
     {
       name: "ALOO NAZAKAT",
       price: "₹360",
-desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders stuffed with a rich blend of paneer, dry fruits, raisins, and aromatic spices."
+desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders stuffed with a rich blend of paneer, dry fruits, raisins, and aromatic spices"
     },
    {
   name: "RED PANEER TIKKA",
   price: "₹380",
-  desc: "Smoky paneer cubes with bold tandoori flavors.",
+  desc: "Smoky paneer cubes with bold tandoori flavors",
 },
 {
   name: "WHITE PANEER TIKKA",
   price: "₹380",
-  desc: "Creamy paneer tikka with a rich, mild taste.",
+  desc: "Creamy paneer tikka with a rich, mild taste",
 },
 {
   name: "GREEN PANEER TIKKA",
   price: "₹380",
-  desc: "Fresh herb-marinated paneer grilled to perfection.",
+  desc: "Fresh herb-marinated paneer grilled to perfection",
 },
 {
   name: "AFGANI SOYA CHAAP",
   price: "₹360",
-  desc: "Rich and creamy Afghani-style soya chaap.",
+  desc: "Rich and creamy Afghani-style soya chaap",
 },
 {
   name: "HARIYALI SOYA CHAAP",
   price: "₹340",
-  desc: "Green herb-marinated soya chaap."
+  desc: "Green herb-marinated soya chaap"
 },
 {
   name: "KASHMIRI SOYA CHAAP",
   price: "₹340",
-  desc: "Flavorful soya chaap with aromatic Kashmiri spices.",
+  desc: "Flavorful soya chaap with aromatic Kashmiri spices",
 },
     // ================= CHINESE STARTERS =================
                                 {
@@ -428,42 +428,42 @@ desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders st
     {
   name: "CHINESE BHEL",
   price: "₹260",
-  desc: "rispy noodles with fresh vegetables & Chinese sauce."
+  desc: "rispy noodles with fresh vegetables & Chinese sauce"
     },
 {
   name: "VEG CRISPY",
   price: "₹300",
-  desc: "Crispy vegetables tossed in Chinese sauces.",
+  desc: "Crispy vegetables tossed in Chinese sauces",
 },
 {
   name: "HONEY CHILLI POTATO",
   price: "₹260",
-  desc: "Crispy French fries tossed in honey & chilli sauce.",
+  desc: "Crispy French fries tossed in honey & chilli sauce",
 },
 {
   name: "VEG SPRING ROLL",
   price: "₹300",
-  desc: "Vegetables rolled in a thin rice paper sheet, fried and served with dips.",
+  desc: "Vegetables rolled in a thin rice paper sheet, fried and served with dips",
 },
 {
   name: "CHEESE CIGAR ROLL (6 PCS)",
   price: "₹380",
-  desc: "Crunchy rolls stuffed with melted cheese and sweet chilli sauce.",
+  desc: "Crunchy rolls stuffed with melted cheese and sweet chilli sauce",
 },
 {
   name: "VEG MANCHURIAN (DRY)",
   price: "₹320",
-  desc: "Veg balls tossed in classic Indo-Chinese sauces.",
+  desc: "Veg balls tossed in classic Indo-Chinese sauces",
 },
 {
   name: "VEG PANEER CHILLY (DRY)",
   price: "₹380",
-  desc: "Paneer, onions, and peppers tossed in spicy Chinese sauces.",
+  desc: "Paneer, onions, and peppers tossed in spicy Chinese sauces",
 },
 {
   name: "MUSHROOM CHILLI",
   price: "₹380",
-  desc: "Mushrooms stir-fried with chilli, ginger, and garlic.",
+  desc: "Mushrooms stir-fried with chilli, ginger, and garlic",
 },
 
   ],
@@ -497,17 +497,17 @@ Chinese: {
     {
       name: "VEGETABLE FRIED RICE",
       price: "₹280",
-      desc: "Stir Fried Vegetables with Rice in Chinese Sauce.",
+      desc: "Stir Fried Vegetables with Rice in Chinese Sauce",
     },
     {
       name: "SCHEZWAN FRIED RICE",
       price: "₹320",
-      desc: "Stir Fried Vegetables with Rice in Schezwan Sauce And Chinese Sauce.",
+      desc: "Stir Fried Vegetables with Rice in Schezwan Sauce And Chinese Sauce",
     },
     {
       name: "MUSHROOM FRIED RICE",
       price: "₹380",
-      desc: "Stir fried mushroom with rice and Chinese sauce.",
+      desc: "Stir fried mushroom with rice and Chinese sauce",
     },
 
     // ================= NOODLES & CHOPSUEY =================
@@ -517,22 +517,22 @@ Chinese: {
     {
       name: "HAKKA NOODLE",
       price: "₹280",
-      desc: "Noodles Stir Fried with Shredded Vegetables.",
+      desc: "Noodles Stir Fried with Shredded Vegetables",
     },
     {
       name: "CHILLY GARLIC NOODLES",
       price: "₹280",
-      desc: "Spicy garlic-flavoured noodles with shredded vegetables.",
+      desc: "Spicy garlic-flavoured noodles with shredded vegetables",
     },
     {
       name: "SCHEZWAN GARLIC NOODLE",
       price: "₹320",
-      desc: "Garlic-flavoured spicy noodles tossed in Schezwan sauce.",
+      desc: "Garlic-flavoured spicy noodles tossed in Schezwan sauce",
     },
     {
       name: "VEGETABLE CHOPSUEY",
       price: "₹360",
-      desc: "Crispy Noodles Served Sweet Indo-chinese Sauce and Vegetables.",
+      desc: "Crispy Noodles Served Sweet Indo-chinese Sauce and Vegetables",
     },
 
     // ================= SIZZLING EXPRESS =================
@@ -552,7 +552,7 @@ Chinese: {
     {
       name: "CHEF'S SPECIAL SIZZLER",
       price: "₹580",
-      desc: "Paneer tikka (3 types), veg biryani, hakka noodles & manchurian dry.",
+      desc: "Paneer tikka (3 types), veg biryani, hakka noodles & manchurian dry",
     },
 
   ],
