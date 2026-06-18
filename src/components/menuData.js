@@ -325,15 +325,15 @@ Soups: {
       price: "₹280",
       desc: "Traditional Italian Broccoli Soup with Garlic",
     },
-    {
-      name: "VEG TALUMEIN SOUP",
-      price: "₹280",
-      desc: "Mixture of Greens and vegetables cooked in Vegetable Stock for heartful combination",
-    },
+    // {
+    //   name: "VEG TALUMEIN SOUP",
+    //   price: "₹280",
+    //   desc: "Mixture of Greens and vegetables cooked in Vegetable Stock for heartful combination",
+    // },
     {
       name: "VEG TOMYUM SOUP",
       price: "₹280",
-      desc: "Lower Calorie Soup with Vegetables and fragrant thai spices for tasty indulgence",
+      desc: "Low Calorie Soup with Vegetables and fragrant thai spices for tasty indulgence",
     },
   ],
 },
@@ -349,7 +349,7 @@ Soups: {
     {
       name: "CRISPY CORN",
       price: "₹300",
-      desc: "Chakhna- Corn Kernnels made Crisp served with Fresh Onion Tomatoes & Corriander",
+      desc: "Chakhna- Corn Kernels made Crisp served with Fresh Onion Tomatoes & Coriander",
     },
     {
       name: "HARA BHARA KEBAB",
@@ -359,7 +359,7 @@ Soups: {
     {
       name: "MIX VEG BHAJIYA",
       price: "₹300",
-      desc: "Crispy & Tasty, Mix Veg Fritters W/Sweet Chilli Sauce",
+      desc: "Crispy & Tasty, Mix Veg Fritters with Sweet Chilli Sauce",
     },
 
     // ================= TANDOOR STARTERS =================
@@ -372,7 +372,7 @@ Soups: {
       desc: "Hung Curd, Paneer, Ginger And Green Chilli, Flour And Basic Spices Powder Served With Green Chutney",
     },
     {
-      name: "STUFFED TANDOORI MUSHROOM Z",
+      name: "STUFFED TANDOORI MUSHROOM ",
       price: "₹360",
       desc: "Marinated Mushroom Stuffed With Cottage Cheese & Potato Cooked In Tandoor Served Salad & Chutney",
     },
@@ -389,7 +389,7 @@ Soups: {
     {
       name: "ALOO NAZAKAT",
       price: "₹360",
-desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders stuffed with a rich blend of paneer, dry fruits, raisins, and aromatic spices"
+desc: "Stuffed potato barrels filled with paneer, dry fruits and spices"
     },
    {
   name: "RED PANEER TIKKA",
@@ -428,7 +428,7 @@ desc: "An Indian vegetarian starter consisting of deep-fried potato cylinders st
     {
   name: "CHINESE BHEL",
   price: "₹260",
-  desc: "rispy noodles with fresh vegetables & Chinese sauce"
+  desc: "crispy noodles with fresh vegetables & Chinese sauce"
     },
 {
   name: "VEG CRISPY",
@@ -680,7 +680,9 @@ Chinese: {
       price: "₹310",
       desc: "Lentils cooked in traditional dhaba style",
     },
-
+                                   {
+  heading: "Accompaniments"
+},
     {
       name: "Roasted Papad (2 pcs)",
       price: "₹90",
@@ -701,6 +703,38 @@ Chinese: {
       price: "₹160",
       desc: "Fried papad topped with spicy masala mix",
     },
+
+{
+  name: "------Salads Aur Raita------",
+  price: "",
+  desc: "",
+},
+
+{
+  name: "Green Salad",
+  price: "₹200",
+  desc: "Fresh garden salad with seasonal vegetables",
+},
+{
+  name: "Kachumbar",
+  price: "₹200",
+  desc: "Chopped onion, tomato & cucumber salad",
+},
+{
+  name: "Boondi Raita",
+  price: "₹140",
+  desc: "Creamy yogurt with crispy boondi",
+},
+{
+  name: "Pineapple Raita",
+  price: "₹380",
+  desc: "Sweet pineapple blended with chilled yogurt",
+},
+{
+  name: "Mix Fruit Raita",
+  price: "₹240",
+  desc: "Fresh seasonal fruits mixed with creamy yogurt",
+},
 
     {
       name: "------From Tandoor------",
@@ -750,17 +784,17 @@ Chinese: {
     },
     {
       name: "Lachha Paratha",
-      price: "₹80",
+      price: "₹90",
       desc: "Layered crispy lachha paratha",
     },
     {
       name: "Pudina Mirchi Lachha Paratha",
-      price: "₹100",
+      price: "₹110",
       desc: "Mint and chilli flavored lachha paratha",
     },
     {
       name: "Stuffed Paratha Mix Veg",
-      price: "₹120",
+      price: "₹140",
       desc: "Mixed vegetable stuffed paratha",
     },
     {
@@ -776,7 +810,7 @@ Chinese: {
     {
       name: "Roti Basket",
       price: "₹320",
-      desc: "Assorted basket of Indian breads",
+      desc: "1 Tandoori Roti, 1 Garlic Butter Naan, 1 Missi Roti, 1 Lachha Paratha & 1 Onion Chilli Kulcha.",
     },
   ],
 },
@@ -1038,7 +1072,7 @@ Beverages: {
     {
       name: "Paratha Platter",
       price: "₹360",
-      desc: "Choose any 2 parathas with raita, pickle, onion salad & shahi kheer",
+      desc: "Choose any 2 parathas (Aloo / Paneer / Mix Veg) served with raita, pickle, onion salad & shahi kheer",
     },
     {
       name: "Dal Makhani Mini Meal",
